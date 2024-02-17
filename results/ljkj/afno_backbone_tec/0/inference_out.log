@@ -1,0 +1,1911 @@
+2024-01-22 11:10:02,681 - root - INFO - --------------- Versions ---------------
+2024-01-22 11:10:02,685 - root - INFO - git branch: b'* master'
+2024-01-22 11:10:02,689 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-22 11:10:02,689 - root - INFO - Torch: 2.1.2+cu118
+2024-01-22 11:10:02,689 - root - INFO - ----------------------------------------
+2024-01-22 11:10:02,689 - root - INFO - ------------------ Configuration ------------------
+2024-01-22 11:10:02,689 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-22 11:10:02,689 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-22 11:10:02,690 - root - INFO - log_to_wandb True
+2024-01-22 11:10:02,690 - root - INFO - lr 0.0005
+2024-01-22 11:10:02,690 - root - INFO - batch_size 16
+2024-01-22 11:10:02,690 - root - INFO - max_epochs 1510
+2024-01-22 11:10:02,690 - root - INFO - scheduler CosineAnnealingLR
+2024-01-22 11:10:02,690 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 11:10:02,690 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 11:10:02,690 - root - INFO - orography False
+2024-01-22 11:10:02,690 - root - INFO - orography_path None
+2024-01-22 11:10:02,690 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-22 11:10:02,690 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-22 11:10:02,690 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-22 11:10:02,690 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-22 11:10:02,690 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-22 11:10:02,691 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-22 11:10:02,691 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-22 11:10:02,691 - root - INFO - loss l2
+2024-01-22 11:10:02,691 - root - INFO - num_data_workers 4
+2024-01-22 11:10:02,691 - root - INFO - dt 1
+2024-01-22 11:10:02,691 - root - INFO - n_history 0
+2024-01-22 11:10:02,691 - root - INFO - prediction_type iterative
+2024-01-22 11:10:02,691 - root - INFO - prediction_length 41
+2024-01-22 11:10:02,691 - root - INFO - n_initial_conditions 5
+2024-01-22 11:10:02,691 - root - INFO - ics_type default
+2024-01-22 11:10:02,691 - root - INFO - save_raw_forecasts True
+2024-01-22 11:10:02,691 - root - INFO - save_channel False
+2024-01-22 11:10:02,691 - root - INFO - masked_acc False
+2024-01-22 11:10:02,691 - root - INFO - maskpath None
+2024-01-22 11:10:02,691 - root - INFO - perturb False
+2024-01-22 11:10:02,692 - root - INFO - add_grid False
+2024-01-22 11:10:02,692 - root - INFO - N_grid_channels 0
+2024-01-22 11:10:02,692 - root - INFO - gridtype sinusoidal
+2024-01-22 11:10:02,692 - root - INFO - roll False
+2024-01-22 11:10:02,692 - root - INFO - num_blocks 8
+2024-01-22 11:10:02,692 - root - INFO - nettype afno
+2024-01-22 11:10:02,692 - root - INFO - patch_size 8
+2024-01-22 11:10:02,692 - root - INFO - width 56
+2024-01-22 11:10:02,692 - root - INFO - modes 32
+2024-01-22 11:10:02,692 - root - INFO - target default
+2024-01-22 11:10:02,692 - root - INFO - normalization zscore
+2024-01-22 11:10:02,692 - root - INFO - log_to_screen True
+2024-01-22 11:10:02,692 - root - INFO - save_checkpoint True
+2024-01-22 11:10:02,692 - root - INFO - enable_nhwc False
+2024-01-22 11:10:02,693 - root - INFO - optimizer_type FusedAdam
+2024-01-22 11:10:02,693 - root - INFO - crop_size_x None
+2024-01-22 11:10:02,693 - root - INFO - crop_size_y None
+2024-01-22 11:10:02,693 - root - INFO - two_step_training False
+2024-01-22 11:10:02,693 - root - INFO - plot_animations False
+2024-01-22 11:10:02,693 - root - INFO - add_noise False
+2024-01-22 11:10:02,693 - root - INFO - noise_std 0
+2024-01-22 11:10:02,693 - root - INFO - world_size 1
+2024-01-22 11:10:02,693 - root - INFO - interp 0
+2024-01-22 11:10:02,693 - root - INFO - use_daily_climatology False
+2024-01-22 11:10:02,693 - root - INFO - global_batch_size 16
+2024-01-22 11:10:02,693 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-22 11:10:02,693 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 11:10:02,693 - root - INFO - resuming False
+2024-01-22 11:10:02,693 - root - INFO - local_rank 0
+2024-01-22 11:10:02,694 - root - INFO - ---------------------------------------------------
+2024-01-22 11:10:02,694 - root - INFO - Inference for 36 initial conditions
+2024-01-22 11:10:02,696 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-22 11:10:02,698 - root - INFO - Number of samples per year: 509
+2024-01-22 11:10:02,698 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-22 11:10:02,698 - root - INFO - Delta t: 6 hours
+2024-01-22 11:10:02,698 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-22 11:10:02,698 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 11:10:03,756 - root - INFO - Loading inference data
+2024-01-22 11:10:03,756 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-22 11:10:03,756 - root - INFO - Initial condition 1 of 36
+2024-01-22 11:10:03,833 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:00,066 - root - INFO - --------------- Versions ---------------
+2024-01-22 17:51:00,070 - root - INFO - git branch: b'* master'
+2024-01-22 17:51:00,072 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-22 17:51:00,072 - root - INFO - Torch: 2.1.2+cu118
+2024-01-22 17:51:00,072 - root - INFO - ----------------------------------------
+2024-01-22 17:51:00,072 - root - INFO - ------------------ Configuration ------------------
+2024-01-22 17:51:00,072 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-22 17:51:00,073 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-22 17:51:00,073 - root - INFO - log_to_wandb True
+2024-01-22 17:51:00,073 - root - INFO - lr 0.0005
+2024-01-22 17:51:00,073 - root - INFO - batch_size 16
+2024-01-22 17:51:00,073 - root - INFO - max_epochs 1510
+2024-01-22 17:51:00,073 - root - INFO - scheduler CosineAnnealingLR
+2024-01-22 17:51:00,073 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 17:51:00,073 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 17:51:00,073 - root - INFO - orography False
+2024-01-22 17:51:00,073 - root - INFO - orography_path None
+2024-01-22 17:51:00,073 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-22 17:51:00,073 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-22 17:51:00,073 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-22 17:51:00,073 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-22 17:51:00,073 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-22 17:51:00,073 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-22 17:51:00,073 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-22 17:51:00,073 - root - INFO - loss l2
+2024-01-22 17:51:00,073 - root - INFO - num_data_workers 4
+2024-01-22 17:51:00,073 - root - INFO - dt 1
+2024-01-22 17:51:00,073 - root - INFO - n_history 0
+2024-01-22 17:51:00,073 - root - INFO - prediction_type iterative
+2024-01-22 17:51:00,073 - root - INFO - prediction_length 41
+2024-01-22 17:51:00,073 - root - INFO - n_initial_conditions 5
+2024-01-22 17:51:00,073 - root - INFO - ics_type default
+2024-01-22 17:51:00,073 - root - INFO - save_raw_forecasts True
+2024-01-22 17:51:00,073 - root - INFO - save_channel False
+2024-01-22 17:51:00,073 - root - INFO - masked_acc False
+2024-01-22 17:51:00,073 - root - INFO - maskpath None
+2024-01-22 17:51:00,073 - root - INFO - perturb False
+2024-01-22 17:51:00,073 - root - INFO - add_grid False
+2024-01-22 17:51:00,073 - root - INFO - N_grid_channels 0
+2024-01-22 17:51:00,073 - root - INFO - gridtype sinusoidal
+2024-01-22 17:51:00,073 - root - INFO - roll False
+2024-01-22 17:51:00,073 - root - INFO - num_blocks 8
+2024-01-22 17:51:00,073 - root - INFO - nettype afno
+2024-01-22 17:51:00,073 - root - INFO - patch_size 8
+2024-01-22 17:51:00,074 - root - INFO - width 56
+2024-01-22 17:51:00,074 - root - INFO - modes 32
+2024-01-22 17:51:00,074 - root - INFO - target default
+2024-01-22 17:51:00,074 - root - INFO - normalization zscore
+2024-01-22 17:51:00,074 - root - INFO - log_to_screen True
+2024-01-22 17:51:00,074 - root - INFO - save_checkpoint True
+2024-01-22 17:51:00,074 - root - INFO - enable_nhwc False
+2024-01-22 17:51:00,074 - root - INFO - optimizer_type FusedAdam
+2024-01-22 17:51:00,074 - root - INFO - crop_size_x None
+2024-01-22 17:51:00,074 - root - INFO - crop_size_y None
+2024-01-22 17:51:00,074 - root - INFO - two_step_training False
+2024-01-22 17:51:00,074 - root - INFO - plot_animations False
+2024-01-22 17:51:00,074 - root - INFO - add_noise False
+2024-01-22 17:51:00,074 - root - INFO - noise_std 0
+2024-01-22 17:51:00,074 - root - INFO - world_size 1
+2024-01-22 17:51:00,074 - root - INFO - interp 0
+2024-01-22 17:51:00,074 - root - INFO - use_daily_climatology False
+2024-01-22 17:51:00,074 - root - INFO - global_batch_size 16
+2024-01-22 17:51:00,074 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-22 17:51:00,074 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 17:51:00,074 - root - INFO - resuming False
+2024-01-22 17:51:00,074 - root - INFO - local_rank 0
+2024-01-22 17:51:00,074 - root - INFO - ---------------------------------------------------
+2024-01-22 17:51:00,074 - root - INFO - Inference for 36 initial conditions
+2024-01-22 17:51:00,075 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-22 17:51:00,076 - root - INFO - Number of samples per year: 509
+2024-01-22 17:51:00,076 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-22 17:51:00,076 - root - INFO - Delta t: 6 hours
+2024-01-22 17:51:00,076 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-22 17:51:00,076 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 17:51:01,130 - root - INFO - Loading inference data
+2024-01-22 17:51:01,131 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-22 17:51:01,131 - root - INFO - Initial condition 1 of 36
+2024-01-22 17:51:01,203 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:02,506 - root - INFO - Initial condition 2 of 36
+2024-01-22 17:51:02,560 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:02,989 - root - INFO - Initial condition 3 of 36
+2024-01-22 17:51:03,053 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:03,441 - root - INFO - Initial condition 4 of 36
+2024-01-22 17:51:03,503 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:03,899 - root - INFO - Initial condition 5 of 36
+2024-01-22 17:51:03,957 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:04,309 - root - INFO - Initial condition 6 of 36
+2024-01-22 17:51:04,365 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:04,769 - root - INFO - Initial condition 7 of 36
+2024-01-22 17:51:04,833 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:05,191 - root - INFO - Initial condition 8 of 36
+2024-01-22 17:51:05,253 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:05,639 - root - INFO - Initial condition 9 of 36
+2024-01-22 17:51:05,704 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:06,058 - root - INFO - Initial condition 10 of 36
+2024-01-22 17:51:06,112 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:06,526 - root - INFO - Initial condition 11 of 36
+2024-01-22 17:51:06,582 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:06,957 - root - INFO - Initial condition 12 of 36
+2024-01-22 17:51:07,019 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:07,410 - root - INFO - Initial condition 13 of 36
+2024-01-22 17:51:07,467 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:07,835 - root - INFO - Initial condition 14 of 36
+2024-01-22 17:51:07,892 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:08,340 - root - INFO - Initial condition 15 of 36
+2024-01-22 17:51:08,358 - root - INFO - Begin autoregressive inference
+2024-01-22 17:51:34,545 - root - INFO - --------------- Versions ---------------
+2024-01-22 17:51:34,549 - root - INFO - git branch: b'* master'
+2024-01-22 17:51:34,552 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-22 17:51:34,552 - root - INFO - Torch: 2.1.2+cu118
+2024-01-22 17:51:34,552 - root - INFO - ----------------------------------------
+2024-01-22 17:51:34,552 - root - INFO - ------------------ Configuration ------------------
+2024-01-22 17:51:34,552 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-22 17:51:34,552 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-22 17:51:34,552 - root - INFO - log_to_wandb True
+2024-01-22 17:51:34,552 - root - INFO - lr 0.0005
+2024-01-22 17:51:34,553 - root - INFO - batch_size 16
+2024-01-22 17:51:34,553 - root - INFO - max_epochs 1510
+2024-01-22 17:51:34,553 - root - INFO - scheduler CosineAnnealingLR
+2024-01-22 17:51:34,553 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 17:51:34,553 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-22 17:51:34,553 - root - INFO - orography False
+2024-01-22 17:51:34,553 - root - INFO - orography_path None
+2024-01-22 17:51:34,553 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-22 17:51:34,553 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-22 17:51:34,553 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-22 17:51:34,553 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-22 17:51:34,553 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-22 17:51:34,553 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-22 17:51:34,553 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-22 17:51:34,554 - root - INFO - loss l2
+2024-01-22 17:51:34,554 - root - INFO - num_data_workers 4
+2024-01-22 17:51:34,554 - root - INFO - dt 1
+2024-01-22 17:51:34,554 - root - INFO - n_history 0
+2024-01-22 17:51:34,554 - root - INFO - prediction_type iterative
+2024-01-22 17:51:34,554 - root - INFO - prediction_length 41
+2024-01-22 17:51:34,554 - root - INFO - n_initial_conditions 5
+2024-01-22 17:51:34,554 - root - INFO - ics_type default
+2024-01-22 17:51:34,554 - root - INFO - save_raw_forecasts True
+2024-01-22 17:51:34,554 - root - INFO - save_channel False
+2024-01-22 17:51:34,554 - root - INFO - masked_acc False
+2024-01-22 17:51:34,554 - root - INFO - maskpath None
+2024-01-22 17:51:34,554 - root - INFO - perturb False
+2024-01-22 17:51:34,554 - root - INFO - add_grid False
+2024-01-22 17:51:34,554 - root - INFO - N_grid_channels 0
+2024-01-22 17:51:34,554 - root - INFO - gridtype sinusoidal
+2024-01-22 17:51:34,554 - root - INFO - roll False
+2024-01-22 17:51:34,555 - root - INFO - num_blocks 8
+2024-01-22 17:51:34,555 - root - INFO - nettype afno
+2024-01-22 17:51:34,555 - root - INFO - patch_size 8
+2024-01-22 17:51:34,555 - root - INFO - width 56
+2024-01-22 17:51:34,555 - root - INFO - modes 32
+2024-01-22 17:51:34,555 - root - INFO - target default
+2024-01-22 17:51:34,555 - root - INFO - normalization zscore
+2024-01-22 17:51:34,555 - root - INFO - log_to_screen True
+2024-01-22 17:51:34,555 - root - INFO - save_checkpoint True
+2024-01-22 17:51:34,555 - root - INFO - enable_nhwc False
+2024-01-22 17:51:34,555 - root - INFO - optimizer_type FusedAdam
+2024-01-22 17:51:34,555 - root - INFO - crop_size_x None
+2024-01-22 17:51:34,555 - root - INFO - crop_size_y None
+2024-01-22 17:51:34,555 - root - INFO - two_step_training False
+2024-01-22 17:51:34,555 - root - INFO - plot_animations False
+2024-01-22 17:51:34,556 - root - INFO - add_noise False
+2024-01-22 17:51:34,556 - root - INFO - noise_std 0
+2024-01-22 17:51:34,556 - root - INFO - world_size 1
+2024-01-22 17:51:34,556 - root - INFO - interp 0
+2024-01-22 17:51:34,556 - root - INFO - use_daily_climatology False
+2024-01-22 17:51:34,556 - root - INFO - global_batch_size 16
+2024-01-22 17:51:34,556 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-22 17:51:34,556 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 17:51:34,556 - root - INFO - resuming False
+2024-01-22 17:51:34,556 - root - INFO - local_rank 0
+2024-01-22 17:51:34,556 - root - INFO - ---------------------------------------------------
+2024-01-22 17:51:34,556 - root - INFO - Inference for 36 initial conditions
+2024-01-22 17:51:34,557 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-22 17:51:34,558 - root - INFO - Number of samples per year: 509
+2024-01-22 17:51:34,558 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-22 17:51:34,558 - root - INFO - Delta t: 6 hours
+2024-01-22 17:51:34,558 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-22 17:51:34,558 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-22 17:51:35,401 - root - INFO - Loading inference data
+2024-01-22 17:51:35,401 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 09:56:31,939 - root - INFO - --------------- Versions ---------------
+2024-01-23 09:56:31,944 - root - INFO - git branch: b'* master'
+2024-01-23 09:56:31,947 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 09:56:31,948 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 09:56:31,948 - root - INFO - ----------------------------------------
+2024-01-23 09:56:31,948 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 09:56:31,948 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 09:56:31,948 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 09:56:31,948 - root - INFO - log_to_wandb True
+2024-01-23 09:56:31,948 - root - INFO - lr 0.0005
+2024-01-23 09:56:31,948 - root - INFO - batch_size 16
+2024-01-23 09:56:31,948 - root - INFO - max_epochs 1510
+2024-01-23 09:56:31,948 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 09:56:31,948 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 09:56:31,948 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 09:56:31,948 - root - INFO - orography False
+2024-01-23 09:56:31,948 - root - INFO - orography_path None
+2024-01-23 09:56:31,949 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 09:56:31,949 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 09:56:31,949 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 09:56:31,949 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 09:56:31,949 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 09:56:31,949 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 09:56:31,949 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 09:56:31,949 - root - INFO - loss l2
+2024-01-23 09:56:31,949 - root - INFO - num_data_workers 4
+2024-01-23 09:56:31,949 - root - INFO - dt 1
+2024-01-23 09:56:31,949 - root - INFO - n_history 0
+2024-01-23 09:56:31,949 - root - INFO - prediction_type iterative
+2024-01-23 09:56:31,949 - root - INFO - prediction_length 41
+2024-01-23 09:56:31,949 - root - INFO - n_initial_conditions 5
+2024-01-23 09:56:31,949 - root - INFO - ics_type default
+2024-01-23 09:56:31,949 - root - INFO - save_raw_forecasts True
+2024-01-23 09:56:31,950 - root - INFO - save_channel False
+2024-01-23 09:56:31,950 - root - INFO - masked_acc False
+2024-01-23 09:56:31,950 - root - INFO - maskpath None
+2024-01-23 09:56:31,950 - root - INFO - perturb False
+2024-01-23 09:56:31,950 - root - INFO - add_grid False
+2024-01-23 09:56:31,950 - root - INFO - N_grid_channels 0
+2024-01-23 09:56:31,950 - root - INFO - gridtype sinusoidal
+2024-01-23 09:56:31,950 - root - INFO - roll False
+2024-01-23 09:56:31,950 - root - INFO - num_blocks 8
+2024-01-23 09:56:31,950 - root - INFO - nettype afno
+2024-01-23 09:56:31,950 - root - INFO - patch_size 8
+2024-01-23 09:56:31,950 - root - INFO - width 56
+2024-01-23 09:56:31,950 - root - INFO - modes 32
+2024-01-23 09:56:31,950 - root - INFO - target default
+2024-01-23 09:56:31,950 - root - INFO - normalization zscore
+2024-01-23 09:56:31,950 - root - INFO - log_to_screen True
+2024-01-23 09:56:31,950 - root - INFO - save_checkpoint True
+2024-01-23 09:56:31,951 - root - INFO - enable_nhwc False
+2024-01-23 09:56:31,951 - root - INFO - optimizer_type FusedAdam
+2024-01-23 09:56:31,951 - root - INFO - crop_size_x None
+2024-01-23 09:56:31,951 - root - INFO - crop_size_y None
+2024-01-23 09:56:31,951 - root - INFO - two_step_training False
+2024-01-23 09:56:31,951 - root - INFO - plot_animations False
+2024-01-23 09:56:31,951 - root - INFO - add_noise False
+2024-01-23 09:56:31,951 - root - INFO - noise_std 0
+2024-01-23 09:56:31,951 - root - INFO - world_size 1
+2024-01-23 09:56:31,951 - root - INFO - interp 0
+2024-01-23 09:56:31,951 - root - INFO - use_daily_climatology False
+2024-01-23 09:56:31,951 - root - INFO - global_batch_size 16
+2024-01-23 09:56:31,951 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 09:56:31,951 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 09:56:31,951 - root - INFO - resuming False
+2024-01-23 09:56:31,951 - root - INFO - local_rank 0
+2024-01-23 09:56:31,952 - root - INFO - ---------------------------------------------------
+2024-01-23 09:56:31,952 - root - INFO - Inference for 36 initial conditions
+2024-01-23 09:56:31,953 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 09:56:31,954 - root - INFO - Number of samples per year: 509
+2024-01-23 09:56:31,954 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 09:56:31,954 - root - INFO - Delta t: 6 hours
+2024-01-23 09:56:31,954 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 09:56:31,954 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 09:56:33,115 - root - INFO - Loading inference data
+2024-01-23 09:56:33,115 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 10:14:07,886 - root - INFO - --------------- Versions ---------------
+2024-01-23 10:14:07,890 - root - INFO - git branch: b'* master'
+2024-01-23 10:14:07,893 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 10:14:07,893 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 10:14:07,894 - root - INFO - ----------------------------------------
+2024-01-23 10:14:07,894 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 10:14:07,894 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 10:14:07,894 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 10:14:07,894 - root - INFO - log_to_wandb True
+2024-01-23 10:14:07,894 - root - INFO - lr 0.0005
+2024-01-23 10:14:07,894 - root - INFO - batch_size 16
+2024-01-23 10:14:07,894 - root - INFO - max_epochs 1510
+2024-01-23 10:14:07,894 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 10:14:07,894 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:14:07,894 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:14:07,894 - root - INFO - orography False
+2024-01-23 10:14:07,894 - root - INFO - orography_path None
+2024-01-23 10:14:07,894 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 10:14:07,894 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 10:14:07,895 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 10:14:07,895 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 10:14:07,895 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 10:14:07,895 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 10:14:07,895 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 10:14:07,895 - root - INFO - loss l2
+2024-01-23 10:14:07,895 - root - INFO - num_data_workers 4
+2024-01-23 10:14:07,895 - root - INFO - dt 1
+2024-01-23 10:14:07,895 - root - INFO - n_history 0
+2024-01-23 10:14:07,895 - root - INFO - prediction_type iterative
+2024-01-23 10:14:07,895 - root - INFO - prediction_length 41
+2024-01-23 10:14:07,895 - root - INFO - n_initial_conditions 5
+2024-01-23 10:14:07,895 - root - INFO - ics_type default
+2024-01-23 10:14:07,895 - root - INFO - save_raw_forecasts True
+2024-01-23 10:14:07,895 - root - INFO - save_channel False
+2024-01-23 10:14:07,895 - root - INFO - masked_acc False
+2024-01-23 10:14:07,896 - root - INFO - maskpath None
+2024-01-23 10:14:07,896 - root - INFO - perturb False
+2024-01-23 10:14:07,896 - root - INFO - add_grid False
+2024-01-23 10:14:07,896 - root - INFO - N_grid_channels 0
+2024-01-23 10:14:07,896 - root - INFO - gridtype sinusoidal
+2024-01-23 10:14:07,896 - root - INFO - roll False
+2024-01-23 10:14:07,896 - root - INFO - num_blocks 8
+2024-01-23 10:14:07,896 - root - INFO - nettype afno
+2024-01-23 10:14:07,896 - root - INFO - patch_size 8
+2024-01-23 10:14:07,896 - root - INFO - width 56
+2024-01-23 10:14:07,896 - root - INFO - modes 32
+2024-01-23 10:14:07,896 - root - INFO - target default
+2024-01-23 10:14:07,896 - root - INFO - normalization zscore
+2024-01-23 10:14:07,896 - root - INFO - log_to_screen True
+2024-01-23 10:14:07,896 - root - INFO - save_checkpoint True
+2024-01-23 10:14:07,897 - root - INFO - enable_nhwc False
+2024-01-23 10:14:07,897 - root - INFO - optimizer_type FusedAdam
+2024-01-23 10:14:07,897 - root - INFO - crop_size_x None
+2024-01-23 10:14:07,897 - root - INFO - crop_size_y None
+2024-01-23 10:14:07,897 - root - INFO - two_step_training False
+2024-01-23 10:14:07,897 - root - INFO - plot_animations False
+2024-01-23 10:14:07,897 - root - INFO - add_noise False
+2024-01-23 10:14:07,897 - root - INFO - noise_std 0
+2024-01-23 10:14:07,897 - root - INFO - world_size 1
+2024-01-23 10:14:07,897 - root - INFO - interp 0
+2024-01-23 10:14:07,897 - root - INFO - use_daily_climatology False
+2024-01-23 10:14:07,897 - root - INFO - global_batch_size 16
+2024-01-23 10:14:07,897 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 10:14:07,897 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 10:14:07,897 - root - INFO - resuming False
+2024-01-23 10:14:07,897 - root - INFO - local_rank 0
+2024-01-23 10:14:07,898 - root - INFO - ---------------------------------------------------
+2024-01-23 10:14:07,898 - root - INFO - Inference for 36 initial conditions
+2024-01-23 10:14:07,899 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 10:14:07,900 - root - INFO - Number of samples per year: 509
+2024-01-23 10:14:07,900 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 10:14:07,900 - root - INFO - Delta t: 6 hours
+2024-01-23 10:14:07,900 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 10:14:07,900 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 10:14:09,038 - root - INFO - Loading inference data
+2024-01-23 10:14:09,038 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 10:14:09,039 - root - INFO - Initial condition 1 of 36
+2024-01-23 10:14:09,094 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:10,335 - root - INFO - Initial condition 2 of 36
+2024-01-23 10:14:10,381 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:10,770 - root - INFO - Initial condition 3 of 36
+2024-01-23 10:14:10,820 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:11,202 - root - INFO - Initial condition 4 of 36
+2024-01-23 10:14:11,262 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:11,632 - root - INFO - Initial condition 5 of 36
+2024-01-23 10:14:11,687 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:12,067 - root - INFO - Initial condition 6 of 36
+2024-01-23 10:14:12,123 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:12,503 - root - INFO - Initial condition 7 of 36
+2024-01-23 10:14:12,551 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:12,926 - root - INFO - Initial condition 8 of 36
+2024-01-23 10:14:12,984 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:13,358 - root - INFO - Initial condition 9 of 36
+2024-01-23 10:14:13,413 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:13,800 - root - INFO - Initial condition 10 of 36
+2024-01-23 10:14:13,856 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:14,223 - root - INFO - Initial condition 11 of 36
+2024-01-23 10:14:14,278 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:14,655 - root - INFO - Initial condition 12 of 36
+2024-01-23 10:14:14,705 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:15,080 - root - INFO - Initial condition 13 of 36
+2024-01-23 10:14:15,135 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:15,513 - root - INFO - Initial condition 14 of 36
+2024-01-23 10:14:15,567 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:15,943 - root - INFO - Initial condition 15 of 36
+2024-01-23 10:14:15,955 - root - INFO - Begin autoregressive inference
+2024-01-23 10:14:58,367 - root - INFO - --------------- Versions ---------------
+2024-01-23 10:14:58,372 - root - INFO - git branch: b'* master'
+2024-01-23 10:14:58,376 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 10:14:58,376 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 10:14:58,376 - root - INFO - ----------------------------------------
+2024-01-23 10:14:58,376 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 10:14:58,376 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 10:14:58,376 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 10:14:58,376 - root - INFO - log_to_wandb True
+2024-01-23 10:14:58,376 - root - INFO - lr 0.0005
+2024-01-23 10:14:58,376 - root - INFO - batch_size 16
+2024-01-23 10:14:58,376 - root - INFO - max_epochs 1510
+2024-01-23 10:14:58,376 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 10:14:58,376 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:14:58,376 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:14:58,377 - root - INFO - orography False
+2024-01-23 10:14:58,377 - root - INFO - orography_path None
+2024-01-23 10:14:58,377 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 10:14:58,377 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 10:14:58,377 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 10:14:58,377 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 10:14:58,377 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 10:14:58,377 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 10:14:58,377 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 10:14:58,377 - root - INFO - loss l2
+2024-01-23 10:14:58,377 - root - INFO - num_data_workers 4
+2024-01-23 10:14:58,377 - root - INFO - dt 1
+2024-01-23 10:14:58,377 - root - INFO - n_history 0
+2024-01-23 10:14:58,377 - root - INFO - prediction_type iterative
+2024-01-23 10:14:58,377 - root - INFO - prediction_length 41
+2024-01-23 10:14:58,377 - root - INFO - n_initial_conditions 5
+2024-01-23 10:14:58,377 - root - INFO - ics_type default
+2024-01-23 10:14:58,378 - root - INFO - save_raw_forecasts True
+2024-01-23 10:14:58,378 - root - INFO - save_channel False
+2024-01-23 10:14:58,378 - root - INFO - masked_acc False
+2024-01-23 10:14:58,378 - root - INFO - maskpath None
+2024-01-23 10:14:58,378 - root - INFO - perturb False
+2024-01-23 10:14:58,378 - root - INFO - add_grid False
+2024-01-23 10:14:58,378 - root - INFO - N_grid_channels 0
+2024-01-23 10:14:58,378 - root - INFO - gridtype sinusoidal
+2024-01-23 10:14:58,378 - root - INFO - roll False
+2024-01-23 10:14:58,378 - root - INFO - num_blocks 8
+2024-01-23 10:14:58,378 - root - INFO - nettype afno
+2024-01-23 10:14:58,378 - root - INFO - patch_size 8
+2024-01-23 10:14:58,378 - root - INFO - width 56
+2024-01-23 10:14:58,378 - root - INFO - modes 32
+2024-01-23 10:14:58,378 - root - INFO - target default
+2024-01-23 10:14:58,378 - root - INFO - normalization zscore
+2024-01-23 10:14:58,379 - root - INFO - log_to_screen True
+2024-01-23 10:14:58,379 - root - INFO - save_checkpoint True
+2024-01-23 10:14:58,379 - root - INFO - enable_nhwc False
+2024-01-23 10:14:58,379 - root - INFO - optimizer_type FusedAdam
+2024-01-23 10:14:58,379 - root - INFO - crop_size_x None
+2024-01-23 10:14:58,379 - root - INFO - crop_size_y None
+2024-01-23 10:14:58,379 - root - INFO - two_step_training False
+2024-01-23 10:14:58,379 - root - INFO - plot_animations False
+2024-01-23 10:14:58,379 - root - INFO - add_noise False
+2024-01-23 10:14:58,379 - root - INFO - noise_std 0
+2024-01-23 10:14:58,379 - root - INFO - world_size 1
+2024-01-23 10:14:58,379 - root - INFO - interp 0
+2024-01-23 10:14:58,379 - root - INFO - use_daily_climatology False
+2024-01-23 10:14:58,379 - root - INFO - global_batch_size 16
+2024-01-23 10:14:58,379 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 10:14:58,379 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 10:14:58,379 - root - INFO - resuming False
+2024-01-23 10:14:58,380 - root - INFO - local_rank 0
+2024-01-23 10:14:58,380 - root - INFO - ---------------------------------------------------
+2024-01-23 10:20:24,746 - root - INFO - --------------- Versions ---------------
+2024-01-23 10:20:24,751 - root - INFO - git branch: b'* master'
+2024-01-23 10:20:24,754 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 10:20:24,754 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 10:20:24,754 - root - INFO - ----------------------------------------
+2024-01-23 10:20:24,755 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 10:20:24,755 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 10:20:24,755 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 10:20:24,755 - root - INFO - log_to_wandb True
+2024-01-23 10:20:24,755 - root - INFO - lr 0.0005
+2024-01-23 10:20:24,755 - root - INFO - batch_size 16
+2024-01-23 10:20:24,755 - root - INFO - max_epochs 1510
+2024-01-23 10:20:24,755 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 10:20:24,755 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:20:24,755 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 10:20:24,755 - root - INFO - orography False
+2024-01-23 10:20:24,755 - root - INFO - orography_path None
+2024-01-23 10:20:24,755 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 10:20:24,755 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 10:20:24,755 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 10:20:24,756 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 10:20:24,756 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 10:20:24,756 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 10:20:24,756 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 10:20:24,756 - root - INFO - loss l2
+2024-01-23 10:20:24,756 - root - INFO - num_data_workers 4
+2024-01-23 10:20:24,756 - root - INFO - dt 1
+2024-01-23 10:20:24,756 - root - INFO - n_history 0
+2024-01-23 10:20:24,756 - root - INFO - prediction_type iterative
+2024-01-23 10:20:24,756 - root - INFO - prediction_length 41
+2024-01-23 10:20:24,756 - root - INFO - n_initial_conditions 5
+2024-01-23 10:20:24,756 - root - INFO - ics_type default
+2024-01-23 10:20:24,756 - root - INFO - save_raw_forecasts True
+2024-01-23 10:20:24,756 - root - INFO - save_channel False
+2024-01-23 10:20:24,756 - root - INFO - masked_acc False
+2024-01-23 10:20:24,756 - root - INFO - maskpath None
+2024-01-23 10:20:24,757 - root - INFO - perturb False
+2024-01-23 10:20:24,757 - root - INFO - add_grid False
+2024-01-23 10:20:24,757 - root - INFO - N_grid_channels 0
+2024-01-23 10:20:24,757 - root - INFO - gridtype sinusoidal
+2024-01-23 10:20:24,757 - root - INFO - roll False
+2024-01-23 10:20:24,757 - root - INFO - num_blocks 8
+2024-01-23 10:20:24,757 - root - INFO - nettype afno
+2024-01-23 10:20:24,757 - root - INFO - patch_size 8
+2024-01-23 10:20:24,757 - root - INFO - width 56
+2024-01-23 10:20:24,757 - root - INFO - modes 32
+2024-01-23 10:20:24,757 - root - INFO - target default
+2024-01-23 10:20:24,757 - root - INFO - normalization zscore
+2024-01-23 10:20:24,757 - root - INFO - log_to_screen True
+2024-01-23 10:20:24,757 - root - INFO - save_checkpoint True
+2024-01-23 10:20:24,757 - root - INFO - enable_nhwc False
+2024-01-23 10:20:24,757 - root - INFO - optimizer_type FusedAdam
+2024-01-23 10:20:24,758 - root - INFO - crop_size_x None
+2024-01-23 10:20:24,758 - root - INFO - crop_size_y None
+2024-01-23 10:20:24,758 - root - INFO - two_step_training False
+2024-01-23 10:20:24,758 - root - INFO - plot_animations False
+2024-01-23 10:20:24,758 - root - INFO - add_noise False
+2024-01-23 10:20:24,758 - root - INFO - noise_std 0
+2024-01-23 10:20:24,758 - root - INFO - world_size 1
+2024-01-23 10:20:24,758 - root - INFO - interp 0
+2024-01-23 10:20:24,758 - root - INFO - use_daily_climatology False
+2024-01-23 10:20:24,758 - root - INFO - global_batch_size 16
+2024-01-23 10:20:24,758 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 10:20:24,758 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 10:20:24,758 - root - INFO - resuming False
+2024-01-23 10:20:24,758 - root - INFO - local_rank 0
+2024-01-23 10:20:24,758 - root - INFO - ---------------------------------------------------
+2024-01-23 11:40:09,869 - root - INFO - --------------- Versions ---------------
+2024-01-23 11:40:09,874 - root - INFO - git branch: b'* master'
+2024-01-23 11:40:09,877 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 11:40:09,877 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 11:40:09,877 - root - INFO - ----------------------------------------
+2024-01-23 11:40:09,878 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 11:40:09,878 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 11:40:09,878 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 11:40:09,878 - root - INFO - log_to_wandb True
+2024-01-23 11:40:09,878 - root - INFO - lr 0.0005
+2024-01-23 11:40:09,878 - root - INFO - batch_size 16
+2024-01-23 11:40:09,878 - root - INFO - max_epochs 1510
+2024-01-23 11:40:09,878 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 11:40:09,878 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:09,878 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:09,878 - root - INFO - orography False
+2024-01-23 11:40:09,878 - root - INFO - orography_path None
+2024-01-23 11:40:09,878 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 11:40:09,878 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 11:40:09,878 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 11:40:09,878 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 11:40:09,878 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 11:40:09,879 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 11:40:09,879 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 11:40:09,879 - root - INFO - loss l2
+2024-01-23 11:40:09,879 - root - INFO - num_data_workers 4
+2024-01-23 11:40:09,879 - root - INFO - dt 1
+2024-01-23 11:40:09,879 - root - INFO - n_history 0
+2024-01-23 11:40:09,879 - root - INFO - prediction_type iterative
+2024-01-23 11:40:09,879 - root - INFO - prediction_length 41
+2024-01-23 11:40:09,879 - root - INFO - n_initial_conditions 5
+2024-01-23 11:40:09,879 - root - INFO - ics_type default
+2024-01-23 11:40:09,879 - root - INFO - save_raw_forecasts True
+2024-01-23 11:40:09,879 - root - INFO - save_channel False
+2024-01-23 11:40:09,879 - root - INFO - masked_acc False
+2024-01-23 11:40:09,879 - root - INFO - maskpath None
+2024-01-23 11:40:09,879 - root - INFO - perturb False
+2024-01-23 11:40:09,879 - root - INFO - add_grid False
+2024-01-23 11:40:09,879 - root - INFO - N_grid_channels 0
+2024-01-23 11:40:09,879 - root - INFO - gridtype sinusoidal
+2024-01-23 11:40:09,879 - root - INFO - roll False
+2024-01-23 11:40:09,879 - root - INFO - num_blocks 8
+2024-01-23 11:40:09,880 - root - INFO - nettype afno
+2024-01-23 11:40:09,880 - root - INFO - patch_size 8
+2024-01-23 11:40:09,880 - root - INFO - width 56
+2024-01-23 11:40:09,880 - root - INFO - modes 32
+2024-01-23 11:40:09,880 - root - INFO - target default
+2024-01-23 11:40:09,880 - root - INFO - normalization zscore
+2024-01-23 11:40:09,880 - root - INFO - log_to_screen True
+2024-01-23 11:40:09,880 - root - INFO - save_checkpoint True
+2024-01-23 11:40:09,880 - root - INFO - enable_nhwc False
+2024-01-23 11:40:09,880 - root - INFO - optimizer_type FusedAdam
+2024-01-23 11:40:09,880 - root - INFO - crop_size_x None
+2024-01-23 11:40:09,880 - root - INFO - crop_size_y None
+2024-01-23 11:40:09,880 - root - INFO - two_step_training False
+2024-01-23 11:40:09,880 - root - INFO - plot_animations False
+2024-01-23 11:40:09,880 - root - INFO - add_noise False
+2024-01-23 11:40:09,880 - root - INFO - noise_std 0
+2024-01-23 11:40:09,880 - root - INFO - world_size 1
+2024-01-23 11:40:09,880 - root - INFO - interp 0
+2024-01-23 11:40:09,880 - root - INFO - use_daily_climatology False
+2024-01-23 11:40:09,881 - root - INFO - global_batch_size 16
+2024-01-23 11:40:09,881 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 11:40:09,881 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 11:40:09,881 - root - INFO - resuming False
+2024-01-23 11:40:09,881 - root - INFO - local_rank 0
+2024-01-23 11:40:09,881 - root - INFO - ---------------------------------------------------
+2024-01-23 11:40:38,929 - root - INFO - --------------- Versions ---------------
+2024-01-23 11:40:38,935 - root - INFO - git branch: b'* master'
+2024-01-23 11:40:38,938 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 11:40:38,938 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 11:40:38,938 - root - INFO - ----------------------------------------
+2024-01-23 11:40:38,938 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 11:40:38,938 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 11:40:38,938 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 11:40:38,938 - root - INFO - log_to_wandb True
+2024-01-23 11:40:38,938 - root - INFO - lr 0.0005
+2024-01-23 11:40:38,938 - root - INFO - batch_size 16
+2024-01-23 11:40:38,939 - root - INFO - max_epochs 1510
+2024-01-23 11:40:38,939 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 11:40:38,939 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:38,939 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:38,939 - root - INFO - orography False
+2024-01-23 11:40:38,939 - root - INFO - orography_path None
+2024-01-23 11:40:38,939 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 11:40:38,939 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 11:40:38,939 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 11:40:38,939 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 11:40:38,939 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 11:40:38,939 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 11:40:38,939 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 11:40:38,939 - root - INFO - loss l2
+2024-01-23 11:40:38,939 - root - INFO - num_data_workers 4
+2024-01-23 11:40:38,939 - root - INFO - dt 1
+2024-01-23 11:40:38,939 - root - INFO - n_history 0
+2024-01-23 11:40:38,939 - root - INFO - prediction_type iterative
+2024-01-23 11:40:38,939 - root - INFO - prediction_length 41
+2024-01-23 11:40:38,940 - root - INFO - n_initial_conditions 5
+2024-01-23 11:40:38,940 - root - INFO - ics_type default
+2024-01-23 11:40:38,940 - root - INFO - save_raw_forecasts True
+2024-01-23 11:40:38,940 - root - INFO - save_channel False
+2024-01-23 11:40:38,940 - root - INFO - masked_acc False
+2024-01-23 11:40:38,940 - root - INFO - maskpath None
+2024-01-23 11:40:38,940 - root - INFO - perturb False
+2024-01-23 11:40:38,940 - root - INFO - add_grid False
+2024-01-23 11:40:38,940 - root - INFO - N_grid_channels 0
+2024-01-23 11:40:38,940 - root - INFO - gridtype sinusoidal
+2024-01-23 11:40:38,940 - root - INFO - roll False
+2024-01-23 11:40:38,940 - root - INFO - num_blocks 8
+2024-01-23 11:40:38,940 - root - INFO - nettype afno
+2024-01-23 11:40:38,940 - root - INFO - patch_size 8
+2024-01-23 11:40:38,940 - root - INFO - width 56
+2024-01-23 11:40:38,940 - root - INFO - modes 32
+2024-01-23 11:40:38,940 - root - INFO - target default
+2024-01-23 11:40:38,940 - root - INFO - normalization zscore
+2024-01-23 11:40:38,940 - root - INFO - log_to_screen True
+2024-01-23 11:40:38,941 - root - INFO - save_checkpoint True
+2024-01-23 11:40:38,941 - root - INFO - enable_nhwc False
+2024-01-23 11:40:38,941 - root - INFO - optimizer_type FusedAdam
+2024-01-23 11:40:38,941 - root - INFO - crop_size_x None
+2024-01-23 11:40:38,941 - root - INFO - crop_size_y None
+2024-01-23 11:40:38,941 - root - INFO - two_step_training False
+2024-01-23 11:40:38,941 - root - INFO - plot_animations False
+2024-01-23 11:40:38,941 - root - INFO - add_noise False
+2024-01-23 11:40:38,941 - root - INFO - noise_std 0
+2024-01-23 11:40:38,941 - root - INFO - world_size 1
+2024-01-23 11:40:38,941 - root - INFO - interp 0
+2024-01-23 11:40:38,941 - root - INFO - use_daily_climatology False
+2024-01-23 11:40:38,941 - root - INFO - global_batch_size 16
+2024-01-23 11:40:38,941 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 11:40:38,941 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 11:40:38,941 - root - INFO - resuming False
+2024-01-23 11:40:38,941 - root - INFO - local_rank 0
+2024-01-23 11:40:38,941 - root - INFO - ---------------------------------------------------
+2024-01-23 11:40:53,446 - root - INFO - --------------- Versions ---------------
+2024-01-23 11:40:53,450 - root - INFO - git branch: b'* master'
+2024-01-23 11:40:53,453 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 11:40:53,453 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 11:40:53,453 - root - INFO - ----------------------------------------
+2024-01-23 11:40:53,453 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 11:40:53,453 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 11:40:53,454 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 11:40:53,454 - root - INFO - log_to_wandb True
+2024-01-23 11:40:53,454 - root - INFO - lr 0.0005
+2024-01-23 11:40:53,454 - root - INFO - batch_size 16
+2024-01-23 11:40:53,454 - root - INFO - max_epochs 1510
+2024-01-23 11:40:53,454 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 11:40:53,454 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:53,454 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 11:40:53,454 - root - INFO - orography False
+2024-01-23 11:40:53,454 - root - INFO - orography_path None
+2024-01-23 11:40:53,454 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 11:40:53,454 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 11:40:53,454 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 11:40:53,454 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 11:40:53,454 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 11:40:53,454 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 11:40:53,454 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 11:40:53,454 - root - INFO - loss l2
+2024-01-23 11:40:53,454 - root - INFO - num_data_workers 4
+2024-01-23 11:40:53,454 - root - INFO - dt 1
+2024-01-23 11:40:53,455 - root - INFO - n_history 0
+2024-01-23 11:40:53,455 - root - INFO - prediction_type iterative
+2024-01-23 11:40:53,455 - root - INFO - prediction_length 41
+2024-01-23 11:40:53,455 - root - INFO - n_initial_conditions 5
+2024-01-23 11:40:53,455 - root - INFO - ics_type default
+2024-01-23 11:40:53,455 - root - INFO - save_raw_forecasts True
+2024-01-23 11:40:53,455 - root - INFO - save_channel False
+2024-01-23 11:40:53,455 - root - INFO - masked_acc False
+2024-01-23 11:40:53,455 - root - INFO - maskpath None
+2024-01-23 11:40:53,455 - root - INFO - perturb False
+2024-01-23 11:40:53,455 - root - INFO - add_grid False
+2024-01-23 11:40:53,455 - root - INFO - N_grid_channels 0
+2024-01-23 11:40:53,455 - root - INFO - gridtype sinusoidal
+2024-01-23 11:40:53,455 - root - INFO - roll False
+2024-01-23 11:40:53,455 - root - INFO - num_blocks 8
+2024-01-23 11:40:53,455 - root - INFO - nettype afno
+2024-01-23 11:40:53,455 - root - INFO - patch_size 8
+2024-01-23 11:40:53,455 - root - INFO - width 56
+2024-01-23 11:40:53,455 - root - INFO - modes 32
+2024-01-23 11:40:53,455 - root - INFO - target default
+2024-01-23 11:40:53,456 - root - INFO - normalization zscore
+2024-01-23 11:40:53,456 - root - INFO - log_to_screen True
+2024-01-23 11:40:53,456 - root - INFO - save_checkpoint True
+2024-01-23 11:40:53,456 - root - INFO - enable_nhwc False
+2024-01-23 11:40:53,456 - root - INFO - optimizer_type FusedAdam
+2024-01-23 11:40:53,456 - root - INFO - crop_size_x None
+2024-01-23 11:40:53,456 - root - INFO - crop_size_y None
+2024-01-23 11:40:53,456 - root - INFO - two_step_training False
+2024-01-23 11:40:53,456 - root - INFO - plot_animations False
+2024-01-23 11:40:53,456 - root - INFO - add_noise False
+2024-01-23 11:40:53,456 - root - INFO - noise_std 0
+2024-01-23 11:40:53,456 - root - INFO - world_size 1
+2024-01-23 11:40:53,456 - root - INFO - interp 0
+2024-01-23 11:40:53,456 - root - INFO - use_daily_climatology False
+2024-01-23 11:40:53,456 - root - INFO - global_batch_size 16
+2024-01-23 11:40:53,456 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 11:40:53,456 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 11:40:53,456 - root - INFO - resuming False
+2024-01-23 11:40:53,456 - root - INFO - local_rank 0
+2024-01-23 11:40:53,456 - root - INFO - ---------------------------------------------------
+2024-01-23 15:58:13,165 - root - INFO - --------------- Versions ---------------
+2024-01-23 15:58:13,172 - root - INFO - git branch: b'* master'
+2024-01-23 15:58:13,176 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 15:58:13,176 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 15:58:13,176 - root - INFO - ----------------------------------------
+2024-01-23 15:58:13,176 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 15:58:13,176 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 15:58:13,176 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 15:58:13,176 - root - INFO - log_to_wandb True
+2024-01-23 15:58:13,176 - root - INFO - lr 0.0005
+2024-01-23 15:58:13,176 - root - INFO - batch_size 16
+2024-01-23 15:58:13,176 - root - INFO - max_epochs 1510
+2024-01-23 15:58:13,177 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 15:58:13,177 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 15:58:13,177 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 15:58:13,177 - root - INFO - orography False
+2024-01-23 15:58:13,177 - root - INFO - orography_path None
+2024-01-23 15:58:13,177 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 15:58:13,177 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 15:58:13,177 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 15:58:13,177 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 15:58:13,177 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 15:58:13,177 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 15:58:13,177 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 15:58:13,177 - root - INFO - loss l2
+2024-01-23 15:58:13,177 - root - INFO - num_data_workers 4
+2024-01-23 15:58:13,177 - root - INFO - dt 1
+2024-01-23 15:58:13,177 - root - INFO - n_history 0
+2024-01-23 15:58:13,178 - root - INFO - prediction_type iterative
+2024-01-23 15:58:13,178 - root - INFO - prediction_length 41
+2024-01-23 15:58:13,178 - root - INFO - n_initial_conditions 5
+2024-01-23 15:58:13,178 - root - INFO - ics_type default
+2024-01-23 15:58:13,178 - root - INFO - save_raw_forecasts True
+2024-01-23 15:58:13,178 - root - INFO - save_channel False
+2024-01-23 15:58:13,178 - root - INFO - masked_acc False
+2024-01-23 15:58:13,178 - root - INFO - maskpath None
+2024-01-23 15:58:13,178 - root - INFO - perturb False
+2024-01-23 15:58:13,178 - root - INFO - add_grid False
+2024-01-23 15:58:13,178 - root - INFO - N_grid_channels 0
+2024-01-23 15:58:13,178 - root - INFO - gridtype sinusoidal
+2024-01-23 15:58:13,178 - root - INFO - roll False
+2024-01-23 15:58:13,178 - root - INFO - num_blocks 8
+2024-01-23 15:58:13,178 - root - INFO - nettype afno
+2024-01-23 15:58:13,178 - root - INFO - patch_size 8
+2024-01-23 15:58:13,178 - root - INFO - width 56
+2024-01-23 15:58:13,179 - root - INFO - modes 32
+2024-01-23 15:58:13,179 - root - INFO - target default
+2024-01-23 15:58:13,179 - root - INFO - normalization zscore
+2024-01-23 15:58:13,179 - root - INFO - log_to_screen True
+2024-01-23 15:58:13,179 - root - INFO - save_checkpoint True
+2024-01-23 15:58:13,179 - root - INFO - enable_nhwc False
+2024-01-23 15:58:13,179 - root - INFO - optimizer_type FusedAdam
+2024-01-23 15:58:13,179 - root - INFO - crop_size_x None
+2024-01-23 15:58:13,179 - root - INFO - crop_size_y None
+2024-01-23 15:58:13,179 - root - INFO - two_step_training False
+2024-01-23 15:58:13,179 - root - INFO - plot_animations False
+2024-01-23 15:58:13,179 - root - INFO - add_noise False
+2024-01-23 15:58:13,179 - root - INFO - noise_std 0
+2024-01-23 15:58:13,179 - root - INFO - world_size 1
+2024-01-23 15:58:13,179 - root - INFO - interp 0
+2024-01-23 15:58:13,179 - root - INFO - use_daily_climatology False
+2024-01-23 15:58:13,179 - root - INFO - global_batch_size 16
+2024-01-23 15:58:13,180 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 15:58:13,180 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 15:58:13,180 - root - INFO - resuming False
+2024-01-23 15:58:13,180 - root - INFO - local_rank 0
+2024-01-23 15:58:13,180 - root - INFO - ---------------------------------------------------
+2024-01-23 15:58:59,520 - root - INFO - --------------- Versions ---------------
+2024-01-23 15:58:59,525 - root - INFO - git branch: b'* master'
+2024-01-23 15:58:59,528 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 15:58:59,528 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 15:58:59,528 - root - INFO - ----------------------------------------
+2024-01-23 15:58:59,528 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 15:58:59,528 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 15:58:59,528 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 15:58:59,528 - root - INFO - log_to_wandb True
+2024-01-23 15:58:59,528 - root - INFO - lr 0.0005
+2024-01-23 15:58:59,529 - root - INFO - batch_size 16
+2024-01-23 15:58:59,529 - root - INFO - max_epochs 1510
+2024-01-23 15:58:59,529 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 15:58:59,529 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 15:58:59,529 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 15:58:59,529 - root - INFO - orography False
+2024-01-23 15:58:59,529 - root - INFO - orography_path None
+2024-01-23 15:58:59,529 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 15:58:59,529 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 15:58:59,529 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 15:58:59,529 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 15:58:59,529 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 15:58:59,529 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 15:58:59,529 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 15:58:59,529 - root - INFO - loss l2
+2024-01-23 15:58:59,530 - root - INFO - num_data_workers 4
+2024-01-23 15:58:59,530 - root - INFO - dt 1
+2024-01-23 15:58:59,530 - root - INFO - n_history 0
+2024-01-23 15:58:59,530 - root - INFO - prediction_type iterative
+2024-01-23 15:58:59,530 - root - INFO - prediction_length 41
+2024-01-23 15:58:59,530 - root - INFO - n_initial_conditions 5
+2024-01-23 15:58:59,530 - root - INFO - ics_type default
+2024-01-23 15:58:59,530 - root - INFO - save_raw_forecasts True
+2024-01-23 15:58:59,530 - root - INFO - save_channel False
+2024-01-23 15:58:59,530 - root - INFO - masked_acc False
+2024-01-23 15:58:59,530 - root - INFO - maskpath None
+2024-01-23 15:58:59,530 - root - INFO - perturb False
+2024-01-23 15:58:59,530 - root - INFO - add_grid False
+2024-01-23 15:58:59,530 - root - INFO - N_grid_channels 0
+2024-01-23 15:58:59,530 - root - INFO - gridtype sinusoidal
+2024-01-23 15:58:59,530 - root - INFO - roll False
+2024-01-23 15:58:59,530 - root - INFO - num_blocks 8
+2024-01-23 15:58:59,531 - root - INFO - nettype afno
+2024-01-23 15:58:59,531 - root - INFO - patch_size 8
+2024-01-23 15:58:59,531 - root - INFO - width 56
+2024-01-23 15:58:59,531 - root - INFO - modes 32
+2024-01-23 15:58:59,531 - root - INFO - target default
+2024-01-23 15:58:59,531 - root - INFO - normalization zscore
+2024-01-23 15:58:59,531 - root - INFO - log_to_screen True
+2024-01-23 15:58:59,531 - root - INFO - save_checkpoint True
+2024-01-23 15:58:59,531 - root - INFO - enable_nhwc False
+2024-01-23 15:58:59,531 - root - INFO - optimizer_type FusedAdam
+2024-01-23 15:58:59,531 - root - INFO - crop_size_x None
+2024-01-23 15:58:59,531 - root - INFO - crop_size_y None
+2024-01-23 15:58:59,531 - root - INFO - two_step_training False
+2024-01-23 15:58:59,531 - root - INFO - plot_animations False
+2024-01-23 15:58:59,531 - root - INFO - add_noise False
+2024-01-23 15:58:59,532 - root - INFO - noise_std 0
+2024-01-23 15:58:59,532 - root - INFO - world_size 1
+2024-01-23 15:58:59,532 - root - INFO - interp 0
+2024-01-23 15:58:59,532 - root - INFO - use_daily_climatology False
+2024-01-23 15:58:59,532 - root - INFO - global_batch_size 16
+2024-01-23 15:58:59,532 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 15:58:59,532 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 15:58:59,532 - root - INFO - resuming False
+2024-01-23 15:58:59,532 - root - INFO - local_rank 0
+2024-01-23 15:58:59,532 - root - INFO - ---------------------------------------------------
+2024-01-23 15:58:59,536 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 15:58:59,536 - root - INFO - Number of samples per year: 509
+2024-01-23 15:58:59,536 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 15:58:59,536 - root - INFO - Delta t: 6 hours
+2024-01-23 15:58:59,536 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 15:58:59,537 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 15:59:00,611 - root - INFO - Loading inference data
+2024-01-23 15:59:00,612 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 16:42:57,340 - root - INFO - --------------- Versions ---------------
+2024-01-23 16:42:57,345 - root - INFO - git branch: b'* master'
+2024-01-23 16:42:57,349 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 16:42:57,349 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 16:42:57,349 - root - INFO - ----------------------------------------
+2024-01-23 16:42:57,349 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 16:42:57,349 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 16:42:57,349 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 16:42:57,349 - root - INFO - log_to_wandb True
+2024-01-23 16:42:57,349 - root - INFO - lr 0.0005
+2024-01-23 16:42:57,349 - root - INFO - batch_size 16
+2024-01-23 16:42:57,350 - root - INFO - max_epochs 1510
+2024-01-23 16:42:57,350 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 16:42:57,350 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 16:42:57,350 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 16:42:57,350 - root - INFO - prediction_length 100
+2024-01-23 16:42:57,350 - root - INFO - orography False
+2024-01-23 16:42:57,350 - root - INFO - orography_path None
+2024-01-23 16:42:57,350 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 16:42:57,350 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 16:42:57,350 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 16:42:57,350 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 16:42:57,350 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 16:42:57,350 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 16:42:57,350 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 16:42:57,350 - root - INFO - loss l2
+2024-01-23 16:42:57,350 - root - INFO - num_data_workers 4
+2024-01-23 16:42:57,351 - root - INFO - dt 1
+2024-01-23 16:42:57,351 - root - INFO - n_history 0
+2024-01-23 16:42:57,351 - root - INFO - prediction_type iterative
+2024-01-23 16:42:57,351 - root - INFO - n_initial_conditions 5
+2024-01-23 16:42:57,351 - root - INFO - ics_type default
+2024-01-23 16:42:57,351 - root - INFO - save_raw_forecasts True
+2024-01-23 16:42:57,351 - root - INFO - save_channel False
+2024-01-23 16:42:57,351 - root - INFO - masked_acc False
+2024-01-23 16:42:57,351 - root - INFO - maskpath None
+2024-01-23 16:42:57,351 - root - INFO - perturb False
+2024-01-23 16:42:57,351 - root - INFO - add_grid False
+2024-01-23 16:42:57,351 - root - INFO - N_grid_channels 0
+2024-01-23 16:42:57,351 - root - INFO - gridtype sinusoidal
+2024-01-23 16:42:57,351 - root - INFO - roll False
+2024-01-23 16:42:57,351 - root - INFO - num_blocks 8
+2024-01-23 16:42:57,351 - root - INFO - nettype afno
+2024-01-23 16:42:57,351 - root - INFO - patch_size 8
+2024-01-23 16:42:57,352 - root - INFO - width 56
+2024-01-23 16:42:57,352 - root - INFO - modes 32
+2024-01-23 16:42:57,352 - root - INFO - target default
+2024-01-23 16:42:57,352 - root - INFO - normalization zscore
+2024-01-23 16:42:57,352 - root - INFO - log_to_screen True
+2024-01-23 16:42:57,352 - root - INFO - save_checkpoint True
+2024-01-23 16:42:57,352 - root - INFO - enable_nhwc False
+2024-01-23 16:42:57,352 - root - INFO - optimizer_type FusedAdam
+2024-01-23 16:42:57,352 - root - INFO - crop_size_x None
+2024-01-23 16:42:57,352 - root - INFO - crop_size_y None
+2024-01-23 16:42:57,352 - root - INFO - two_step_training False
+2024-01-23 16:42:57,352 - root - INFO - plot_animations False
+2024-01-23 16:42:57,352 - root - INFO - add_noise False
+2024-01-23 16:42:57,352 - root - INFO - noise_std 0
+2024-01-23 16:42:57,352 - root - INFO - world_size 1
+2024-01-23 16:42:57,352 - root - INFO - interp 0
+2024-01-23 16:42:57,353 - root - INFO - use_daily_climatology False
+2024-01-23 16:42:57,353 - root - INFO - global_batch_size 16
+2024-01-23 16:42:57,353 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 16:42:57,353 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 16:42:57,353 - root - INFO - resuming False
+2024-01-23 16:42:57,353 - root - INFO - local_rank 0
+2024-01-23 16:42:57,353 - root - INFO - ---------------------------------------------------
+2024-01-23 16:42:57,354 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 16:42:57,355 - root - INFO - Number of samples per year: 509
+2024-01-23 16:42:57,355 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 16:42:57,355 - root - INFO - Delta t: 6 hours
+2024-01-23 16:42:57,355 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 16:42:57,355 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 16:42:58,519 - root - INFO - Loading inference data
+2024-01-23 16:42:58,519 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 17:14:02,349 - root - INFO - --------------- Versions ---------------
+2024-01-23 17:14:02,355 - root - INFO - git branch: b'* master'
+2024-01-23 17:14:02,359 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 17:14:02,359 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 17:14:02,359 - root - INFO - ----------------------------------------
+2024-01-23 17:14:02,359 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 17:14:02,359 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 17:14:02,359 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 17:14:02,359 - root - INFO - log_to_wandb True
+2024-01-23 17:14:02,359 - root - INFO - lr 0.0005
+2024-01-23 17:14:02,359 - root - INFO - batch_size 16
+2024-01-23 17:14:02,359 - root - INFO - max_epochs 1510
+2024-01-23 17:14:02,359 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 17:14:02,359 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 17:14:02,359 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 17:14:02,359 - root - INFO - prediction_length 100
+2024-01-23 17:14:02,360 - root - INFO - orography False
+2024-01-23 17:14:02,360 - root - INFO - orography_path None
+2024-01-23 17:14:02,360 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 17:14:02,360 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 17:14:02,360 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 17:14:02,360 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 17:14:02,360 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 17:14:02,360 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 17:14:02,360 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 17:14:02,360 - root - INFO - loss l2
+2024-01-23 17:14:02,360 - root - INFO - num_data_workers 4
+2024-01-23 17:14:02,360 - root - INFO - dt 1
+2024-01-23 17:14:02,360 - root - INFO - n_history 0
+2024-01-23 17:14:02,360 - root - INFO - prediction_type iterative
+2024-01-23 17:14:02,360 - root - INFO - n_initial_conditions 5
+2024-01-23 17:14:02,360 - root - INFO - ics_type default
+2024-01-23 17:14:02,361 - root - INFO - save_raw_forecasts True
+2024-01-23 17:14:02,361 - root - INFO - save_channel False
+2024-01-23 17:14:02,361 - root - INFO - masked_acc False
+2024-01-23 17:14:02,361 - root - INFO - maskpath None
+2024-01-23 17:14:02,361 - root - INFO - perturb False
+2024-01-23 17:14:02,361 - root - INFO - add_grid False
+2024-01-23 17:14:02,361 - root - INFO - N_grid_channels 0
+2024-01-23 17:14:02,361 - root - INFO - gridtype sinusoidal
+2024-01-23 17:14:02,361 - root - INFO - roll False
+2024-01-23 17:14:02,361 - root - INFO - num_blocks 8
+2024-01-23 17:14:02,361 - root - INFO - nettype afno
+2024-01-23 17:14:02,361 - root - INFO - patch_size 8
+2024-01-23 17:14:02,361 - root - INFO - width 56
+2024-01-23 17:14:02,361 - root - INFO - modes 32
+2024-01-23 17:14:02,361 - root - INFO - target default
+2024-01-23 17:14:02,361 - root - INFO - normalization zscore
+2024-01-23 17:14:02,361 - root - INFO - log_to_screen True
+2024-01-23 17:14:02,362 - root - INFO - save_checkpoint True
+2024-01-23 17:14:02,362 - root - INFO - enable_nhwc False
+2024-01-23 17:14:02,362 - root - INFO - optimizer_type FusedAdam
+2024-01-23 17:14:02,362 - root - INFO - crop_size_x None
+2024-01-23 17:14:02,362 - root - INFO - crop_size_y None
+2024-01-23 17:14:02,362 - root - INFO - two_step_training False
+2024-01-23 17:14:02,362 - root - INFO - plot_animations False
+2024-01-23 17:14:02,362 - root - INFO - add_noise False
+2024-01-23 17:14:02,362 - root - INFO - noise_std 0
+2024-01-23 17:14:02,362 - root - INFO - world_size 1
+2024-01-23 17:14:02,362 - root - INFO - interp 0
+2024-01-23 17:14:02,362 - root - INFO - use_daily_climatology False
+2024-01-23 17:14:02,362 - root - INFO - global_batch_size 16
+2024-01-23 17:14:02,362 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 17:14:02,362 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 17:14:02,362 - root - INFO - resuming False
+2024-01-23 17:14:02,363 - root - INFO - local_rank 0
+2024-01-23 17:14:02,363 - root - INFO - ---------------------------------------------------
+2024-01-23 17:14:02,364 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 17:14:02,365 - root - INFO - Number of samples per year: 509
+2024-01-23 17:14:02,365 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 17:14:02,365 - root - INFO - Delta t: 6 hours
+2024-01-23 17:14:02,365 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 17:14:02,365 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 17:14:03,546 - root - INFO - Loading inference data
+2024-01-23 17:14:03,546 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 17:14:03,546 - root - INFO - Initial condition 1 of 0
+2024-01-23 17:14:03,686 - root - INFO - Begin autoregressive inference
+2024-01-23 17:15:49,706 - root - INFO - Initial condition 2 of 0
+2024-01-23 17:15:50,133 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:27,652 - root - INFO - --------------- Versions ---------------
+2024-01-23 17:16:27,658 - root - INFO - git branch: b'* master'
+2024-01-23 17:16:27,661 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-23 17:16:27,661 - root - INFO - Torch: 2.1.2+cu118
+2024-01-23 17:16:27,662 - root - INFO - ----------------------------------------
+2024-01-23 17:16:27,662 - root - INFO - ------------------ Configuration ------------------
+2024-01-23 17:16:27,662 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-23 17:16:27,662 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-23 17:16:27,662 - root - INFO - log_to_wandb True
+2024-01-23 17:16:27,662 - root - INFO - lr 0.0005
+2024-01-23 17:16:27,662 - root - INFO - batch_size 16
+2024-01-23 17:16:27,662 - root - INFO - max_epochs 1510
+2024-01-23 17:16:27,662 - root - INFO - scheduler CosineAnnealingLR
+2024-01-23 17:16:27,662 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 17:16:27,662 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-23 17:16:27,662 - root - INFO - prediction_length 100
+2024-01-23 17:16:27,662 - root - INFO - orography False
+2024-01-23 17:16:27,662 - root - INFO - orography_path None
+2024-01-23 17:16:27,662 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-23 17:16:27,663 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-23 17:16:27,663 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-23 17:16:27,663 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-23 17:16:27,663 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-23 17:16:27,663 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-23 17:16:27,663 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-23 17:16:27,663 - root - INFO - loss l2
+2024-01-23 17:16:27,663 - root - INFO - num_data_workers 4
+2024-01-23 17:16:27,663 - root - INFO - dt 1
+2024-01-23 17:16:27,663 - root - INFO - n_history 0
+2024-01-23 17:16:27,663 - root - INFO - prediction_type iterative
+2024-01-23 17:16:27,663 - root - INFO - n_initial_conditions 5
+2024-01-23 17:16:27,663 - root - INFO - ics_type default
+2024-01-23 17:16:27,663 - root - INFO - save_raw_forecasts True
+2024-01-23 17:16:27,663 - root - INFO - save_channel False
+2024-01-23 17:16:27,663 - root - INFO - masked_acc False
+2024-01-23 17:16:27,663 - root - INFO - maskpath None
+2024-01-23 17:16:27,664 - root - INFO - perturb False
+2024-01-23 17:16:27,664 - root - INFO - add_grid False
+2024-01-23 17:16:27,664 - root - INFO - N_grid_channels 0
+2024-01-23 17:16:27,664 - root - INFO - gridtype sinusoidal
+2024-01-23 17:16:27,664 - root - INFO - roll False
+2024-01-23 17:16:27,664 - root - INFO - num_blocks 8
+2024-01-23 17:16:27,664 - root - INFO - nettype afno
+2024-01-23 17:16:27,664 - root - INFO - patch_size 8
+2024-01-23 17:16:27,664 - root - INFO - width 56
+2024-01-23 17:16:27,664 - root - INFO - modes 32
+2024-01-23 17:16:27,664 - root - INFO - target default
+2024-01-23 17:16:27,664 - root - INFO - normalization zscore
+2024-01-23 17:16:27,664 - root - INFO - log_to_screen True
+2024-01-23 17:16:27,664 - root - INFO - save_checkpoint True
+2024-01-23 17:16:27,664 - root - INFO - enable_nhwc False
+2024-01-23 17:16:27,664 - root - INFO - optimizer_type FusedAdam
+2024-01-23 17:16:27,665 - root - INFO - crop_size_x None
+2024-01-23 17:16:27,665 - root - INFO - crop_size_y None
+2024-01-23 17:16:27,665 - root - INFO - two_step_training False
+2024-01-23 17:16:27,665 - root - INFO - plot_animations False
+2024-01-23 17:16:27,665 - root - INFO - add_noise False
+2024-01-23 17:16:27,665 - root - INFO - noise_std 0
+2024-01-23 17:16:27,665 - root - INFO - world_size 1
+2024-01-23 17:16:27,665 - root - INFO - interp 0
+2024-01-23 17:16:27,665 - root - INFO - use_daily_climatology False
+2024-01-23 17:16:27,665 - root - INFO - global_batch_size 16
+2024-01-23 17:16:27,665 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-23 17:16:27,665 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 17:16:27,665 - root - INFO - resuming False
+2024-01-23 17:16:27,665 - root - INFO - local_rank 0
+2024-01-23 17:16:27,665 - root - INFO - ---------------------------------------------------
+2024-01-23 17:16:27,666 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 17:16:27,667 - root - INFO - Number of samples per year: 509
+2024-01-23 17:16:27,667 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-23 17:16:27,667 - root - INFO - Delta t: 6 hours
+2024-01-23 17:16:27,667 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-23 17:16:27,667 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-23 17:16:28,617 - root - INFO - Loading inference data
+2024-01-23 17:16:28,617 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-23 17:16:28,618 - root - INFO - Initial condition 1 of 5
+2024-01-23 17:16:28,720 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:30,245 - root - INFO - Initial condition 2 of 5
+2024-01-23 17:16:30,354 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:31,290 - root - INFO - Initial condition 3 of 5
+2024-01-23 17:16:31,424 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:32,388 - root - INFO - Initial condition 4 of 5
+2024-01-23 17:16:32,532 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:33,466 - root - INFO - Initial condition 5 of 5
+2024-01-23 17:16:33,594 - root - INFO - Begin autoregressive inference
+2024-01-23 17:16:34,539 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions_.h5
+2024-01-24 15:47:59,601 - root - INFO - --------------- Versions ---------------
+2024-01-24 15:47:59,606 - root - INFO - git branch: b'* master'
+2024-01-24 15:47:59,609 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 15:47:59,609 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 15:47:59,609 - root - INFO - ----------------------------------------
+2024-01-24 15:47:59,609 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 15:47:59,609 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 15:47:59,609 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 15:47:59,610 - root - INFO - log_to_wandb True
+2024-01-24 15:47:59,610 - root - INFO - lr 0.0005
+2024-01-24 15:47:59,610 - root - INFO - batch_size 16
+2024-01-24 15:47:59,610 - root - INFO - max_epochs 1510
+2024-01-24 15:47:59,610 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 15:47:59,610 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:47:59,610 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:47:59,610 - root - INFO - prediction_length 100
+2024-01-24 15:47:59,610 - root - INFO - orography False
+2024-01-24 15:47:59,610 - root - INFO - orography_path None
+2024-01-24 15:47:59,610 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 15:47:59,610 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 15:47:59,610 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 15:47:59,610 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 15:47:59,610 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 15:47:59,610 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 15:47:59,611 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 15:47:59,611 - root - INFO - loss l2
+2024-01-24 15:47:59,611 - root - INFO - num_data_workers 4
+2024-01-24 15:47:59,611 - root - INFO - dt 1
+2024-01-24 15:47:59,611 - root - INFO - n_history 0
+2024-01-24 15:47:59,611 - root - INFO - prediction_type iterative
+2024-01-24 15:47:59,611 - root - INFO - n_initial_conditions 5
+2024-01-24 15:47:59,611 - root - INFO - ics_type default
+2024-01-24 15:47:59,611 - root - INFO - save_raw_forecasts True
+2024-01-24 15:47:59,611 - root - INFO - save_channel False
+2024-01-24 15:47:59,611 - root - INFO - masked_acc False
+2024-01-24 15:47:59,611 - root - INFO - maskpath None
+2024-01-24 15:47:59,611 - root - INFO - perturb False
+2024-01-24 15:47:59,611 - root - INFO - add_grid False
+2024-01-24 15:47:59,611 - root - INFO - N_grid_channels 0
+2024-01-24 15:47:59,611 - root - INFO - gridtype sinusoidal
+2024-01-24 15:47:59,612 - root - INFO - roll False
+2024-01-24 15:47:59,612 - root - INFO - num_blocks 8
+2024-01-24 15:47:59,612 - root - INFO - nettype afno
+2024-01-24 15:47:59,612 - root - INFO - patch_size 8
+2024-01-24 15:47:59,612 - root - INFO - width 56
+2024-01-24 15:47:59,612 - root - INFO - modes 32
+2024-01-24 15:47:59,612 - root - INFO - target default
+2024-01-24 15:47:59,612 - root - INFO - normalization zscore
+2024-01-24 15:47:59,612 - root - INFO - log_to_screen True
+2024-01-24 15:47:59,612 - root - INFO - save_checkpoint True
+2024-01-24 15:47:59,612 - root - INFO - enable_nhwc False
+2024-01-24 15:47:59,612 - root - INFO - optimizer_type FusedAdam
+2024-01-24 15:47:59,612 - root - INFO - crop_size_x None
+2024-01-24 15:47:59,612 - root - INFO - crop_size_y None
+2024-01-24 15:47:59,612 - root - INFO - two_step_training False
+2024-01-24 15:47:59,612 - root - INFO - plot_animations False
+2024-01-24 15:47:59,613 - root - INFO - add_noise False
+2024-01-24 15:47:59,613 - root - INFO - noise_std 0
+2024-01-24 15:47:59,613 - root - INFO - world_size 1
+2024-01-24 15:47:59,613 - root - INFO - interp 0
+2024-01-24 15:47:59,613 - root - INFO - use_daily_climatology False
+2024-01-24 15:47:59,613 - root - INFO - global_batch_size 16
+2024-01-24 15:47:59,613 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 15:47:59,613 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:47:59,613 - root - INFO - resuming False
+2024-01-24 15:47:59,613 - root - INFO - local_rank 0
+2024-01-24 15:47:59,613 - root - INFO - ---------------------------------------------------
+2024-01-24 15:47:59,614 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:47:59,615 - root - INFO - Number of samples per year: 509
+2024-01-24 15:47:59,615 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 15:47:59,615 - root - INFO - Delta t: 6 hours
+2024-01-24 15:47:59,615 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 15:47:59,616 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:48:00,803 - root - INFO - Loading inference data
+2024-01-24 15:48:00,803 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:48:00,804 - root - INFO - Initial condition 1 of 5
+2024-01-24 15:48:00,946 - root - INFO - Begin autoregressive inference
+2024-01-24 15:48:02,696 - root - INFO - Initial condition 2 of 5
+2024-01-24 15:48:02,843 - root - INFO - Begin autoregressive inference
+2024-01-24 15:48:03,756 - root - INFO - Initial condition 3 of 5
+2024-01-24 15:48:03,887 - root - INFO - Begin autoregressive inference
+2024-01-24 15:48:04,843 - root - INFO - Initial condition 4 of 5
+2024-01-24 15:48:04,981 - root - INFO - Begin autoregressive inference
+2024-01-24 15:48:05,904 - root - INFO - Initial condition 5 of 5
+2024-01-24 15:48:06,031 - root - INFO - Begin autoregressive inference
+2024-01-24 15:48:07,006 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions_.h5
+2024-01-24 15:51:45,178 - root - INFO - --------------- Versions ---------------
+2024-01-24 15:51:45,183 - root - INFO - git branch: b'* master'
+2024-01-24 15:51:45,186 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 15:51:45,186 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 15:51:45,187 - root - INFO - ----------------------------------------
+2024-01-24 15:51:45,187 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 15:51:45,187 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 15:51:45,187 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 15:51:45,187 - root - INFO - log_to_wandb True
+2024-01-24 15:51:45,187 - root - INFO - lr 0.0005
+2024-01-24 15:51:45,187 - root - INFO - batch_size 16
+2024-01-24 15:51:45,187 - root - INFO - max_epochs 1510
+2024-01-24 15:51:45,187 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 15:51:45,187 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:51:45,187 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:51:45,187 - root - INFO - prediction_length 100
+2024-01-24 15:51:45,187 - root - INFO - orography False
+2024-01-24 15:51:45,187 - root - INFO - orography_path None
+2024-01-24 15:51:45,187 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 15:51:45,187 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 15:51:45,188 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 15:51:45,188 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 15:51:45,188 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 15:51:45,188 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 15:51:45,188 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 15:51:45,188 - root - INFO - loss l2
+2024-01-24 15:51:45,188 - root - INFO - num_data_workers 4
+2024-01-24 15:51:45,188 - root - INFO - dt 1
+2024-01-24 15:51:45,188 - root - INFO - n_history 0
+2024-01-24 15:51:45,188 - root - INFO - prediction_type iterative
+2024-01-24 15:51:45,188 - root - INFO - n_initial_conditions 5
+2024-01-24 15:51:45,188 - root - INFO - ics_type default
+2024-01-24 15:51:45,188 - root - INFO - save_raw_forecasts True
+2024-01-24 15:51:45,188 - root - INFO - save_channel False
+2024-01-24 15:51:45,188 - root - INFO - masked_acc False
+2024-01-24 15:51:45,188 - root - INFO - maskpath None
+2024-01-24 15:51:45,189 - root - INFO - perturb False
+2024-01-24 15:51:45,189 - root - INFO - add_grid False
+2024-01-24 15:51:45,189 - root - INFO - N_grid_channels 0
+2024-01-24 15:51:45,189 - root - INFO - gridtype sinusoidal
+2024-01-24 15:51:45,189 - root - INFO - roll False
+2024-01-24 15:51:45,189 - root - INFO - num_blocks 8
+2024-01-24 15:51:45,189 - root - INFO - nettype afno
+2024-01-24 15:51:45,189 - root - INFO - patch_size 8
+2024-01-24 15:51:45,189 - root - INFO - width 56
+2024-01-24 15:51:45,189 - root - INFO - modes 32
+2024-01-24 15:51:45,189 - root - INFO - target default
+2024-01-24 15:51:45,189 - root - INFO - normalization zscore
+2024-01-24 15:51:45,189 - root - INFO - log_to_screen True
+2024-01-24 15:51:45,189 - root - INFO - save_checkpoint True
+2024-01-24 15:51:45,189 - root - INFO - enable_nhwc False
+2024-01-24 15:51:45,189 - root - INFO - optimizer_type FusedAdam
+2024-01-24 15:51:45,189 - root - INFO - crop_size_x None
+2024-01-24 15:51:45,190 - root - INFO - crop_size_y None
+2024-01-24 15:51:45,190 - root - INFO - two_step_training False
+2024-01-24 15:51:45,190 - root - INFO - plot_animations False
+2024-01-24 15:51:45,190 - root - INFO - add_noise False
+2024-01-24 15:51:45,190 - root - INFO - noise_std 0
+2024-01-24 15:51:45,190 - root - INFO - world_size 1
+2024-01-24 15:51:45,190 - root - INFO - interp 0
+2024-01-24 15:51:45,190 - root - INFO - use_daily_climatology False
+2024-01-24 15:51:45,190 - root - INFO - global_batch_size 16
+2024-01-24 15:51:45,190 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 15:51:45,190 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:51:45,190 - root - INFO - resuming False
+2024-01-24 15:51:45,190 - root - INFO - local_rank 0
+2024-01-24 15:51:45,190 - root - INFO - ---------------------------------------------------
+2024-01-24 15:51:45,191 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:51:45,192 - root - INFO - Number of samples per year: 509
+2024-01-24 15:51:45,192 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 15:51:45,192 - root - INFO - Delta t: 6 hours
+2024-01-24 15:51:45,192 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 15:51:45,192 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:51:46,245 - root - INFO - Loading inference data
+2024-01-24 15:51:46,245 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:51:46,246 - root - INFO - Initial condition 1 of 5
+2024-01-24 15:51:46,371 - root - INFO - Begin autoregressive inference
+2024-01-24 15:51:47,876 - root - INFO - Initial condition 2 of 5
+2024-01-24 15:51:48,011 - root - INFO - Begin autoregressive inference
+2024-01-24 15:51:48,960 - root - INFO - Initial condition 3 of 5
+2024-01-24 15:51:49,073 - root - INFO - Begin autoregressive inference
+2024-01-24 15:51:49,978 - root - INFO - Initial condition 4 of 5
+2024-01-24 15:51:50,070 - root - INFO - Begin autoregressive inference
+2024-01-24 15:51:50,978 - root - INFO - Initial condition 5 of 5
+2024-01-24 15:51:51,107 - root - INFO - Begin autoregressive inference
+2024-01-24 15:51:52,014 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 15:52:30,693 - root - INFO - --------------- Versions ---------------
+2024-01-24 15:52:30,697 - root - INFO - git branch: b'* master'
+2024-01-24 15:52:30,700 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 15:52:30,700 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 15:52:30,700 - root - INFO - ----------------------------------------
+2024-01-24 15:52:30,700 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 15:52:30,700 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 15:52:30,701 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 15:52:30,701 - root - INFO - log_to_wandb True
+2024-01-24 15:52:30,701 - root - INFO - lr 0.0005
+2024-01-24 15:52:30,701 - root - INFO - batch_size 16
+2024-01-24 15:52:30,701 - root - INFO - max_epochs 1510
+2024-01-24 15:52:30,701 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 15:52:30,701 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:52:30,701 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:52:30,701 - root - INFO - prediction_length 100
+2024-01-24 15:52:30,701 - root - INFO - orography False
+2024-01-24 15:52:30,701 - root - INFO - orography_path None
+2024-01-24 15:52:30,701 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 15:52:30,701 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 15:52:30,701 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 15:52:30,701 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 15:52:30,701 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 15:52:30,702 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 15:52:30,702 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 15:52:30,702 - root - INFO - loss l2
+2024-01-24 15:52:30,702 - root - INFO - num_data_workers 4
+2024-01-24 15:52:30,702 - root - INFO - dt 1
+2024-01-24 15:52:30,702 - root - INFO - n_history 0
+2024-01-24 15:52:30,702 - root - INFO - prediction_type iterative
+2024-01-24 15:52:30,702 - root - INFO - n_initial_conditions 5
+2024-01-24 15:52:30,702 - root - INFO - ics_type default
+2024-01-24 15:52:30,702 - root - INFO - save_raw_forecasts True
+2024-01-24 15:52:30,702 - root - INFO - save_channel False
+2024-01-24 15:52:30,702 - root - INFO - masked_acc False
+2024-01-24 15:52:30,702 - root - INFO - maskpath None
+2024-01-24 15:52:30,702 - root - INFO - perturb False
+2024-01-24 15:52:30,702 - root - INFO - add_grid False
+2024-01-24 15:52:30,702 - root - INFO - N_grid_channels 0
+2024-01-24 15:52:30,702 - root - INFO - gridtype sinusoidal
+2024-01-24 15:52:30,703 - root - INFO - roll False
+2024-01-24 15:52:30,703 - root - INFO - num_blocks 8
+2024-01-24 15:52:30,703 - root - INFO - nettype afno
+2024-01-24 15:52:30,703 - root - INFO - patch_size 8
+2024-01-24 15:52:30,703 - root - INFO - width 56
+2024-01-24 15:52:30,703 - root - INFO - modes 32
+2024-01-24 15:52:30,703 - root - INFO - target default
+2024-01-24 15:52:30,703 - root - INFO - normalization zscore
+2024-01-24 15:52:30,703 - root - INFO - log_to_screen True
+2024-01-24 15:52:30,703 - root - INFO - save_checkpoint True
+2024-01-24 15:52:30,703 - root - INFO - enable_nhwc False
+2024-01-24 15:52:30,703 - root - INFO - optimizer_type FusedAdam
+2024-01-24 15:52:30,703 - root - INFO - crop_size_x None
+2024-01-24 15:52:30,703 - root - INFO - crop_size_y None
+2024-01-24 15:52:30,703 - root - INFO - two_step_training False
+2024-01-24 15:52:30,703 - root - INFO - plot_animations False
+2024-01-24 15:52:30,704 - root - INFO - add_noise False
+2024-01-24 15:52:30,704 - root - INFO - noise_std 0
+2024-01-24 15:52:30,704 - root - INFO - world_size 1
+2024-01-24 15:52:30,704 - root - INFO - interp 0
+2024-01-24 15:52:30,704 - root - INFO - use_daily_climatology False
+2024-01-24 15:52:30,704 - root - INFO - global_batch_size 16
+2024-01-24 15:52:30,704 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 15:52:30,704 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:52:30,704 - root - INFO - resuming False
+2024-01-24 15:52:30,704 - root - INFO - local_rank 0
+2024-01-24 15:52:30,704 - root - INFO - ---------------------------------------------------
+2024-01-24 15:52:30,705 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:52:30,706 - root - INFO - Number of samples per year: 509
+2024-01-24 15:52:30,706 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 15:52:30,706 - root - INFO - Delta t: 6 hours
+2024-01-24 15:52:30,706 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 15:52:30,706 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:52:31,593 - root - INFO - Loading inference data
+2024-01-24 15:52:31,593 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:52:31,594 - root - INFO - Initial condition 1 of 5
+2024-01-24 15:52:31,692 - root - INFO - Begin autoregressive inference
+2024-01-24 15:52:33,214 - root - INFO - Initial condition 2 of 5
+2024-01-24 15:52:33,313 - root - INFO - Begin autoregressive inference
+2024-01-24 15:52:34,254 - root - INFO - Initial condition 3 of 5
+2024-01-24 15:52:34,366 - root - INFO - Begin autoregressive inference
+2024-01-24 15:52:35,302 - root - INFO - Initial condition 4 of 5
+2024-01-24 15:52:35,400 - root - INFO - Begin autoregressive inference
+2024-01-24 15:52:36,344 - root - INFO - Initial condition 5 of 5
+2024-01-24 15:52:36,452 - root - INFO - Begin autoregressive inference
+2024-01-24 15:52:37,371 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 15:57:12,066 - root - INFO - --------------- Versions ---------------
+2024-01-24 15:57:12,069 - root - INFO - git branch: b'* master'
+2024-01-24 15:57:12,072 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 15:57:12,072 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 15:57:12,072 - root - INFO - ----------------------------------------
+2024-01-24 15:57:12,072 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 15:57:12,072 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 15:57:12,072 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 15:57:12,072 - root - INFO - log_to_wandb True
+2024-01-24 15:57:12,072 - root - INFO - lr 0.0005
+2024-01-24 15:57:12,072 - root - INFO - batch_size 16
+2024-01-24 15:57:12,072 - root - INFO - max_epochs 1510
+2024-01-24 15:57:12,072 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 15:57:12,072 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:57:12,072 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 15:57:12,072 - root - INFO - prediction_length 100
+2024-01-24 15:57:12,073 - root - INFO - orography False
+2024-01-24 15:57:12,073 - root - INFO - orography_path None
+2024-01-24 15:57:12,073 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 15:57:12,073 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 15:57:12,073 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 15:57:12,073 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 15:57:12,073 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 15:57:12,073 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 15:57:12,073 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 15:57:12,073 - root - INFO - loss l2
+2024-01-24 15:57:12,073 - root - INFO - num_data_workers 4
+2024-01-24 15:57:12,073 - root - INFO - dt 1
+2024-01-24 15:57:12,073 - root - INFO - n_history 0
+2024-01-24 15:57:12,073 - root - INFO - prediction_type iterative
+2024-01-24 15:57:12,073 - root - INFO - n_initial_conditions 5
+2024-01-24 15:57:12,073 - root - INFO - ics_type default
+2024-01-24 15:57:12,073 - root - INFO - save_raw_forecasts True
+2024-01-24 15:57:12,073 - root - INFO - save_channel False
+2024-01-24 15:57:12,073 - root - INFO - masked_acc False
+2024-01-24 15:57:12,073 - root - INFO - maskpath None
+2024-01-24 15:57:12,073 - root - INFO - perturb False
+2024-01-24 15:57:12,073 - root - INFO - add_grid False
+2024-01-24 15:57:12,073 - root - INFO - N_grid_channels 0
+2024-01-24 15:57:12,073 - root - INFO - gridtype sinusoidal
+2024-01-24 15:57:12,073 - root - INFO - roll False
+2024-01-24 15:57:12,073 - root - INFO - num_blocks 8
+2024-01-24 15:57:12,073 - root - INFO - nettype afno
+2024-01-24 15:57:12,073 - root - INFO - patch_size 8
+2024-01-24 15:57:12,073 - root - INFO - width 56
+2024-01-24 15:57:12,073 - root - INFO - modes 32
+2024-01-24 15:57:12,073 - root - INFO - target default
+2024-01-24 15:57:12,073 - root - INFO - normalization zscore
+2024-01-24 15:57:12,073 - root - INFO - log_to_screen True
+2024-01-24 15:57:12,073 - root - INFO - save_checkpoint True
+2024-01-24 15:57:12,073 - root - INFO - enable_nhwc False
+2024-01-24 15:57:12,073 - root - INFO - optimizer_type FusedAdam
+2024-01-24 15:57:12,073 - root - INFO - crop_size_x None
+2024-01-24 15:57:12,074 - root - INFO - crop_size_y None
+2024-01-24 15:57:12,074 - root - INFO - two_step_training False
+2024-01-24 15:57:12,074 - root - INFO - plot_animations False
+2024-01-24 15:57:12,074 - root - INFO - add_noise False
+2024-01-24 15:57:12,074 - root - INFO - noise_std 0
+2024-01-24 15:57:12,074 - root - INFO - world_size 1
+2024-01-24 15:57:12,074 - root - INFO - interp 0
+2024-01-24 15:57:12,074 - root - INFO - use_daily_climatology False
+2024-01-24 15:57:12,074 - root - INFO - global_batch_size 16
+2024-01-24 15:57:12,074 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 15:57:12,074 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:57:12,074 - root - INFO - resuming False
+2024-01-24 15:57:12,074 - root - INFO - local_rank 0
+2024-01-24 15:57:12,074 - root - INFO - ---------------------------------------------------
+2024-01-24 15:57:12,074 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:57:12,075 - root - INFO - Number of samples per year: 509
+2024-01-24 15:57:12,075 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 15:57:12,075 - root - INFO - Delta t: 6 hours
+2024-01-24 15:57:12,075 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 15:57:12,075 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 15:57:13,072 - root - INFO - Loading inference data
+2024-01-24 15:57:13,072 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 15:57:13,073 - root - INFO - Initial condition 1 of 5
+2024-01-24 15:57:13,228 - root - INFO - Begin autoregressive inference
+2024-01-24 15:57:14,632 - root - INFO - Initial condition 2 of 5
+2024-01-24 15:57:14,792 - root - INFO - Begin autoregressive inference
+2024-01-24 15:57:15,582 - root - INFO - Initial condition 3 of 5
+2024-01-24 15:57:15,703 - root - INFO - Begin autoregressive inference
+2024-01-24 15:57:16,491 - root - INFO - Initial condition 4 of 5
+2024-01-24 15:57:16,615 - root - INFO - Begin autoregressive inference
+2024-01-24 15:57:17,449 - root - INFO - Initial condition 5 of 5
+2024-01-24 15:57:17,591 - root - INFO - Begin autoregressive inference
+2024-01-24 15:57:18,384 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 16:10:36,444 - root - INFO - --------------- Versions ---------------
+2024-01-24 16:10:36,449 - root - INFO - git branch: b'* master'
+2024-01-24 16:10:36,452 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 16:10:36,452 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 16:10:36,452 - root - INFO - ----------------------------------------
+2024-01-24 16:10:36,452 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 16:10:36,452 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 16:10:36,452 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 16:10:36,452 - root - INFO - log_to_wandb True
+2024-01-24 16:10:36,452 - root - INFO - lr 0.0005
+2024-01-24 16:10:36,453 - root - INFO - batch_size 16
+2024-01-24 16:10:36,453 - root - INFO - max_epochs 1510
+2024-01-24 16:10:36,453 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 16:10:36,453 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:10:36,453 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:10:36,453 - root - INFO - prediction_length 100
+2024-01-24 16:10:36,453 - root - INFO - orography False
+2024-01-24 16:10:36,453 - root - INFO - orography_path None
+2024-01-24 16:10:36,453 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 16:10:36,453 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 16:10:36,453 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 16:10:36,453 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 16:10:36,453 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 16:10:36,453 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 16:10:36,453 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 16:10:36,453 - root - INFO - loss l2
+2024-01-24 16:10:36,454 - root - INFO - num_data_workers 4
+2024-01-24 16:10:36,454 - root - INFO - dt 1
+2024-01-24 16:10:36,454 - root - INFO - n_history 0
+2024-01-24 16:10:36,454 - root - INFO - prediction_type iterative
+2024-01-24 16:10:36,454 - root - INFO - n_initial_conditions 5
+2024-01-24 16:10:36,454 - root - INFO - ics_type default
+2024-01-24 16:10:36,454 - root - INFO - save_raw_forecasts True
+2024-01-24 16:10:36,454 - root - INFO - save_channel False
+2024-01-24 16:10:36,454 - root - INFO - masked_acc False
+2024-01-24 16:10:36,454 - root - INFO - maskpath None
+2024-01-24 16:10:36,454 - root - INFO - perturb False
+2024-01-24 16:10:36,454 - root - INFO - add_grid False
+2024-01-24 16:10:36,454 - root - INFO - N_grid_channels 0
+2024-01-24 16:10:36,454 - root - INFO - gridtype sinusoidal
+2024-01-24 16:10:36,454 - root - INFO - roll False
+2024-01-24 16:10:36,454 - root - INFO - num_blocks 8
+2024-01-24 16:10:36,455 - root - INFO - nettype afno
+2024-01-24 16:10:36,455 - root - INFO - patch_size 8
+2024-01-24 16:10:36,455 - root - INFO - width 56
+2024-01-24 16:10:36,455 - root - INFO - modes 32
+2024-01-24 16:10:36,455 - root - INFO - target default
+2024-01-24 16:10:36,455 - root - INFO - normalization zscore
+2024-01-24 16:10:36,455 - root - INFO - log_to_screen True
+2024-01-24 16:10:36,455 - root - INFO - save_checkpoint True
+2024-01-24 16:10:36,455 - root - INFO - enable_nhwc False
+2024-01-24 16:10:36,455 - root - INFO - optimizer_type FusedAdam
+2024-01-24 16:10:36,455 - root - INFO - crop_size_x None
+2024-01-24 16:10:36,455 - root - INFO - crop_size_y None
+2024-01-24 16:10:36,455 - root - INFO - two_step_training False
+2024-01-24 16:10:36,455 - root - INFO - plot_animations False
+2024-01-24 16:10:36,455 - root - INFO - add_noise False
+2024-01-24 16:10:36,455 - root - INFO - noise_std 0
+2024-01-24 16:10:36,456 - root - INFO - world_size 1
+2024-01-24 16:10:36,456 - root - INFO - interp 0
+2024-01-24 16:10:36,456 - root - INFO - use_daily_climatology False
+2024-01-24 16:10:36,456 - root - INFO - global_batch_size 16
+2024-01-24 16:10:36,456 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 16:10:36,456 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:10:36,456 - root - INFO - resuming False
+2024-01-24 16:10:36,456 - root - INFO - local_rank 0
+2024-01-24 16:10:36,456 - root - INFO - ---------------------------------------------------
+2024-01-24 16:10:36,457 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:10:36,458 - root - INFO - Number of samples per year: 509
+2024-01-24 16:10:36,458 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 16:10:36,458 - root - INFO - Delta t: 6 hours
+2024-01-24 16:10:36,458 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 16:10:36,458 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:10:37,501 - root - INFO - Loading inference data
+2024-01-24 16:10:37,502 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:10:37,502 - root - INFO - Initial condition 1 of 5
+2024-01-24 16:10:37,644 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:01,324 - root - INFO - --------------- Versions ---------------
+2024-01-24 16:12:01,328 - root - INFO - git branch: b'* master'
+2024-01-24 16:12:01,330 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 16:12:01,331 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 16:12:01,331 - root - INFO - ----------------------------------------
+2024-01-24 16:12:01,331 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 16:12:01,331 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 16:12:01,331 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 16:12:01,331 - root - INFO - log_to_wandb True
+2024-01-24 16:12:01,331 - root - INFO - lr 0.0005
+2024-01-24 16:12:01,331 - root - INFO - batch_size 16
+2024-01-24 16:12:01,331 - root - INFO - max_epochs 1510
+2024-01-24 16:12:01,331 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 16:12:01,331 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:12:01,331 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:12:01,331 - root - INFO - prediction_length 100
+2024-01-24 16:12:01,331 - root - INFO - orography False
+2024-01-24 16:12:01,331 - root - INFO - orography_path None
+2024-01-24 16:12:01,331 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 16:12:01,331 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 16:12:01,331 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 16:12:01,331 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 16:12:01,331 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 16:12:01,331 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 16:12:01,331 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 16:12:01,331 - root - INFO - loss l2
+2024-01-24 16:12:01,331 - root - INFO - num_data_workers 4
+2024-01-24 16:12:01,331 - root - INFO - dt 1
+2024-01-24 16:12:01,331 - root - INFO - n_history 0
+2024-01-24 16:12:01,331 - root - INFO - prediction_type iterative
+2024-01-24 16:12:01,331 - root - INFO - n_initial_conditions 5
+2024-01-24 16:12:01,331 - root - INFO - ics_type default
+2024-01-24 16:12:01,331 - root - INFO - save_raw_forecasts True
+2024-01-24 16:12:01,331 - root - INFO - save_channel False
+2024-01-24 16:12:01,331 - root - INFO - masked_acc False
+2024-01-24 16:12:01,331 - root - INFO - maskpath None
+2024-01-24 16:12:01,331 - root - INFO - perturb False
+2024-01-24 16:12:01,332 - root - INFO - add_grid False
+2024-01-24 16:12:01,332 - root - INFO - N_grid_channels 0
+2024-01-24 16:12:01,332 - root - INFO - gridtype sinusoidal
+2024-01-24 16:12:01,332 - root - INFO - roll False
+2024-01-24 16:12:01,332 - root - INFO - num_blocks 8
+2024-01-24 16:12:01,332 - root - INFO - nettype afno
+2024-01-24 16:12:01,332 - root - INFO - patch_size 8
+2024-01-24 16:12:01,332 - root - INFO - width 56
+2024-01-24 16:12:01,332 - root - INFO - modes 32
+2024-01-24 16:12:01,332 - root - INFO - target default
+2024-01-24 16:12:01,332 - root - INFO - normalization zscore
+2024-01-24 16:12:01,332 - root - INFO - log_to_screen True
+2024-01-24 16:12:01,332 - root - INFO - save_checkpoint True
+2024-01-24 16:12:01,332 - root - INFO - enable_nhwc False
+2024-01-24 16:12:01,332 - root - INFO - optimizer_type FusedAdam
+2024-01-24 16:12:01,332 - root - INFO - crop_size_x None
+2024-01-24 16:12:01,332 - root - INFO - crop_size_y None
+2024-01-24 16:12:01,332 - root - INFO - two_step_training False
+2024-01-24 16:12:01,332 - root - INFO - plot_animations False
+2024-01-24 16:12:01,332 - root - INFO - add_noise False
+2024-01-24 16:12:01,332 - root - INFO - noise_std 0
+2024-01-24 16:12:01,332 - root - INFO - world_size 1
+2024-01-24 16:12:01,332 - root - INFO - interp 0
+2024-01-24 16:12:01,332 - root - INFO - use_daily_climatology False
+2024-01-24 16:12:01,332 - root - INFO - global_batch_size 16
+2024-01-24 16:12:01,332 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 16:12:01,332 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:12:01,332 - root - INFO - resuming False
+2024-01-24 16:12:01,332 - root - INFO - local_rank 0
+2024-01-24 16:12:01,332 - root - INFO - ---------------------------------------------------
+2024-01-24 16:12:01,333 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:12:01,333 - root - INFO - Number of samples per year: 509
+2024-01-24 16:12:01,333 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 16:12:01,333 - root - INFO - Delta t: 6 hours
+2024-01-24 16:12:01,333 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 16:12:01,333 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:12:02,268 - root - INFO - Loading inference data
+2024-01-24 16:12:02,268 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:12:02,269 - root - INFO - Initial condition 1 of 5
+2024-01-24 16:12:02,367 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:03,852 - root - INFO - Initial condition 2 of 5
+2024-01-24 16:12:03,986 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:04,910 - root - INFO - Initial condition 3 of 5
+2024-01-24 16:12:05,042 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:05,927 - root - INFO - Initial condition 4 of 5
+2024-01-24 16:12:06,052 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:06,981 - root - INFO - Initial condition 5 of 5
+2024-01-24 16:12:07,107 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:07,970 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 16:12:20,896 - root - INFO - --------------- Versions ---------------
+2024-01-24 16:12:20,900 - root - INFO - git branch: b'* master'
+2024-01-24 16:12:20,903 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 16:12:20,903 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 16:12:20,903 - root - INFO - ----------------------------------------
+2024-01-24 16:12:20,903 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 16:12:20,903 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 16:12:20,903 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 16:12:20,903 - root - INFO - log_to_wandb True
+2024-01-24 16:12:20,903 - root - INFO - lr 0.0005
+2024-01-24 16:12:20,903 - root - INFO - batch_size 16
+2024-01-24 16:12:20,904 - root - INFO - max_epochs 1510
+2024-01-24 16:12:20,904 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 16:12:20,904 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:12:20,904 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:12:20,904 - root - INFO - prediction_length 100
+2024-01-24 16:12:20,904 - root - INFO - orography False
+2024-01-24 16:12:20,904 - root - INFO - orography_path None
+2024-01-24 16:12:20,904 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 16:12:20,904 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 16:12:20,904 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 16:12:20,904 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 16:12:20,904 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 16:12:20,904 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 16:12:20,904 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 16:12:20,904 - root - INFO - loss l2
+2024-01-24 16:12:20,904 - root - INFO - num_data_workers 4
+2024-01-24 16:12:20,905 - root - INFO - dt 1
+2024-01-24 16:12:20,905 - root - INFO - n_history 0
+2024-01-24 16:12:20,905 - root - INFO - prediction_type iterative
+2024-01-24 16:12:20,905 - root - INFO - n_initial_conditions 5
+2024-01-24 16:12:20,905 - root - INFO - ics_type default
+2024-01-24 16:12:20,905 - root - INFO - save_raw_forecasts True
+2024-01-24 16:12:20,905 - root - INFO - save_channel False
+2024-01-24 16:12:20,905 - root - INFO - masked_acc False
+2024-01-24 16:12:20,905 - root - INFO - maskpath None
+2024-01-24 16:12:20,905 - root - INFO - perturb False
+2024-01-24 16:12:20,905 - root - INFO - add_grid False
+2024-01-24 16:12:20,905 - root - INFO - N_grid_channels 0
+2024-01-24 16:12:20,905 - root - INFO - gridtype sinusoidal
+2024-01-24 16:12:20,905 - root - INFO - roll False
+2024-01-24 16:12:20,905 - root - INFO - num_blocks 8
+2024-01-24 16:12:20,905 - root - INFO - nettype afno
+2024-01-24 16:12:20,906 - root - INFO - patch_size 8
+2024-01-24 16:12:20,906 - root - INFO - width 56
+2024-01-24 16:12:20,906 - root - INFO - modes 32
+2024-01-24 16:12:20,906 - root - INFO - target default
+2024-01-24 16:12:20,906 - root - INFO - normalization zscore
+2024-01-24 16:12:20,906 - root - INFO - log_to_screen True
+2024-01-24 16:12:20,906 - root - INFO - save_checkpoint True
+2024-01-24 16:12:20,906 - root - INFO - enable_nhwc False
+2024-01-24 16:12:20,906 - root - INFO - optimizer_type FusedAdam
+2024-01-24 16:12:20,906 - root - INFO - crop_size_x None
+2024-01-24 16:12:20,906 - root - INFO - crop_size_y None
+2024-01-24 16:12:20,906 - root - INFO - two_step_training False
+2024-01-24 16:12:20,906 - root - INFO - plot_animations False
+2024-01-24 16:12:20,906 - root - INFO - add_noise False
+2024-01-24 16:12:20,906 - root - INFO - noise_std 0
+2024-01-24 16:12:20,906 - root - INFO - world_size 1
+2024-01-24 16:12:20,907 - root - INFO - interp 0
+2024-01-24 16:12:20,907 - root - INFO - use_daily_climatology False
+2024-01-24 16:12:20,907 - root - INFO - global_batch_size 16
+2024-01-24 16:12:20,907 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 16:12:20,907 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:12:20,907 - root - INFO - resuming False
+2024-01-24 16:12:20,907 - root - INFO - local_rank 0
+2024-01-24 16:12:20,907 - root - INFO - ---------------------------------------------------
+2024-01-24 16:12:20,908 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:12:20,908 - root - INFO - Number of samples per year: 509
+2024-01-24 16:12:20,908 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 16:12:20,908 - root - INFO - Delta t: 6 hours
+2024-01-24 16:12:20,909 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 16:12:20,909 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:12:21,793 - root - INFO - Loading inference data
+2024-01-24 16:12:21,793 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:12:21,793 - root - INFO - Initial condition 1 of 5
+2024-01-24 16:12:21,893 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:23,502 - root - INFO - Initial condition 2 of 5
+2024-01-24 16:12:23,612 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:24,591 - root - INFO - Initial condition 3 of 5
+2024-01-24 16:12:24,693 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:25,697 - root - INFO - Initial condition 4 of 5
+2024-01-24 16:12:25,786 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:26,769 - root - INFO - Initial condition 5 of 5
+2024-01-24 16:12:26,858 - root - INFO - Begin autoregressive inference
+2024-01-24 16:12:27,904 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 16:13:06,483 - root - INFO - --------------- Versions ---------------
+2024-01-24 16:13:06,488 - root - INFO - git branch: b'* master'
+2024-01-24 16:13:06,491 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 16:13:06,491 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 16:13:06,491 - root - INFO - ----------------------------------------
+2024-01-24 16:13:06,491 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 16:13:06,491 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 16:13:06,491 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 16:13:06,491 - root - INFO - log_to_wandb True
+2024-01-24 16:13:06,492 - root - INFO - lr 0.0005
+2024-01-24 16:13:06,492 - root - INFO - batch_size 16
+2024-01-24 16:13:06,492 - root - INFO - max_epochs 1510
+2024-01-24 16:13:06,492 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 16:13:06,492 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:13:06,492 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:13:06,492 - root - INFO - prediction_length 100
+2024-01-24 16:13:06,492 - root - INFO - orography False
+2024-01-24 16:13:06,492 - root - INFO - orography_path None
+2024-01-24 16:13:06,492 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 16:13:06,492 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 16:13:06,492 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 16:13:06,492 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 16:13:06,492 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 16:13:06,492 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 16:13:06,492 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 16:13:06,493 - root - INFO - loss l2
+2024-01-24 16:13:06,493 - root - INFO - num_data_workers 4
+2024-01-24 16:13:06,493 - root - INFO - dt 1
+2024-01-24 16:13:06,493 - root - INFO - n_history 0
+2024-01-24 16:13:06,493 - root - INFO - prediction_type iterative
+2024-01-24 16:13:06,493 - root - INFO - n_initial_conditions 5
+2024-01-24 16:13:06,493 - root - INFO - ics_type default
+2024-01-24 16:13:06,493 - root - INFO - save_raw_forecasts True
+2024-01-24 16:13:06,493 - root - INFO - save_channel False
+2024-01-24 16:13:06,493 - root - INFO - masked_acc False
+2024-01-24 16:13:06,493 - root - INFO - maskpath None
+2024-01-24 16:13:06,493 - root - INFO - perturb False
+2024-01-24 16:13:06,493 - root - INFO - add_grid False
+2024-01-24 16:13:06,493 - root - INFO - N_grid_channels 0
+2024-01-24 16:13:06,493 - root - INFO - gridtype sinusoidal
+2024-01-24 16:13:06,493 - root - INFO - roll False
+2024-01-24 16:13:06,494 - root - INFO - num_blocks 8
+2024-01-24 16:13:06,494 - root - INFO - nettype afno
+2024-01-24 16:13:06,494 - root - INFO - patch_size 8
+2024-01-24 16:13:06,494 - root - INFO - width 56
+2024-01-24 16:13:06,494 - root - INFO - modes 32
+2024-01-24 16:13:06,494 - root - INFO - target default
+2024-01-24 16:13:06,494 - root - INFO - normalization zscore
+2024-01-24 16:13:06,494 - root - INFO - log_to_screen True
+2024-01-24 16:13:06,494 - root - INFO - save_checkpoint True
+2024-01-24 16:13:06,494 - root - INFO - enable_nhwc False
+2024-01-24 16:13:06,494 - root - INFO - optimizer_type FusedAdam
+2024-01-24 16:13:06,494 - root - INFO - crop_size_x None
+2024-01-24 16:13:06,494 - root - INFO - crop_size_y None
+2024-01-24 16:13:06,494 - root - INFO - two_step_training False
+2024-01-24 16:13:06,494 - root - INFO - plot_animations False
+2024-01-24 16:13:06,494 - root - INFO - add_noise False
+2024-01-24 16:13:06,494 - root - INFO - noise_std 0
+2024-01-24 16:13:06,495 - root - INFO - world_size 1
+2024-01-24 16:13:06,495 - root - INFO - interp 0
+2024-01-24 16:13:06,495 - root - INFO - use_daily_climatology False
+2024-01-24 16:13:06,495 - root - INFO - global_batch_size 16
+2024-01-24 16:13:06,495 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 16:13:06,495 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:13:06,495 - root - INFO - resuming False
+2024-01-24 16:13:06,495 - root - INFO - local_rank 0
+2024-01-24 16:13:06,495 - root - INFO - ---------------------------------------------------
+2024-01-24 16:13:06,496 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:13:06,496 - root - INFO - Number of samples per year: 509
+2024-01-24 16:13:06,497 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 16:13:06,497 - root - INFO - Delta t: 6 hours
+2024-01-24 16:13:06,497 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 16:13:06,497 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:13:07,386 - root - INFO - Loading inference data
+2024-01-24 16:13:07,386 - root - INFO - Inference data from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:13:07,387 - root - INFO - Initial condition 1 of 5
+2024-01-24 16:13:07,486 - root - INFO - Begin autoregressive inference
+2024-01-24 16:13:09,080 - root - INFO - Initial condition 2 of 5
+2024-01-24 16:13:09,196 - root - INFO - Begin autoregressive inference
+2024-01-24 16:13:10,171 - root - INFO - Initial condition 3 of 5
+2024-01-24 16:13:10,262 - root - INFO - Begin autoregressive inference
+2024-01-24 16:13:11,254 - root - INFO - Initial condition 4 of 5
+2024-01-24 16:13:11,372 - root - INFO - Begin autoregressive inference
+2024-01-24 16:13:12,355 - root - INFO - Initial condition 5 of 5
+2024-01-24 16:13:12,446 - root - INFO - Begin autoregressive inference
+2024-01-24 16:13:13,462 - root - INFO - Saving files at /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/autoregressive_predictions__vis.h5
+2024-01-24 16:20:18,890 - root - INFO - --------------- Versions ---------------
+2024-01-24 16:20:18,895 - root - INFO - git branch: b'* master'
+2024-01-24 16:20:18,898 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-01-24 16:20:18,898 - root - INFO - Torch: 2.1.2+cu118
+2024-01-24 16:20:18,899 - root - INFO - ----------------------------------------
+2024-01-24 16:20:18,899 - root - INFO - ------------------ Configuration ------------------
+2024-01-24 16:20:18,899 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-01-24 16:20:18,899 - root - INFO - Configuration name: afno_backbone_tec
+2024-01-24 16:20:18,899 - root - INFO - log_to_wandb True
+2024-01-24 16:20:18,899 - root - INFO - lr 0.0005
+2024-01-24 16:20:18,899 - root - INFO - batch_size 16
+2024-01-24 16:20:18,899 - root - INFO - max_epochs 1510
+2024-01-24 16:20:18,899 - root - INFO - scheduler CosineAnnealingLR
+2024-01-24 16:20:18,899 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:20:18,899 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-01-24 16:20:18,899 - root - INFO - prediction_length 100
+2024-01-24 16:20:18,899 - root - INFO - orography False
+2024-01-24 16:20:18,899 - root - INFO - orography_path None
+2024-01-24 16:20:18,899 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-01-24 16:20:18,900 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-01-24 16:20:18,900 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-01-24 16:20:18,900 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-01-24 16:20:18,900 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-01-24 16:20:18,900 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-01-24 16:20:18,900 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-01-24 16:20:18,900 - root - INFO - loss l2
+2024-01-24 16:20:18,900 - root - INFO - num_data_workers 4
+2024-01-24 16:20:18,900 - root - INFO - dt 1
+2024-01-24 16:20:18,900 - root - INFO - n_history 0
+2024-01-24 16:20:18,900 - root - INFO - prediction_type iterative
+2024-01-24 16:20:18,900 - root - INFO - n_initial_conditions 5
+2024-01-24 16:20:18,900 - root - INFO - ics_type default
+2024-01-24 16:20:18,900 - root - INFO - save_raw_forecasts True
+2024-01-24 16:20:18,900 - root - INFO - save_channel False
+2024-01-24 16:20:18,900 - root - INFO - masked_acc False
+2024-01-24 16:20:18,900 - root - INFO - maskpath None
+2024-01-24 16:20:18,901 - root - INFO - perturb False
+2024-01-24 16:20:18,901 - root - INFO - add_grid False
+2024-01-24 16:20:18,901 - root - INFO - N_grid_channels 0
+2024-01-24 16:20:18,901 - root - INFO - gridtype sinusoidal
+2024-01-24 16:20:18,901 - root - INFO - roll False
+2024-01-24 16:20:18,901 - root - INFO - num_blocks 8
+2024-01-24 16:20:18,901 - root - INFO - nettype afno
+2024-01-24 16:20:18,901 - root - INFO - patch_size 8
+2024-01-24 16:20:18,901 - root - INFO - width 56
+2024-01-24 16:20:18,901 - root - INFO - modes 32
+2024-01-24 16:20:18,901 - root - INFO - target default
+2024-01-24 16:20:18,901 - root - INFO - normalization zscore
+2024-01-24 16:20:18,901 - root - INFO - log_to_screen True
+2024-01-24 16:20:18,901 - root - INFO - save_checkpoint True
+2024-01-24 16:20:18,901 - root - INFO - enable_nhwc False
+2024-01-24 16:20:18,901 - root - INFO - optimizer_type FusedAdam
+2024-01-24 16:20:18,902 - root - INFO - crop_size_x None
+2024-01-24 16:20:18,902 - root - INFO - crop_size_y None
+2024-01-24 16:20:18,902 - root - INFO - two_step_training False
+2024-01-24 16:20:18,902 - root - INFO - plot_animations False
+2024-01-24 16:20:18,902 - root - INFO - add_noise False
+2024-01-24 16:20:18,902 - root - INFO - noise_std 0
+2024-01-24 16:20:18,902 - root - INFO - world_size 1
+2024-01-24 16:20:18,902 - root - INFO - interp 0
+2024-01-24 16:20:18,902 - root - INFO - use_daily_climatology False
+2024-01-24 16:20:18,902 - root - INFO - global_batch_size 16
+2024-01-24 16:20:18,902 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0
+2024-01-24 16:20:18,902 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar
+2024-01-24 16:20:18,902 - root - INFO - resuming False
+2024-01-24 16:20:18,902 - root - INFO - local_rank 0
+2024-01-24 16:20:18,902 - root - INFO - ---------------------------------------------------
+2024-01-24 16:20:18,904 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample/2010.h5
+2024-01-24 16:20:18,904 - root - INFO - Number of samples per year: 509
+2024-01-24 16:20:18,904 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-01-24 16:20:18,904 - root - INFO - Delta t: 6 hours
+2024-01-24 16:20:18,904 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-01-24 16:20:18,905 - root - INFO - Loading trained model checkpoint from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec/0/training_checkpoints/best_ckpt.tar

@@ -1,0 +1,313 @@
+2024-02-17 03:09:53,338 - root - INFO - --------------- Versions ---------------
+2024-02-17 03:09:53,342 - root - INFO - git branch: b'* master'
+2024-02-17 03:09:53,346 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-17 03:09:53,346 - root - INFO - Torch: 2.1.2+cu118
+2024-02-17 03:09:53,346 - root - INFO - ----------------------------------------
+2024-02-17 03:09:53,346 - root - INFO - ------------------ Configuration ------------------
+2024-02-17 03:09:53,346 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-17 03:09:53,346 - root - INFO - Configuration name: afno_backbone_tec_256
+2024-02-17 03:09:53,346 - root - INFO - log_to_wandb False
+2024-02-17 03:09:53,346 - root - INFO - lr 0.0005
+2024-02-17 03:09:53,346 - root - INFO - batch_size 4
+2024-02-17 03:09:53,346 - root - INFO - patch_size 4
+2024-02-17 03:09:53,346 - root - INFO - img_size [256, 512]
+2024-02-17 03:09:53,346 - root - INFO - max_epochs 1500
+2024-02-17 03:09:53,346 - root - INFO - scheduler CosineAnnealingLR
+2024-02-17 03:09:53,346 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:09:53,346 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:09:53,346 - root - INFO - prediction_length 100
+2024-02-17 03:09:53,346 - root - INFO - orography False
+2024-02-17 03:09:53,346 - root - INFO - orography_path None
+2024-02-17 03:09:53,346 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256
+2024-02-17 03:09:53,346 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train
+2024-02-17 03:09:53,346 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test
+2024-02-17 03:09:53,346 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/out_of_sample
+2024-02-17 03:09:53,346 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/time_means.npy
+2024-02-17 03:09:53,346 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_means.npy
+2024-02-17 03:09:53,346 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_stds.npy
+2024-02-17 03:09:53,346 - root - INFO - loss l2
+2024-02-17 03:09:53,346 - root - INFO - num_data_workers 4
+2024-02-17 03:09:53,346 - root - INFO - dt 1
+2024-02-17 03:09:53,346 - root - INFO - n_history 0
+2024-02-17 03:09:53,346 - root - INFO - prediction_type iterative
+2024-02-17 03:09:53,346 - root - INFO - n_initial_conditions 5
+2024-02-17 03:09:53,346 - root - INFO - ics_type default
+2024-02-17 03:09:53,346 - root - INFO - save_raw_forecasts True
+2024-02-17 03:09:53,346 - root - INFO - save_channel False
+2024-02-17 03:09:53,346 - root - INFO - masked_acc False
+2024-02-17 03:09:53,346 - root - INFO - maskpath None
+2024-02-17 03:09:53,346 - root - INFO - perturb False
+2024-02-17 03:09:53,346 - root - INFO - add_grid False
+2024-02-17 03:09:53,346 - root - INFO - N_grid_channels 0
+2024-02-17 03:09:53,346 - root - INFO - gridtype sinusoidal
+2024-02-17 03:09:53,347 - root - INFO - roll False
+2024-02-17 03:09:53,347 - root - INFO - num_blocks 8
+2024-02-17 03:09:53,347 - root - INFO - nettype afno
+2024-02-17 03:09:53,347 - root - INFO - width 56
+2024-02-17 03:09:53,347 - root - INFO - modes 32
+2024-02-17 03:09:53,347 - root - INFO - target default
+2024-02-17 03:09:53,347 - root - INFO - normalization zscore
+2024-02-17 03:09:53,347 - root - INFO - log_to_screen True
+2024-02-17 03:09:53,347 - root - INFO - save_checkpoint True
+2024-02-17 03:09:53,347 - root - INFO - enable_nhwc False
+2024-02-17 03:09:53,347 - root - INFO - optimizer_type FusedAdam
+2024-02-17 03:09:53,347 - root - INFO - crop_size_x None
+2024-02-17 03:09:53,347 - root - INFO - crop_size_y None
+2024-02-17 03:09:53,347 - root - INFO - two_step_training False
+2024-02-17 03:09:53,347 - root - INFO - plot_animations False
+2024-02-17 03:09:53,347 - root - INFO - add_noise False
+2024-02-17 03:09:53,347 - root - INFO - noise_std 0
+2024-02-17 03:09:53,347 - root - INFO - epsilon_factor 0
+2024-02-17 03:09:53,347 - root - INFO - world_size 1
+2024-02-17 03:09:53,347 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1
+2024-02-17 03:09:53,347 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/ckpt.tar
+2024-02-17 03:09:53,347 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/best_ckpt.tar
+2024-02-17 03:09:53,347 - root - INFO - resuming False
+2024-02-17 03:09:53,347 - root - INFO - local_rank 0
+2024-02-17 03:09:53,347 - root - INFO - enable_amp True
+2024-02-17 03:09:53,347 - root - INFO - name afno_backbone_tec_256_1
+2024-02-17 03:09:53,347 - root - INFO - group era5_precipafno_backbone_tec_256
+2024-02-17 03:09:53,347 - root - INFO - project ERA5_precip
+2024-02-17 03:09:53,347 - root - INFO - entity flowgan
+2024-02-17 03:09:53,347 - root - INFO - ---------------------------------------------------
+2024-02-17 03:09:53,351 - root - INFO - rank 0, begin data loader init
+2024-02-17 03:09:53,352 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train/2005.h5
+2024-02-17 03:09:53,352 - root - INFO - Number of samples per year: 336
+2024-02-17 03:09:53,352 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-17 03:09:53,352 - root - INFO - Delta t: 6 hours
+2024-02-17 03:09:53,352 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:09:53,353 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test/2008.h5
+2024-02-17 03:09:53,353 - root - INFO - Number of samples per year: 337
+2024-02-17 03:09:53,353 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-17 03:09:53,353 - root - INFO - Delta t: 6 hours
+2024-02-17 03:09:53,353 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:09:53,353 - root - INFO - rank 0, data loader initialized
+2024-02-17 03:09:53,990 - root - INFO - Number of trainable model parameters: 66895104
+2024-02-17 03:09:53,990 - root - INFO - Starting Training Loop...
+2024-02-17 03:10:13,533 - root - INFO - --------------- Versions ---------------
+2024-02-17 03:10:13,537 - root - INFO - git branch: b'* master'
+2024-02-17 03:10:13,540 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-17 03:10:13,540 - root - INFO - Torch: 2.1.2+cu118
+2024-02-17 03:10:13,540 - root - INFO - ----------------------------------------
+2024-02-17 03:10:13,540 - root - INFO - ------------------ Configuration ------------------
+2024-02-17 03:10:13,540 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-17 03:10:13,540 - root - INFO - Configuration name: afno_backbone_tec_256
+2024-02-17 03:10:13,541 - root - INFO - log_to_wandb False
+2024-02-17 03:10:13,541 - root - INFO - lr 0.0005
+2024-02-17 03:10:13,541 - root - INFO - batch_size 4
+2024-02-17 03:10:13,541 - root - INFO - patch_size 4
+2024-02-17 03:10:13,541 - root - INFO - img_size [128, 256]
+2024-02-17 03:10:13,541 - root - INFO - max_epochs 1500
+2024-02-17 03:10:13,541 - root - INFO - scheduler CosineAnnealingLR
+2024-02-17 03:10:13,541 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:10:13,541 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:10:13,541 - root - INFO - prediction_length 100
+2024-02-17 03:10:13,541 - root - INFO - orography False
+2024-02-17 03:10:13,541 - root - INFO - orography_path None
+2024-02-17 03:10:13,541 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256
+2024-02-17 03:10:13,541 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train
+2024-02-17 03:10:13,541 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test
+2024-02-17 03:10:13,541 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/out_of_sample
+2024-02-17 03:10:13,541 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/time_means.npy
+2024-02-17 03:10:13,541 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_means.npy
+2024-02-17 03:10:13,541 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_stds.npy
+2024-02-17 03:10:13,541 - root - INFO - loss l2
+2024-02-17 03:10:13,541 - root - INFO - num_data_workers 4
+2024-02-17 03:10:13,541 - root - INFO - dt 1
+2024-02-17 03:10:13,541 - root - INFO - n_history 0
+2024-02-17 03:10:13,541 - root - INFO - prediction_type iterative
+2024-02-17 03:10:13,541 - root - INFO - n_initial_conditions 5
+2024-02-17 03:10:13,541 - root - INFO - ics_type default
+2024-02-17 03:10:13,541 - root - INFO - save_raw_forecasts True
+2024-02-17 03:10:13,541 - root - INFO - save_channel False
+2024-02-17 03:10:13,541 - root - INFO - masked_acc False
+2024-02-17 03:10:13,541 - root - INFO - maskpath None
+2024-02-17 03:10:13,541 - root - INFO - perturb False
+2024-02-17 03:10:13,541 - root - INFO - add_grid False
+2024-02-17 03:10:13,541 - root - INFO - N_grid_channels 0
+2024-02-17 03:10:13,542 - root - INFO - gridtype sinusoidal
+2024-02-17 03:10:13,542 - root - INFO - roll False
+2024-02-17 03:10:13,542 - root - INFO - num_blocks 8
+2024-02-17 03:10:13,542 - root - INFO - nettype afno
+2024-02-17 03:10:13,542 - root - INFO - width 56
+2024-02-17 03:10:13,542 - root - INFO - modes 32
+2024-02-17 03:10:13,542 - root - INFO - target default
+2024-02-17 03:10:13,542 - root - INFO - normalization zscore
+2024-02-17 03:10:13,542 - root - INFO - log_to_screen True
+2024-02-17 03:10:13,542 - root - INFO - save_checkpoint True
+2024-02-17 03:10:13,542 - root - INFO - enable_nhwc False
+2024-02-17 03:10:13,542 - root - INFO - optimizer_type FusedAdam
+2024-02-17 03:10:13,542 - root - INFO - crop_size_x None
+2024-02-17 03:10:13,542 - root - INFO - crop_size_y None
+2024-02-17 03:10:13,542 - root - INFO - two_step_training False
+2024-02-17 03:10:13,542 - root - INFO - plot_animations False
+2024-02-17 03:10:13,542 - root - INFO - add_noise False
+2024-02-17 03:10:13,542 - root - INFO - noise_std 0
+2024-02-17 03:10:13,542 - root - INFO - epsilon_factor 0
+2024-02-17 03:10:13,542 - root - INFO - world_size 1
+2024-02-17 03:10:13,542 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1
+2024-02-17 03:10:13,542 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/ckpt.tar
+2024-02-17 03:10:13,542 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/best_ckpt.tar
+2024-02-17 03:10:13,542 - root - INFO - resuming False
+2024-02-17 03:10:13,542 - root - INFO - local_rank 0
+2024-02-17 03:10:13,542 - root - INFO - enable_amp True
+2024-02-17 03:10:13,542 - root - INFO - name afno_backbone_tec_256_1
+2024-02-17 03:10:13,542 - root - INFO - group era5_precipafno_backbone_tec_256
+2024-02-17 03:10:13,542 - root - INFO - project ERA5_precip
+2024-02-17 03:10:13,542 - root - INFO - entity flowgan
+2024-02-17 03:10:13,542 - root - INFO - ---------------------------------------------------
+2024-02-17 03:10:13,547 - root - INFO - rank 0, begin data loader init
+2024-02-17 03:10:13,547 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train/2005.h5
+2024-02-17 03:10:13,548 - root - INFO - Number of samples per year: 336
+2024-02-17 03:10:13,548 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-17 03:10:13,548 - root - INFO - Delta t: 6 hours
+2024-02-17 03:10:13,548 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:10:13,548 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test/2008.h5
+2024-02-17 03:10:13,548 - root - INFO - Number of samples per year: 337
+2024-02-17 03:10:13,548 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-17 03:10:13,548 - root - INFO - Delta t: 6 hours
+2024-02-17 03:10:13,548 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:10:13,549 - root - INFO - rank 0, data loader initialized
+2024-02-17 03:10:14,163 - root - INFO - Number of trainable model parameters: 62176512
+2024-02-17 03:10:14,163 - root - INFO - Starting Training Loop...
+2024-02-17 03:11:03,442 - root - INFO - Time taken for epoch 1 is 49.27816200256348 sec
+2024-02-17 03:11:03,442 - root - INFO - Train loss: 0.2848103940486908. Valid loss: 0.4537412226200104
+2024-02-17 03:29:15,347 - root - INFO - --------------- Versions ---------------
+2024-02-17 03:29:15,351 - root - INFO - git branch: b'* master'
+2024-02-17 03:29:15,354 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-17 03:29:15,354 - root - INFO - Torch: 2.1.2+cu118
+2024-02-17 03:29:15,355 - root - INFO - ----------------------------------------
+2024-02-17 03:29:15,355 - root - INFO - ------------------ Configuration ------------------
+2024-02-17 03:29:15,355 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-17 03:29:15,355 - root - INFO - Configuration name: afno_backbone_tec_256
+2024-02-17 03:29:15,355 - root - INFO - log_to_wandb False
+2024-02-17 03:29:15,355 - root - INFO - lr 0.0005
+2024-02-17 03:29:15,355 - root - INFO - batch_size 4
+2024-02-17 03:29:15,355 - root - INFO - patch_size 4
+2024-02-17 03:29:15,355 - root - INFO - img_size [128, 256]
+2024-02-17 03:29:15,355 - root - INFO - max_epochs 1500
+2024-02-17 03:29:15,355 - root - INFO - scheduler CosineAnnealingLR
+2024-02-17 03:29:15,355 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:29:15,355 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 03:29:15,355 - root - INFO - prediction_length 100
+2024-02-17 03:29:15,355 - root - INFO - orography False
+2024-02-17 03:29:15,355 - root - INFO - orography_path None
+2024-02-17 03:29:15,355 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256
+2024-02-17 03:29:15,355 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train
+2024-02-17 03:29:15,355 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test
+2024-02-17 03:29:15,355 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/out_of_sample
+2024-02-17 03:29:15,355 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/time_means.npy
+2024-02-17 03:29:15,355 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_means.npy
+2024-02-17 03:29:15,355 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_stds.npy
+2024-02-17 03:29:15,355 - root - INFO - loss l2
+2024-02-17 03:29:15,355 - root - INFO - num_data_workers 4
+2024-02-17 03:29:15,355 - root - INFO - dt 1
+2024-02-17 03:29:15,355 - root - INFO - n_history 0
+2024-02-17 03:29:15,355 - root - INFO - prediction_type iterative
+2024-02-17 03:29:15,355 - root - INFO - n_initial_conditions 5
+2024-02-17 03:29:15,355 - root - INFO - ics_type default
+2024-02-17 03:29:15,355 - root - INFO - save_raw_forecasts True
+2024-02-17 03:29:15,355 - root - INFO - save_channel False
+2024-02-17 03:29:15,355 - root - INFO - masked_acc False
+2024-02-17 03:29:15,356 - root - INFO - maskpath None
+2024-02-17 03:29:15,356 - root - INFO - perturb False
+2024-02-17 03:29:15,356 - root - INFO - add_grid False
+2024-02-17 03:29:15,356 - root - INFO - N_grid_channels 0
+2024-02-17 03:29:15,356 - root - INFO - gridtype sinusoidal
+2024-02-17 03:29:15,356 - root - INFO - roll False
+2024-02-17 03:29:15,356 - root - INFO - num_blocks 8
+2024-02-17 03:29:15,356 - root - INFO - nettype afno
+2024-02-17 03:29:15,356 - root - INFO - width 56
+2024-02-17 03:29:15,356 - root - INFO - modes 32
+2024-02-17 03:29:15,356 - root - INFO - target default
+2024-02-17 03:29:15,356 - root - INFO - normalization zscore
+2024-02-17 03:29:15,356 - root - INFO - log_to_screen True
+2024-02-17 03:29:15,356 - root - INFO - save_checkpoint True
+2024-02-17 03:29:15,356 - root - INFO - enable_nhwc False
+2024-02-17 03:29:15,356 - root - INFO - optimizer_type FusedAdam
+2024-02-17 03:29:15,356 - root - INFO - crop_size_x None
+2024-02-17 03:29:15,356 - root - INFO - crop_size_y None
+2024-02-17 03:29:15,356 - root - INFO - two_step_training False
+2024-02-17 03:29:15,356 - root - INFO - plot_animations False
+2024-02-17 03:29:15,356 - root - INFO - add_noise False
+2024-02-17 03:29:15,356 - root - INFO - noise_std 0
+2024-02-17 03:29:15,356 - root - INFO - epsilon_factor 0
+2024-02-17 03:29:15,356 - root - INFO - world_size 1
+2024-02-17 03:29:15,356 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1
+2024-02-17 03:29:15,356 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/ckpt.tar
+2024-02-17 03:29:15,356 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/best_ckpt.tar
+2024-02-17 03:29:15,356 - root - INFO - resuming True
+2024-02-17 03:29:15,356 - root - INFO - local_rank 0
+2024-02-17 03:29:15,356 - root - INFO - enable_amp True
+2024-02-17 03:29:15,356 - root - INFO - name afno_backbone_tec_256_1
+2024-02-17 03:29:15,356 - root - INFO - group era5_precipafno_backbone_tec_256
+2024-02-17 03:29:15,356 - root - INFO - project ERA5_precip
+2024-02-17 03:29:15,356 - root - INFO - entity flowgan
+2024-02-17 03:29:15,357 - root - INFO - ---------------------------------------------------
+2024-02-17 03:29:15,361 - root - INFO - rank 0, begin data loader init
+2024-02-17 03:29:15,362 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train/2005.h5
+2024-02-17 03:29:15,362 - root - INFO - Number of samples per year: 336
+2024-02-17 03:29:15,362 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-17 03:29:15,362 - root - INFO - Delta t: 6 hours
+2024-02-17 03:29:15,362 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:29:15,363 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test/2008.h5
+2024-02-17 03:29:15,363 - root - INFO - Number of samples per year: 337
+2024-02-17 03:29:15,363 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-17 03:29:15,363 - root - INFO - Delta t: 6 hours
+2024-02-17 03:29:15,363 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 03:29:15,363 - root - INFO - rank 0, data loader initialized
+2024-02-17 03:29:16,024 - root - INFO - Loading checkpoint /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/1/training_checkpoints/ckpt.tar
+2024-02-17 03:29:16,478 - root - INFO - Number of trainable model parameters: 62176512
+2024-02-17 03:29:16,478 - root - INFO - Starting Training Loop...
+2024-02-17 03:30:05,953 - root - INFO - Time taken for epoch 2 is 49.474623918533325 sec
+2024-02-17 03:30:05,953 - root - INFO - Train loss: 0.24874955415725708. Valid loss: 0.4343700408935547
+2024-02-17 03:30:54,385 - root - INFO - Time taken for epoch 3 is 48.431488275527954 sec
+2024-02-17 03:30:54,385 - root - INFO - Train loss: 0.23585233092308044. Valid loss: 0.4003179669380188
+2024-02-17 03:31:43,691 - root - INFO - Time taken for epoch 4 is 49.30614233016968 sec
+2024-02-17 03:31:43,692 - root - INFO - Train loss: 0.2335403561592102. Valid loss: 0.39600667357444763
+2024-02-17 11:32:32,026 - root - INFO - Time taken for epoch 5 is 28848.333813667297 sec
+2024-02-17 11:32:32,026 - root - INFO - Train loss: 0.23318904638290405. Valid loss: 0.3981606364250183
+2024-02-17 11:33:20,576 - root - INFO - Time taken for epoch 6 is 48.549290895462036 sec
+2024-02-17 11:33:20,576 - root - INFO - Train loss: 0.23325639963150024. Valid loss: 0.40165048837661743
+2024-02-17 11:34:09,303 - root - INFO - Time taken for epoch 7 is 48.726948261260986 sec
+2024-02-17 11:34:09,304 - root - INFO - Train loss: 0.23445791006088257. Valid loss: 0.4005908966064453
+2024-02-17 11:34:58,456 - root - INFO - Time taken for epoch 8 is 49.15233874320984 sec
+2024-02-17 11:34:58,456 - root - INFO - Train loss: 0.23456275463104248. Valid loss: 0.3942909836769104
+2024-02-17 11:35:46,498 - root - INFO - Time taken for epoch 9 is 48.04166030883789 sec
+2024-02-17 11:35:46,499 - root - INFO - Train loss: 0.23418012261390686. Valid loss: 0.3848598599433899
+2024-02-17 11:36:34,636 - root - INFO - Time taken for epoch 10 is 48.13717079162598 sec
+2024-02-17 11:36:34,636 - root - INFO - Train loss: 0.234377920627594. Valid loss: 0.3804236054420471
+2024-02-17 11:37:21,919 - root - INFO - Time taken for epoch 11 is 47.282652139663696 sec
+2024-02-17 11:37:21,919 - root - INFO - Train loss: 0.23395602405071259. Valid loss: 0.38158589601516724
+2024-02-17 11:38:09,801 - root - INFO - Time taken for epoch 12 is 47.881537675857544 sec
+2024-02-17 11:38:09,801 - root - INFO - Train loss: 0.233738511800766. Valid loss: 0.3755964934825897
+2024-02-17 11:38:57,617 - root - INFO - Time taken for epoch 13 is 47.81555533409119 sec
+2024-02-17 11:38:57,618 - root - INFO - Train loss: 0.23365643620491028. Valid loss: 0.37419185042381287
+2024-02-17 11:39:45,639 - root - INFO - Time taken for epoch 14 is 48.021713733673096 sec
+2024-02-17 11:39:45,640 - root - INFO - Train loss: 0.23295742273330688. Valid loss: 0.3656170666217804
+2024-02-17 11:40:33,893 - root - INFO - Time taken for epoch 15 is 48.2534122467041 sec
+2024-02-17 11:40:33,894 - root - INFO - Train loss: 0.2320317178964615. Valid loss: 0.3625851571559906
+2024-02-17 11:41:22,078 - root - INFO - Time taken for epoch 16 is 48.18402314186096 sec
+2024-02-17 11:41:22,078 - root - INFO - Train loss: 0.23309233784675598. Valid loss: 0.36135879158973694
+2024-02-17 11:42:09,378 - root - INFO - Time taken for epoch 17 is 47.29975700378418 sec
+2024-02-17 11:42:09,379 - root - INFO - Train loss: 0.23280926048755646. Valid loss: 0.3619222939014435
+2024-02-17 11:42:57,452 - root - INFO - Time taken for epoch 18 is 48.07287859916687 sec
+2024-02-17 11:42:57,452 - root - INFO - Train loss: 0.2319364696741104. Valid loss: 0.35568779706954956
+2024-02-17 11:43:47,384 - root - INFO - Time taken for epoch 19 is 49.93188452720642 sec
+2024-02-17 11:43:47,385 - root - INFO - Train loss: 0.23201100528240204. Valid loss: 0.3576340079307556
+2024-02-17 11:44:36,611 - root - INFO - Time taken for epoch 20 is 49.225913524627686 sec
+2024-02-17 11:44:36,611 - root - INFO - Train loss: 0.2303217351436615. Valid loss: 0.35359087586402893
+2024-02-17 11:45:25,933 - root - INFO - Time taken for epoch 21 is 49.322245836257935 sec
+2024-02-17 11:45:25,934 - root - INFO - Train loss: 0.23095950484275818. Valid loss: 0.34726133942604065
+2024-02-17 11:46:14,199 - root - INFO - Time taken for epoch 22 is 48.26549458503723 sec
+2024-02-17 11:46:14,200 - root - INFO - Train loss: 0.2302093207836151. Valid loss: 0.34790563583374023
+2024-02-17 11:47:02,557 - root - INFO - Time taken for epoch 23 is 48.35686230659485 sec
+2024-02-17 11:47:02,557 - root - INFO - Train loss: 0.22846023738384247. Valid loss: 0.3500206768512726
+2024-02-17 11:47:51,064 - root - INFO - Time taken for epoch 24 is 48.50664806365967 sec
+2024-02-17 11:47:51,065 - root - INFO - Train loss: 0.22752168774604797. Valid loss: 0.3510172665119171
+2024-02-17 11:48:39,751 - root - INFO - Time taken for epoch 25 is 48.68613815307617 sec
+2024-02-17 11:48:39,751 - root - INFO - Train loss: 0.22759968042373657. Valid loss: 0.34887880086898804
+2024-02-17 11:49:28,950 - root - INFO - Time taken for epoch 26 is 49.19800400733948 sec
+2024-02-17 11:49:28,950 - root - INFO - Train loss: 0.2256644070148468. Valid loss: 0.3481265902519226
+2024-02-17 11:50:18,856 - root - INFO - Time taken for epoch 27 is 49.905853271484375 sec
+2024-02-17 11:50:18,856 - root - INFO - Train loss: 0.22472591698169708. Valid loss: 0.33722084760665894

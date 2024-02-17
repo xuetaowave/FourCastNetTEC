@@ -1,0 +1,1616 @@
+2024-02-16 12:45:45,119 - root - INFO - --------------- Versions ---------------
+2024-02-16 12:45:45,123 - root - INFO - git branch: b'* master'
+2024-02-16 12:45:45,126 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-16 12:45:45,126 - root - INFO - Torch: 2.1.2+cu118
+2024-02-16 12:45:45,126 - root - INFO - ----------------------------------------
+2024-02-16 12:45:45,126 - root - INFO - ------------------ Configuration ------------------
+2024-02-16 12:45:45,126 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-16 12:45:45,126 - root - INFO - Configuration name: afno_backbone_tec_4
+2024-02-16 12:45:45,126 - root - INFO - log_to_wandb True
+2024-02-16 12:45:45,126 - root - INFO - lr 0.0005
+2024-02-16 12:45:45,126 - root - INFO - batch_size 4
+2024-02-16 12:45:45,126 - root - INFO - patch_size 4
+2024-02-16 12:45:45,126 - root - INFO - img_size [71, 73]
+2024-02-16 12:45:45,126 - root - INFO - max_epochs 1500
+2024-02-16 12:45:45,126 - root - INFO - scheduler CosineAnnealingLR
+2024-02-16 12:45:45,126 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:45:45,126 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:45:45,126 - root - INFO - prediction_length 100
+2024-02-16 12:45:45,126 - root - INFO - orography False
+2024-02-16 12:45:45,126 - root - INFO - orography_path None
+2024-02-16 12:45:45,126 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-02-16 12:45:45,126 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-02-16 12:45:45,126 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-02-16 12:45:45,126 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-02-16 12:45:45,126 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-02-16 12:45:45,126 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-02-16 12:45:45,126 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-02-16 12:45:45,126 - root - INFO - loss l2
+2024-02-16 12:45:45,126 - root - INFO - num_data_workers 4
+2024-02-16 12:45:45,126 - root - INFO - dt 1
+2024-02-16 12:45:45,126 - root - INFO - n_history 0
+2024-02-16 12:45:45,126 - root - INFO - prediction_type iterative
+2024-02-16 12:45:45,127 - root - INFO - n_initial_conditions 5
+2024-02-16 12:45:45,127 - root - INFO - ics_type default
+2024-02-16 12:45:45,127 - root - INFO - save_raw_forecasts True
+2024-02-16 12:45:45,127 - root - INFO - save_channel False
+2024-02-16 12:45:45,127 - root - INFO - masked_acc False
+2024-02-16 12:45:45,127 - root - INFO - maskpath None
+2024-02-16 12:45:45,127 - root - INFO - perturb False
+2024-02-16 12:45:45,127 - root - INFO - add_grid False
+2024-02-16 12:45:45,127 - root - INFO - N_grid_channels 0
+2024-02-16 12:45:45,127 - root - INFO - gridtype sinusoidal
+2024-02-16 12:45:45,127 - root - INFO - roll False
+2024-02-16 12:45:45,127 - root - INFO - num_blocks 8
+2024-02-16 12:45:45,127 - root - INFO - nettype afno
+2024-02-16 12:45:45,127 - root - INFO - width 56
+2024-02-16 12:45:45,127 - root - INFO - modes 32
+2024-02-16 12:45:45,127 - root - INFO - target default
+2024-02-16 12:45:45,127 - root - INFO - normalization zscore
+2024-02-16 12:45:45,127 - root - INFO - log_to_screen True
+2024-02-16 12:45:45,127 - root - INFO - save_checkpoint True
+2024-02-16 12:45:45,127 - root - INFO - enable_nhwc False
+2024-02-16 12:45:45,127 - root - INFO - optimizer_type FusedAdam
+2024-02-16 12:45:45,127 - root - INFO - crop_size_x None
+2024-02-16 12:45:45,127 - root - INFO - crop_size_y None
+2024-02-16 12:45:45,127 - root - INFO - two_step_training False
+2024-02-16 12:45:45,127 - root - INFO - plot_animations False
+2024-02-16 12:45:45,127 - root - INFO - add_noise False
+2024-02-16 12:45:45,127 - root - INFO - noise_std 0
+2024-02-16 12:45:45,127 - root - INFO - epsilon_factor 0
+2024-02-16 12:45:45,127 - root - INFO - world_size 1
+2024-02-16 12:45:45,128 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1
+2024-02-16 12:45:45,128 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/ckpt.tar
+2024-02-16 12:45:45,128 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/best_ckpt.tar
+2024-02-16 12:45:45,128 - root - INFO - resuming False
+2024-02-16 12:45:45,128 - root - INFO - local_rank 0
+2024-02-16 12:45:45,128 - root - INFO - enable_amp True
+2024-02-16 12:45:45,128 - root - INFO - name afno_backbone_tec_4_1
+2024-02-16 12:45:45,128 - root - INFO - group era5_precipafno_backbone_tec_4
+2024-02-16 12:45:45,128 - root - INFO - project ERA5_precip
+2024-02-16 12:45:45,128 - root - INFO - entity flowgan
+2024-02-16 12:45:45,128 - root - INFO - ---------------------------------------------------
+2024-02-16 12:45:48,652 - root - INFO - rank 0, begin data loader init
+2024-02-16 12:45:48,653 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train/2010.h5
+2024-02-16 12:45:48,654 - root - INFO - Number of samples per year: 2525
+2024-02-16 12:45:48,654 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train. Number of examples: 2525. Image Shape: 128 x 128 x 13
+2024-02-16 12:45:48,654 - root - INFO - Delta t: 6 hours
+2024-02-16 12:45:48,654 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:45:48,654 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test/2010.h5
+2024-02-16 12:45:48,655 - root - INFO - Number of samples per year: 509
+2024-02-16 12:45:48,655 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-02-16 12:45:48,655 - root - INFO - Delta t: 6 hours
+2024-02-16 12:45:48,655 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:45:48,655 - root - INFO - rank 0, data loader initialized
+2024-02-16 12:45:49,179 - root - INFO - Number of trainable model parameters: 61390080
+2024-02-16 12:45:49,180 - root - INFO - Starting Training Loop...
+2024-02-16 12:46:25,261 - root - INFO - Time taken for epoch 1 is 36.081544637680054 sec
+2024-02-16 12:46:25,262 - root - INFO - Train loss: 0.35276639461517334. Valid loss: 0.30817294120788574
+2024-02-16 12:49:30,601 - root - INFO - --------------- Versions ---------------
+2024-02-16 12:49:30,604 - root - INFO - git branch: b'* master'
+2024-02-16 12:49:30,607 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-16 12:49:30,607 - root - INFO - Torch: 2.1.2+cu118
+2024-02-16 12:49:30,608 - root - INFO - ----------------------------------------
+2024-02-16 12:49:30,608 - root - INFO - ------------------ Configuration ------------------
+2024-02-16 12:49:30,608 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-16 12:49:30,608 - root - INFO - Configuration name: afno_backbone_tec_4
+2024-02-16 12:49:30,608 - root - INFO - log_to_wandb True
+2024-02-16 12:49:30,608 - root - INFO - lr 0.0005
+2024-02-16 12:49:30,608 - root - INFO - batch_size 4
+2024-02-16 12:49:30,608 - root - INFO - patch_size 4
+2024-02-16 12:49:30,608 - root - INFO - img_size [71, 73]
+2024-02-16 12:49:30,608 - root - INFO - max_epochs 1500
+2024-02-16 12:49:30,608 - root - INFO - scheduler CosineAnnealingLR
+2024-02-16 12:49:30,608 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:49:30,608 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:49:30,608 - root - INFO - prediction_length 100
+2024-02-16 12:49:30,608 - root - INFO - orography False
+2024-02-16 12:49:30,608 - root - INFO - orography_path None
+2024-02-16 12:49:30,608 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-02-16 12:49:30,608 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-02-16 12:49:30,608 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-02-16 12:49:30,608 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-02-16 12:49:30,608 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-02-16 12:49:30,608 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-02-16 12:49:30,608 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-02-16 12:49:30,608 - root - INFO - loss l2
+2024-02-16 12:49:30,608 - root - INFO - num_data_workers 4
+2024-02-16 12:49:30,608 - root - INFO - dt 1
+2024-02-16 12:49:30,608 - root - INFO - n_history 0
+2024-02-16 12:49:30,608 - root - INFO - prediction_type iterative
+2024-02-16 12:49:30,608 - root - INFO - n_initial_conditions 5
+2024-02-16 12:49:30,608 - root - INFO - ics_type default
+2024-02-16 12:49:30,608 - root - INFO - save_raw_forecasts True
+2024-02-16 12:49:30,608 - root - INFO - save_channel False
+2024-02-16 12:49:30,608 - root - INFO - masked_acc False
+2024-02-16 12:49:30,608 - root - INFO - maskpath None
+2024-02-16 12:49:30,608 - root - INFO - perturb False
+2024-02-16 12:49:30,608 - root - INFO - add_grid False
+2024-02-16 12:49:30,609 - root - INFO - N_grid_channels 0
+2024-02-16 12:49:30,609 - root - INFO - gridtype sinusoidal
+2024-02-16 12:49:30,609 - root - INFO - roll False
+2024-02-16 12:49:30,609 - root - INFO - num_blocks 8
+2024-02-16 12:49:30,609 - root - INFO - nettype afno
+2024-02-16 12:49:30,609 - root - INFO - width 56
+2024-02-16 12:49:30,609 - root - INFO - modes 32
+2024-02-16 12:49:30,609 - root - INFO - target default
+2024-02-16 12:49:30,609 - root - INFO - normalization zscore
+2024-02-16 12:49:30,609 - root - INFO - log_to_screen True
+2024-02-16 12:49:30,609 - root - INFO - save_checkpoint True
+2024-02-16 12:49:30,609 - root - INFO - enable_nhwc False
+2024-02-16 12:49:30,609 - root - INFO - optimizer_type FusedAdam
+2024-02-16 12:49:30,609 - root - INFO - crop_size_x None
+2024-02-16 12:49:30,609 - root - INFO - crop_size_y None
+2024-02-16 12:49:30,609 - root - INFO - two_step_training False
+2024-02-16 12:49:30,609 - root - INFO - plot_animations False
+2024-02-16 12:49:30,609 - root - INFO - add_noise False
+2024-02-16 12:49:30,609 - root - INFO - noise_std 0
+2024-02-16 12:49:30,609 - root - INFO - epsilon_factor 0
+2024-02-16 12:49:30,609 - root - INFO - world_size 1
+2024-02-16 12:49:30,609 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1
+2024-02-16 12:49:30,609 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/ckpt.tar
+2024-02-16 12:49:30,609 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/best_ckpt.tar
+2024-02-16 12:49:30,609 - root - INFO - resuming True
+2024-02-16 12:49:30,609 - root - INFO - local_rank 0
+2024-02-16 12:49:30,609 - root - INFO - enable_amp True
+2024-02-16 12:49:30,609 - root - INFO - name afno_backbone_tec_4_1
+2024-02-16 12:49:30,609 - root - INFO - group era5_precipafno_backbone_tec_4
+2024-02-16 12:49:30,609 - root - INFO - project ERA5_precip
+2024-02-16 12:49:30,609 - root - INFO - entity flowgan
+2024-02-16 12:49:30,609 - root - INFO - ---------------------------------------------------
+2024-02-16 12:49:33,838 - root - INFO - rank 0, begin data loader init
+2024-02-16 12:49:33,839 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train/2010.h5
+2024-02-16 12:49:33,840 - root - INFO - Number of samples per year: 2525
+2024-02-16 12:49:33,840 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train. Number of examples: 2525. Image Shape: 128 x 128 x 13
+2024-02-16 12:49:33,840 - root - INFO - Delta t: 6 hours
+2024-02-16 12:49:33,840 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:49:33,840 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test/2010.h5
+2024-02-16 12:49:33,840 - root - INFO - Number of samples per year: 509
+2024-02-16 12:49:33,840 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-02-16 12:49:33,841 - root - INFO - Delta t: 6 hours
+2024-02-16 12:49:33,841 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:49:33,841 - root - INFO - rank 0, data loader initialized
+2024-02-16 12:49:34,454 - root - INFO - Loading checkpoint /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/ckpt.tar
+2024-02-16 12:49:34,843 - root - INFO - Number of trainable model parameters: 61390080
+2024-02-16 12:49:34,843 - root - INFO - Starting Training Loop...
+2024-02-16 12:50:11,360 - root - INFO - Time taken for epoch 2 is 36.51675748825073 sec
+2024-02-16 12:50:11,361 - root - INFO - Train loss: 0.30771899223327637. Valid loss: 0.31576007604599
+2024-02-16 12:50:47,211 - root - INFO - Time taken for epoch 3 is 35.85000133514404 sec
+2024-02-16 12:50:47,211 - root - INFO - Train loss: 0.2854628562927246. Valid loss: 0.30462637543678284
+2024-02-16 12:51:23,060 - root - INFO - Time taken for epoch 4 is 35.84878349304199 sec
+2024-02-16 12:51:23,061 - root - INFO - Train loss: 0.2795952260494232. Valid loss: 0.2968796193599701
+2024-02-16 12:51:57,314 - root - INFO - Time taken for epoch 5 is 34.25341010093689 sec
+2024-02-16 12:51:57,315 - root - INFO - Train loss: 0.2760019302368164. Valid loss: 0.2938288748264313
+2024-02-16 12:52:33,135 - root - INFO - Time taken for epoch 6 is 35.81960201263428 sec
+2024-02-16 12:52:33,135 - root - INFO - Train loss: 0.27146103978157043. Valid loss: 0.29145175218582153
+2024-02-16 12:53:09,484 - root - INFO - Time taken for epoch 7 is 36.34885358810425 sec
+2024-02-16 12:53:09,484 - root - INFO - Train loss: 0.26859742403030396. Valid loss: 0.28928637504577637
+2024-02-16 12:53:44,892 - root - INFO - Time taken for epoch 8 is 35.407044887542725 sec
+2024-02-16 12:53:44,892 - root - INFO - Train loss: 0.26799944043159485. Valid loss: 0.2911246418952942
+2024-02-16 12:54:19,678 - root - INFO - Time taken for epoch 9 is 34.78571105003357 sec
+2024-02-16 12:54:19,679 - root - INFO - Train loss: 0.2669878304004669. Valid loss: 0.2918601632118225
+2024-02-16 12:58:28,258 - root - INFO - --------------- Versions ---------------
+2024-02-16 12:58:28,262 - root - INFO - git branch: b'* master'
+2024-02-16 12:58:28,265 - root - INFO - git hash: b'0711ce89763124f953b655224c99f466a2f54894'
+2024-02-16 12:58:28,266 - root - INFO - Torch: 2.1.2+cu118
+2024-02-16 12:58:28,266 - root - INFO - ----------------------------------------
+2024-02-16 12:58:28,266 - root - INFO - ------------------ Configuration ------------------
+2024-02-16 12:58:28,266 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-16 12:58:28,266 - root - INFO - Configuration name: afno_backbone_tec_4
+2024-02-16 12:58:28,266 - root - INFO - log_to_wandb True
+2024-02-16 12:58:28,266 - root - INFO - lr 0.0005
+2024-02-16 12:58:28,266 - root - INFO - batch_size 4
+2024-02-16 12:58:28,266 - root - INFO - patch_size 4
+2024-02-16 12:58:28,266 - root - INFO - img_size [71, 73]
+2024-02-16 12:58:28,266 - root - INFO - max_epochs 1500
+2024-02-16 12:58:28,266 - root - INFO - scheduler CosineAnnealingLR
+2024-02-16 12:58:28,266 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:58:28,266 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-16 12:58:28,266 - root - INFO - prediction_length 100
+2024-02-16 12:58:28,266 - root - INFO - orography False
+2024-02-16 12:58:28,266 - root - INFO - orography_path None
+2024-02-16 12:58:28,266 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj
+2024-02-16 12:58:28,266 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train
+2024-02-16 12:58:28,266 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test
+2024-02-16 12:58:28,266 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample
+2024-02-16 12:58:28,266 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy
+2024-02-16 12:58:28,266 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy
+2024-02-16 12:58:28,266 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy
+2024-02-16 12:58:28,266 - root - INFO - loss l2
+2024-02-16 12:58:28,266 - root - INFO - num_data_workers 4
+2024-02-16 12:58:28,266 - root - INFO - dt 1
+2024-02-16 12:58:28,266 - root - INFO - n_history 0
+2024-02-16 12:58:28,266 - root - INFO - prediction_type iterative
+2024-02-16 12:58:28,266 - root - INFO - n_initial_conditions 5
+2024-02-16 12:58:28,266 - root - INFO - ics_type default
+2024-02-16 12:58:28,266 - root - INFO - save_raw_forecasts True
+2024-02-16 12:58:28,266 - root - INFO - save_channel False
+2024-02-16 12:58:28,266 - root - INFO - masked_acc False
+2024-02-16 12:58:28,267 - root - INFO - maskpath None
+2024-02-16 12:58:28,267 - root - INFO - perturb False
+2024-02-16 12:58:28,267 - root - INFO - add_grid False
+2024-02-16 12:58:28,267 - root - INFO - N_grid_channels 0
+2024-02-16 12:58:28,267 - root - INFO - gridtype sinusoidal
+2024-02-16 12:58:28,267 - root - INFO - roll False
+2024-02-16 12:58:28,267 - root - INFO - num_blocks 8
+2024-02-16 12:58:28,267 - root - INFO - nettype afno
+2024-02-16 12:58:28,267 - root - INFO - width 56
+2024-02-16 12:58:28,267 - root - INFO - modes 32
+2024-02-16 12:58:28,267 - root - INFO - target default
+2024-02-16 12:58:28,267 - root - INFO - normalization zscore
+2024-02-16 12:58:28,267 - root - INFO - log_to_screen True
+2024-02-16 12:58:28,267 - root - INFO - save_checkpoint True
+2024-02-16 12:58:28,267 - root - INFO - enable_nhwc False
+2024-02-16 12:58:28,267 - root - INFO - optimizer_type FusedAdam
+2024-02-16 12:58:28,267 - root - INFO - crop_size_x None
+2024-02-16 12:58:28,267 - root - INFO - crop_size_y None
+2024-02-16 12:58:28,267 - root - INFO - two_step_training False
+2024-02-16 12:58:28,267 - root - INFO - plot_animations False
+2024-02-16 12:58:28,267 - root - INFO - add_noise False
+2024-02-16 12:58:28,267 - root - INFO - noise_std 0
+2024-02-16 12:58:28,267 - root - INFO - epsilon_factor 0
+2024-02-16 12:58:28,267 - root - INFO - world_size 1
+2024-02-16 12:58:28,267 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1
+2024-02-16 12:58:28,267 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/ckpt.tar
+2024-02-16 12:58:28,267 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/best_ckpt.tar
+2024-02-16 12:58:28,267 - root - INFO - resuming True
+2024-02-16 12:58:28,267 - root - INFO - local_rank 0
+2024-02-16 12:58:28,267 - root - INFO - enable_amp True
+2024-02-16 12:58:28,267 - root - INFO - name afno_backbone_tec_4_1
+2024-02-16 12:58:28,267 - root - INFO - group era5_precipafno_backbone_tec_4
+2024-02-16 12:58:28,267 - root - INFO - project ERA5_precip
+2024-02-16 12:58:28,267 - root - INFO - entity flowgan
+2024-02-16 12:58:28,267 - root - INFO - ---------------------------------------------------
+2024-02-16 12:58:32,250 - root - INFO - rank 0, begin data loader init
+2024-02-16 12:58:32,251 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train/2010.h5
+2024-02-16 12:58:32,253 - root - INFO - Number of samples per year: 2525
+2024-02-16 12:58:32,253 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train. Number of examples: 2525. Image Shape: 128 x 128 x 13
+2024-02-16 12:58:32,253 - root - INFO - Delta t: 6 hours
+2024-02-16 12:58:32,253 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:58:32,253 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test/2010.h5
+2024-02-16 12:58:32,253 - root - INFO - Number of samples per year: 509
+2024-02-16 12:58:32,253 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test. Number of examples: 509. Image Shape: 128 x 128 x 13
+2024-02-16 12:58:32,253 - root - INFO - Delta t: 6 hours
+2024-02-16 12:58:32,254 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-16 12:58:32,254 - root - INFO - rank 0, data loader initialized
+2024-02-16 12:58:32,833 - root - INFO - Loading checkpoint /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj/afno_backbone_tec_4/1/training_checkpoints/ckpt.tar
+2024-02-16 12:58:33,246 - root - INFO - Number of trainable model parameters: 61390080
+2024-02-16 12:58:33,246 - root - INFO - Starting Training Loop...
+2024-02-16 12:59:08,710 - root - INFO - Time taken for epoch 10 is 35.46366477012634 sec
+2024-02-16 12:59:08,710 - root - INFO - Train loss: 0.26287841796875. Valid loss: 0.2932095527648926
+2024-02-16 12:59:42,546 - root - INFO - Time taken for epoch 11 is 33.83524250984192 sec
+2024-02-16 12:59:42,546 - root - INFO - Train loss: 0.25975891947746277. Valid loss: 0.29326850175857544
+2024-02-16 13:00:17,254 - root - INFO - Time taken for epoch 12 is 34.70743012428284 sec
+2024-02-16 13:00:17,254 - root - INFO - Train loss: 0.2569570541381836. Valid loss: 0.29206913709640503
+2024-02-16 13:00:50,370 - root - INFO - Time taken for epoch 13 is 33.11571025848389 sec
+2024-02-16 13:00:50,371 - root - INFO - Train loss: 0.2541581392288208. Valid loss: 0.2951366901397705
+2024-02-16 13:01:22,791 - root - INFO - Time taken for epoch 14 is 32.419891357421875 sec
+2024-02-16 13:01:22,791 - root - INFO - Train loss: 0.2533172070980072. Valid loss: 0.2977624237537384
+2024-02-16 13:01:55,485 - root - INFO - Time taken for epoch 15 is 32.69342041015625 sec
+2024-02-16 13:01:55,486 - root - INFO - Train loss: 0.25206291675567627. Valid loss: 0.3027649521827698
+2024-02-16 13:02:28,147 - root - INFO - Time taken for epoch 16 is 32.660805463790894 sec
+2024-02-16 13:02:28,147 - root - INFO - Train loss: 0.24881243705749512. Valid loss: 0.30325207114219666
+2024-02-16 13:03:00,722 - root - INFO - Time taken for epoch 17 is 32.57463717460632 sec
+2024-02-16 13:03:00,722 - root - INFO - Train loss: 0.24581845104694366. Valid loss: 0.30059126019477844
+2024-02-16 13:03:33,621 - root - INFO - Time taken for epoch 18 is 32.89815711975098 sec
+2024-02-16 13:03:33,621 - root - INFO - Train loss: 0.24316419661045074. Valid loss: 0.29977452754974365
+2024-02-16 13:04:06,132 - root - INFO - Time taken for epoch 19 is 32.51081037521362 sec
+2024-02-16 13:04:06,133 - root - INFO - Train loss: 0.2435353398323059. Valid loss: 0.29870760440826416
+2024-02-16 13:04:38,823 - root - INFO - Time taken for epoch 20 is 32.690088987350464 sec
+2024-02-16 13:04:38,824 - root - INFO - Train loss: 0.24097268283367157. Valid loss: 0.29614564776420593
+2024-02-16 13:05:11,301 - root - INFO - Time taken for epoch 21 is 32.47734570503235 sec
+2024-02-16 13:05:11,302 - root - INFO - Train loss: 0.2385350912809372. Valid loss: 0.29458582401275635
+2024-02-16 13:05:44,356 - root - INFO - Time taken for epoch 22 is 33.0539813041687 sec
+2024-02-16 13:05:44,356 - root - INFO - Train loss: 0.23504716157913208. Valid loss: 0.29097145795822144
+2024-02-16 13:06:17,390 - root - INFO - Time taken for epoch 23 is 33.03356695175171 sec
+2024-02-16 13:06:17,391 - root - INFO - Train loss: 0.23615948855876923. Valid loss: 0.2850414514541626
+2024-02-16 13:06:50,628 - root - INFO - Time taken for epoch 24 is 33.23667001724243 sec
+2024-02-16 13:06:50,628 - root - INFO - Train loss: 0.2332535982131958. Valid loss: 0.2850402593612671
+2024-02-16 13:07:24,204 - root - INFO - Time taken for epoch 25 is 33.575878858566284 sec
+2024-02-16 13:07:24,205 - root - INFO - Train loss: 0.2331363558769226. Valid loss: 0.28166645765304565
+2024-02-16 13:07:58,301 - root - INFO - Time taken for epoch 26 is 34.096492767333984 sec
+2024-02-16 13:07:58,302 - root - INFO - Train loss: 0.2291979193687439. Valid loss: 0.2743692994117737
+2024-02-16 13:08:31,966 - root - INFO - Time taken for epoch 27 is 33.663795709609985 sec
+2024-02-16 13:08:31,967 - root - INFO - Train loss: 0.22236022353172302. Valid loss: 0.27045536041259766
+2024-02-16 13:09:05,418 - root - INFO - Time taken for epoch 28 is 33.45153284072876 sec
+2024-02-16 13:09:05,419 - root - INFO - Train loss: 0.21602019667625427. Valid loss: 0.26407334208488464
+2024-02-16 13:09:38,636 - root - INFO - Time taken for epoch 29 is 33.2173547744751 sec
+2024-02-16 13:09:38,637 - root - INFO - Train loss: 0.2092514932155609. Valid loss: 0.25949662923812866
+2024-02-16 13:10:11,887 - root - INFO - Time taken for epoch 30 is 33.24943280220032 sec
+2024-02-16 13:10:11,887 - root - INFO - Train loss: 0.20553074777126312. Valid loss: 0.25300928950309753
+2024-02-16 13:10:44,794 - root - INFO - Time taken for epoch 31 is 32.90678524971008 sec
+2024-02-16 13:10:44,795 - root - INFO - Train loss: 0.20073755085468292. Valid loss: 0.2520616054534912
+2024-02-16 13:11:18,071 - root - INFO - Time taken for epoch 32 is 33.27641224861145 sec
+2024-02-16 13:11:18,072 - root - INFO - Train loss: 0.19687606394290924. Valid loss: 0.2457284927368164
+2024-02-16 13:11:51,221 - root - INFO - Time taken for epoch 33 is 33.14868187904358 sec
+2024-02-16 13:11:51,221 - root - INFO - Train loss: 0.19630123674869537. Valid loss: 0.24497728049755096
+2024-02-16 13:12:24,147 - root - INFO - Time taken for epoch 34 is 32.92595314979553 sec
+2024-02-16 13:12:24,148 - root - INFO - Train loss: 0.19260719418525696. Valid loss: 0.24963071942329407
+2024-02-16 13:12:57,321 - root - INFO - Time taken for epoch 35 is 33.172484159469604 sec
+2024-02-16 13:12:57,321 - root - INFO - Train loss: 0.19174079596996307. Valid loss: 0.24456024169921875
+2024-02-16 13:13:30,392 - root - INFO - Time taken for epoch 36 is 33.070223569869995 sec
+2024-02-16 13:13:30,392 - root - INFO - Train loss: 0.19351163506507874. Valid loss: 0.24471426010131836
+2024-02-16 13:14:03,905 - root - INFO - Time taken for epoch 37 is 33.51246762275696 sec
+2024-02-16 13:14:03,906 - root - INFO - Train loss: 0.19866162538528442. Valid loss: 0.24169619381427765
+2024-02-16 13:14:37,597 - root - INFO - Time taken for epoch 38 is 33.69103932380676 sec
+2024-02-16 13:14:37,597 - root - INFO - Train loss: 0.18952876329421997. Valid loss: 0.2545892894268036
+2024-02-16 13:15:10,805 - root - INFO - Time taken for epoch 39 is 33.20764660835266 sec
+2024-02-16 13:15:10,806 - root - INFO - Train loss: 0.19085589051246643. Valid loss: 0.2538206875324249
+2024-02-16 13:15:44,464 - root - INFO - Time taken for epoch 40 is 33.658013105392456 sec
+2024-02-16 13:15:44,465 - root - INFO - Train loss: 0.1939454972743988. Valid loss: 0.24317094683647156
+2024-02-16 13:16:18,580 - root - INFO - Time taken for epoch 41 is 34.11512565612793 sec
+2024-02-16 13:16:18,581 - root - INFO - Train loss: 0.1902245581150055. Valid loss: 0.23995597660541534
+2024-02-16 13:16:52,593 - root - INFO - Time taken for epoch 42 is 34.01196813583374 sec
+2024-02-16 13:16:52,593 - root - INFO - Train loss: 0.18122172355651855. Valid loss: 0.24721041321754456
+2024-02-16 13:17:25,877 - root - INFO - Time taken for epoch 43 is 33.28376507759094 sec
+2024-02-16 13:17:25,878 - root - INFO - Train loss: 0.1967325359582901. Valid loss: 0.2439943253993988
+2024-02-16 13:17:58,776 - root - INFO - Time taken for epoch 44 is 32.89765429496765 sec
+2024-02-16 13:17:58,776 - root - INFO - Train loss: 0.18674366176128387. Valid loss: 0.24531355500221252
+2024-02-16 13:18:31,835 - root - INFO - Time taken for epoch 45 is 33.05843377113342 sec
+2024-02-16 13:18:31,836 - root - INFO - Train loss: 0.1773757040500641. Valid loss: 0.24545487761497498
+2024-02-16 13:19:04,881 - root - INFO - Time taken for epoch 46 is 33.044676065444946 sec
+2024-02-16 13:19:04,881 - root - INFO - Train loss: 0.17917145788669586. Valid loss: 0.24509218335151672
+2024-02-16 13:19:37,518 - root - INFO - Time taken for epoch 47 is 32.63718271255493 sec
+2024-02-16 13:19:37,519 - root - INFO - Train loss: 0.18941614031791687. Valid loss: 0.24313144385814667
+2024-02-16 13:20:10,416 - root - INFO - Time taken for epoch 48 is 32.89692187309265 sec
+2024-02-16 13:20:10,417 - root - INFO - Train loss: 0.18553760647773743. Valid loss: 0.2476010024547577
+2024-02-16 13:20:43,664 - root - INFO - Time taken for epoch 49 is 33.246970891952515 sec
+2024-02-16 13:20:43,665 - root - INFO - Train loss: 0.18628668785095215. Valid loss: 0.25091129541397095
+2024-02-16 13:21:17,688 - root - INFO - Time taken for epoch 50 is 34.0228374004364 sec
+2024-02-16 13:21:17,688 - root - INFO - Train loss: 0.18616265058517456. Valid loss: 0.2628834843635559
+2024-02-16 13:21:51,283 - root - INFO - Time taken for epoch 51 is 33.59399175643921 sec
+2024-02-16 13:21:51,283 - root - INFO - Train loss: 0.16412372887134552. Valid loss: 0.2491346150636673
+2024-02-16 13:22:25,533 - root - INFO - Time taken for epoch 52 is 34.249995708465576 sec
+2024-02-16 13:22:25,534 - root - INFO - Train loss: 0.1567085236310959. Valid loss: 0.24710746109485626
+2024-02-16 13:22:58,749 - root - INFO - Time taken for epoch 53 is 33.21481490135193 sec
+2024-02-16 13:22:58,750 - root - INFO - Train loss: 0.16731466352939606. Valid loss: 0.24876217544078827
+2024-02-16 13:23:32,116 - root - INFO - Time taken for epoch 54 is 33.36592626571655 sec
+2024-02-16 13:23:32,116 - root - INFO - Train loss: 0.1655074954032898. Valid loss: 0.25515538454055786
+2024-02-16 13:24:05,081 - root - INFO - Time taken for epoch 55 is 32.96464490890503 sec
+2024-02-16 13:24:05,082 - root - INFO - Train loss: 0.16248738765716553. Valid loss: 0.25269967317581177
+2024-02-16 13:24:37,817 - root - INFO - Time taken for epoch 56 is 32.73460149765015 sec
+2024-02-16 13:24:37,817 - root - INFO - Train loss: 0.16496717929840088. Valid loss: 0.25264137983322144
+2024-02-16 13:25:11,011 - root - INFO - Time taken for epoch 57 is 33.19380235671997 sec
+2024-02-16 13:25:11,012 - root - INFO - Train loss: 0.15920710563659668. Valid loss: 0.24813425540924072
+2024-02-16 13:25:44,160 - root - INFO - Time taken for epoch 58 is 33.147825479507446 sec
+2024-02-16 13:25:44,160 - root - INFO - Train loss: 0.15491294860839844. Valid loss: 0.2523227334022522
+2024-02-16 13:26:16,986 - root - INFO - Time taken for epoch 59 is 32.8258798122406 sec
+2024-02-16 13:26:16,987 - root - INFO - Train loss: 0.15746499598026276. Valid loss: 0.25172924995422363
+2024-02-16 13:26:49,944 - root - INFO - Time taken for epoch 60 is 32.95650935173035 sec
+2024-02-16 13:26:49,944 - root - INFO - Train loss: 0.16493836045265198. Valid loss: 0.25970232486724854
+2024-02-16 13:27:22,895 - root - INFO - Time taken for epoch 61 is 32.95082497596741 sec
+2024-02-16 13:27:22,896 - root - INFO - Train loss: 0.16484156250953674. Valid loss: 0.2510700821876526
+2024-02-16 13:27:56,369 - root - INFO - Time taken for epoch 62 is 33.473246574401855 sec
+2024-02-16 13:27:56,370 - root - INFO - Train loss: 0.15574344992637634. Valid loss: 0.26213210821151733
+2024-02-16 13:28:29,818 - root - INFO - Time taken for epoch 63 is 33.44758415222168 sec
+2024-02-16 13:28:29,818 - root - INFO - Train loss: 0.1467454731464386. Valid loss: 0.2597745358943939
+2024-02-16 13:29:02,546 - root - INFO - Time taken for epoch 64 is 32.72737169265747 sec
+2024-02-16 13:29:02,546 - root - INFO - Train loss: 0.14285308122634888. Valid loss: 0.2722806930541992
+2024-02-16 13:29:35,529 - root - INFO - Time taken for epoch 65 is 32.982107639312744 sec
+2024-02-16 13:29:35,529 - root - INFO - Train loss: 0.14391961693763733. Valid loss: 0.2622826099395752
+2024-02-16 13:30:08,212 - root - INFO - Time taken for epoch 66 is 32.68266677856445 sec
+2024-02-16 13:30:08,213 - root - INFO - Train loss: 0.156001478433609. Valid loss: 0.26536935567855835
+2024-02-16 13:30:41,001 - root - INFO - Time taken for epoch 67 is 32.787612199783325 sec
+2024-02-16 13:30:41,001 - root - INFO - Train loss: 0.1402442455291748. Valid loss: 0.2719675600528717
+2024-02-16 13:31:14,056 - root - INFO - Time taken for epoch 68 is 33.054197788238525 sec
+2024-02-16 13:31:14,056 - root - INFO - Train loss: 0.14071372151374817. Valid loss: 0.25935500860214233
+2024-02-16 13:31:46,759 - root - INFO - Time taken for epoch 69 is 32.702779054641724 sec
+2024-02-16 13:31:46,760 - root - INFO - Train loss: 0.14586827158927917. Valid loss: 0.26234856247901917
+2024-02-16 13:32:19,674 - root - INFO - Time taken for epoch 70 is 32.91401386260986 sec
+2024-02-16 13:32:19,674 - root - INFO - Train loss: 0.13808673620224. Valid loss: 0.26559239625930786
+2024-02-16 13:32:53,905 - root - INFO - Time taken for epoch 71 is 34.23027849197388 sec
+2024-02-16 13:32:53,905 - root - INFO - Train loss: 0.14121265709400177. Valid loss: 0.2456507682800293
+2024-02-16 13:33:28,079 - root - INFO - Time taken for epoch 72 is 34.17360281944275 sec
+2024-02-16 13:33:28,080 - root - INFO - Train loss: 0.14061303436756134. Valid loss: 0.2527877688407898
+2024-02-16 13:34:01,005 - root - INFO - Time taken for epoch 73 is 32.92483472824097 sec
+2024-02-16 13:34:01,005 - root - INFO - Train loss: 0.12435437738895416. Valid loss: 0.2535766065120697
+2024-02-16 13:34:33,883 - root - INFO - Time taken for epoch 74 is 32.877296924591064 sec
+2024-02-16 13:34:33,883 - root - INFO - Train loss: 0.12848469614982605. Valid loss: 0.25590404868125916
+2024-02-16 13:35:07,224 - root - INFO - Time taken for epoch 75 is 33.3407084941864 sec
+2024-02-16 13:35:07,225 - root - INFO - Train loss: 0.12826360762119293. Valid loss: 0.25300559401512146
+2024-02-16 13:35:40,271 - root - INFO - Time taken for epoch 76 is 33.04616594314575 sec
+2024-02-16 13:35:40,272 - root - INFO - Train loss: 0.13641946017742157. Valid loss: 0.25434866547584534
+2024-02-16 13:36:13,315 - root - INFO - Time taken for epoch 77 is 33.043400287628174 sec
+2024-02-16 13:36:13,316 - root - INFO - Train loss: 0.12467636168003082. Valid loss: 0.25870245695114136
+2024-02-16 13:36:46,279 - root - INFO - Time taken for epoch 78 is 32.96266579627991 sec
+2024-02-16 13:36:46,280 - root - INFO - Train loss: 0.12366728484630585. Valid loss: 0.26224562525749207
+2024-02-16 13:37:19,127 - root - INFO - Time taken for epoch 79 is 32.846524715423584 sec
+2024-02-16 13:37:19,127 - root - INFO - Train loss: 0.12949015200138092. Valid loss: 0.2601798176765442
+2024-02-16 13:37:51,688 - root - INFO - Time taken for epoch 80 is 32.56090068817139 sec
+2024-02-16 13:37:51,689 - root - INFO - Train loss: 0.13001510500907898. Valid loss: 0.26934948563575745
+2024-02-16 13:38:24,430 - root - INFO - Time taken for epoch 81 is 32.74043655395508 sec
+2024-02-16 13:38:24,430 - root - INFO - Train loss: 0.11689344048500061. Valid loss: 0.25778159499168396
+2024-02-16 13:38:57,378 - root - INFO - Time taken for epoch 82 is 32.94751596450806 sec
+2024-02-16 13:38:57,379 - root - INFO - Train loss: 0.12216825038194656. Valid loss: 0.2674961984157562
+2024-02-16 13:39:29,987 - root - INFO - Time taken for epoch 83 is 32.60831880569458 sec
+2024-02-16 13:39:29,988 - root - INFO - Train loss: 0.11960771679878235. Valid loss: 0.2591548562049866
+2024-02-16 13:40:03,047 - root - INFO - Time taken for epoch 84 is 33.05850100517273 sec
+2024-02-16 13:40:03,047 - root - INFO - Train loss: 0.11669978499412537. Valid loss: 0.26499810814857483
+2024-02-16 13:40:36,097 - root - INFO - Time taken for epoch 85 is 33.04973220825195 sec
+2024-02-16 13:40:36,098 - root - INFO - Train loss: 0.10844893008470535. Valid loss: 0.2635725140571594
+2024-02-16 13:41:09,200 - root - INFO - Time taken for epoch 86 is 33.10200119018555 sec
+2024-02-16 13:41:09,200 - root - INFO - Train loss: 0.10993915796279907. Valid loss: 0.25787895917892456
+2024-02-16 13:41:42,574 - root - INFO - Time taken for epoch 87 is 33.37358069419861 sec
+2024-02-16 13:41:42,575 - root - INFO - Train loss: 0.1100090816617012. Valid loss: 0.25068148970603943
+2024-02-16 13:42:15,261 - root - INFO - Time taken for epoch 88 is 32.68581223487854 sec
+2024-02-16 13:42:15,270 - root - INFO - Train loss: 0.10618499666452408. Valid loss: 0.25350794196128845
+2024-02-16 13:42:48,178 - root - INFO - Time taken for epoch 89 is 32.907710552215576 sec
+2024-02-16 13:42:48,178 - root - INFO - Train loss: 0.10901398956775665. Valid loss: 0.2546592354774475
+2024-02-16 13:43:21,254 - root - INFO - Time taken for epoch 90 is 33.075214862823486 sec
+2024-02-16 13:43:21,254 - root - INFO - Train loss: 0.11218498647212982. Valid loss: 0.24112829566001892
+2024-02-16 13:43:54,274 - root - INFO - Time taken for epoch 91 is 33.01965045928955 sec
+2024-02-16 13:43:54,275 - root - INFO - Train loss: 0.10282546281814575. Valid loss: 0.24681201577186584
+2024-02-16 13:44:27,358 - root - INFO - Time taken for epoch 92 is 33.08321785926819 sec
+2024-02-16 13:44:27,359 - root - INFO - Train loss: 0.11187209188938141. Valid loss: 0.26500970125198364
+2024-02-16 13:45:00,228 - root - INFO - Time taken for epoch 93 is 32.869377851486206 sec
+2024-02-16 13:45:00,229 - root - INFO - Train loss: 0.11214838922023773. Valid loss: 0.24821940064430237
+2024-02-16 13:45:33,017 - root - INFO - Time taken for epoch 94 is 32.78790354728699 sec
+2024-02-16 13:45:33,018 - root - INFO - Train loss: 0.1044691950082779. Valid loss: 0.2537370026111603
+2024-02-16 13:46:06,230 - root - INFO - Time taken for epoch 95 is 33.21254253387451 sec
+2024-02-16 13:46:06,231 - root - INFO - Train loss: 0.10386689752340317. Valid loss: 0.250754177570343
+2024-02-16 13:46:38,931 - root - INFO - Time taken for epoch 96 is 32.69975185394287 sec
+2024-02-16 13:46:38,931 - root - INFO - Train loss: 0.1016765683889389. Valid loss: 0.24255600571632385
+2024-02-16 13:47:11,924 - root - INFO - Time taken for epoch 97 is 32.99273943901062 sec
+2024-02-16 13:47:11,925 - root - INFO - Train loss: 0.1100633442401886. Valid loss: 0.2455403059720993
+2024-02-16 13:47:44,893 - root - INFO - Time taken for epoch 98 is 32.967899560928345 sec
+2024-02-16 13:47:44,894 - root - INFO - Train loss: 0.10329657793045044. Valid loss: 0.24306993186473846
+2024-02-16 13:48:17,594 - root - INFO - Time taken for epoch 99 is 32.6996123790741 sec
+2024-02-16 13:48:17,594 - root - INFO - Train loss: 0.09688269346952438. Valid loss: 0.24202167987823486
+2024-02-16 13:48:50,537 - root - INFO - Time taken for epoch 100 is 32.94285535812378 sec
+2024-02-16 13:48:50,538 - root - INFO - Train loss: 0.09580706804990768. Valid loss: 0.24353162944316864
+2024-02-16 13:49:23,476 - root - INFO - Time taken for epoch 101 is 32.93763279914856 sec
+2024-02-16 13:49:23,476 - root - INFO - Train loss: 0.10158514976501465. Valid loss: 0.24298925697803497
+2024-02-16 13:49:56,266 - root - INFO - Time taken for epoch 102 is 32.789201736450195 sec
+2024-02-16 13:49:56,266 - root - INFO - Train loss: 0.09880422055721283. Valid loss: 0.2575864791870117
+2024-02-16 13:50:29,706 - root - INFO - Time taken for epoch 103 is 33.439178466796875 sec
+2024-02-16 13:50:29,706 - root - INFO - Train loss: 0.12093223631381989. Valid loss: 0.23853246867656708
+2024-02-16 13:51:02,961 - root - INFO - Time taken for epoch 104 is 33.253945112228394 sec
+2024-02-16 13:51:02,961 - root - INFO - Train loss: 0.0925946831703186. Valid loss: 0.23842854797840118
+2024-02-16 13:51:36,048 - root - INFO - Time taken for epoch 105 is 33.086824893951416 sec
+2024-02-16 13:51:36,049 - root - INFO - Train loss: 0.09193964302539825. Valid loss: 0.23874430358409882
+2024-02-16 13:52:09,203 - root - INFO - Time taken for epoch 106 is 33.154383182525635 sec
+2024-02-16 13:52:09,204 - root - INFO - Train loss: 0.10117019712924957. Valid loss: 0.24124231934547424
+2024-02-16 13:52:42,002 - root - INFO - Time taken for epoch 107 is 32.79727244377136 sec
+2024-02-16 13:52:42,002 - root - INFO - Train loss: 0.09614613652229309. Valid loss: 0.23988202214241028
+2024-02-16 13:53:15,061 - root - INFO - Time taken for epoch 108 is 33.05835700035095 sec
+2024-02-16 13:53:15,061 - root - INFO - Train loss: 0.09704966843128204. Valid loss: 0.2461579293012619
+2024-02-16 13:53:48,517 - root - INFO - Time taken for epoch 109 is 33.45518183708191 sec
+2024-02-16 13:53:48,517 - root - INFO - Train loss: 0.090166836977005. Valid loss: 0.23580773174762726
+2024-02-16 13:54:21,477 - root - INFO - Time taken for epoch 110 is 32.95913577079773 sec
+2024-02-16 13:54:21,477 - root - INFO - Train loss: 0.08680392801761627. Valid loss: 0.23646903038024902
+2024-02-16 13:54:54,641 - root - INFO - Time taken for epoch 111 is 33.16314649581909 sec
+2024-02-16 13:54:54,641 - root - INFO - Train loss: 0.09121589362621307. Valid loss: 0.24229136109352112
+2024-02-16 13:55:27,646 - root - INFO - Time taken for epoch 112 is 33.004966735839844 sec
+2024-02-16 13:55:27,647 - root - INFO - Train loss: 0.09916053712368011. Valid loss: 0.24063222110271454
+2024-02-16 13:56:00,893 - root - INFO - Time taken for epoch 113 is 33.24534320831299 sec
+2024-02-16 13:56:00,893 - root - INFO - Train loss: 0.09368211030960083. Valid loss: 0.23996968567371368
+2024-02-16 13:56:33,931 - root - INFO - Time taken for epoch 114 is 33.03762412071228 sec
+2024-02-16 13:56:33,932 - root - INFO - Train loss: 0.09453721344470978. Valid loss: 0.2452978789806366
+2024-02-16 13:57:07,584 - root - INFO - Time taken for epoch 115 is 33.651888370513916 sec
+2024-02-16 13:57:07,584 - root - INFO - Train loss: 0.09302257746458054. Valid loss: 0.23384149372577667
+2024-02-16 13:57:40,757 - root - INFO - Time taken for epoch 116 is 33.17224335670471 sec
+2024-02-16 13:57:40,757 - root - INFO - Train loss: 0.09620146453380585. Valid loss: 0.2378634661436081
+2024-02-16 13:58:13,761 - root - INFO - Time taken for epoch 117 is 33.003639936447144 sec
+2024-02-16 13:58:13,762 - root - INFO - Train loss: 0.0854865312576294. Valid loss: 0.24098217487335205
+2024-02-16 13:58:46,538 - root - INFO - Time taken for epoch 118 is 32.7762508392334 sec
+2024-02-16 13:58:46,539 - root - INFO - Train loss: 0.10186998546123505. Valid loss: 0.24061033129692078
+2024-02-16 13:59:19,615 - root - INFO - Time taken for epoch 119 is 33.075937032699585 sec
+2024-02-16 13:59:19,615 - root - INFO - Train loss: 0.09595167636871338. Valid loss: 0.24485771358013153
+2024-02-16 13:59:52,771 - root - INFO - Time taken for epoch 120 is 33.15582990646362 sec
+2024-02-16 13:59:52,772 - root - INFO - Train loss: 0.09162505716085434. Valid loss: 0.24930576980113983
+2024-02-16 14:00:25,681 - root - INFO - Time taken for epoch 121 is 32.909205198287964 sec
+2024-02-16 14:00:25,682 - root - INFO - Train loss: 0.08643877506256104. Valid loss: 0.24004831910133362
+2024-02-16 14:00:58,863 - root - INFO - Time taken for epoch 122 is 33.18092465400696 sec
+2024-02-16 14:00:58,864 - root - INFO - Train loss: 0.0963679701089859. Valid loss: 0.23749808967113495
+2024-02-16 14:01:31,639 - root - INFO - Time taken for epoch 123 is 32.77509117126465 sec
+2024-02-16 14:01:31,639 - root - INFO - Train loss: 0.0830473005771637. Valid loss: 0.23615682125091553
+2024-02-16 14:02:04,780 - root - INFO - Time taken for epoch 124 is 33.14082717895508 sec
+2024-02-16 14:02:04,781 - root - INFO - Train loss: 0.08482600003480911. Valid loss: 0.2353399693965912
+2024-02-16 14:02:37,733 - root - INFO - Time taken for epoch 125 is 32.95224618911743 sec
+2024-02-16 14:02:37,734 - root - INFO - Train loss: 0.0806695967912674. Valid loss: 0.23750421404838562
+2024-02-16 14:03:10,675 - root - INFO - Time taken for epoch 126 is 32.94052743911743 sec
+2024-02-16 14:03:10,675 - root - INFO - Train loss: 0.08409549295902252. Valid loss: 0.236191987991333
+2024-02-16 14:03:43,948 - root - INFO - Time taken for epoch 127 is 33.27240252494812 sec
+2024-02-16 14:03:43,948 - root - INFO - Train loss: 0.08605712652206421. Valid loss: 0.2356904000043869
+2024-02-16 14:04:17,090 - root - INFO - Time taken for epoch 128 is 33.14156460762024 sec
+2024-02-16 14:04:17,091 - root - INFO - Train loss: 0.08114679902791977. Valid loss: 0.23641696572303772
+2024-02-16 14:04:49,971 - root - INFO - Time taken for epoch 129 is 32.879491567611694 sec
+2024-02-16 14:04:49,971 - root - INFO - Train loss: 0.08205801248550415. Valid loss: 0.23818524181842804
+2024-02-16 14:05:22,929 - root - INFO - Time taken for epoch 130 is 32.957067012786865 sec
+2024-02-16 14:05:22,929 - root - INFO - Train loss: 0.08891911804676056. Valid loss: 0.2358308583498001
+2024-02-16 14:05:55,906 - root - INFO - Time taken for epoch 131 is 32.97680449485779 sec
+2024-02-16 14:05:55,907 - root - INFO - Train loss: 0.07835394889116287. Valid loss: 0.23907344043254852
+2024-02-16 14:06:29,223 - root - INFO - Time taken for epoch 132 is 33.31629180908203 sec
+2024-02-16 14:06:29,224 - root - INFO - Train loss: 0.07689858973026276. Valid loss: 0.23388376832008362
+2024-02-16 14:07:03,118 - root - INFO - Time taken for epoch 133 is 33.89373445510864 sec
+2024-02-16 14:07:03,118 - root - INFO - Train loss: 0.08243996649980545. Valid loss: 0.23363792896270752
+2024-02-16 14:07:36,043 - root - INFO - Time taken for epoch 134 is 32.92491936683655 sec
+2024-02-16 14:07:36,044 - root - INFO - Train loss: 0.0821761041879654. Valid loss: 0.23534663021564484
+2024-02-16 14:08:08,982 - root - INFO - Time taken for epoch 135 is 32.93756628036499 sec
+2024-02-16 14:08:08,982 - root - INFO - Train loss: 0.07981233298778534. Valid loss: 0.2372543066740036
+2024-02-16 14:08:41,973 - root - INFO - Time taken for epoch 136 is 32.99032807350159 sec
+2024-02-16 14:08:41,973 - root - INFO - Train loss: 0.08157932013273239. Valid loss: 0.2402997463941574
+2024-02-16 14:09:14,681 - root - INFO - Time taken for epoch 137 is 32.70799016952515 sec
+2024-02-16 14:09:14,682 - root - INFO - Train loss: 0.07758592069149017. Valid loss: 0.23638124763965607
+2024-02-16 14:09:48,222 - root - INFO - Time taken for epoch 138 is 33.54018473625183 sec
+2024-02-16 14:09:48,223 - root - INFO - Train loss: 0.07766927778720856. Valid loss: 0.2323182374238968
+2024-02-16 14:10:21,190 - root - INFO - Time taken for epoch 139 is 32.96636748313904 sec
+2024-02-16 14:10:21,190 - root - INFO - Train loss: 0.07399541884660721. Valid loss: 0.23299889266490936
+2024-02-16 14:10:54,063 - root - INFO - Time taken for epoch 140 is 32.87221384048462 sec
+2024-02-16 14:10:54,064 - root - INFO - Train loss: 0.07232782244682312. Valid loss: 0.233635812997818
+2024-02-16 14:11:26,968 - root - INFO - Time taken for epoch 141 is 32.90438461303711 sec
+2024-02-16 14:11:26,969 - root - INFO - Train loss: 0.08427746593952179. Valid loss: 0.23820912837982178
+2024-02-16 14:11:59,916 - root - INFO - Time taken for epoch 142 is 32.946916341781616 sec
+2024-02-16 14:11:59,916 - root - INFO - Train loss: 0.0751677006483078. Valid loss: 0.23633608222007751
+2024-02-16 14:12:32,811 - root - INFO - Time taken for epoch 143 is 32.89406061172485 sec
+2024-02-16 14:12:32,811 - root - INFO - Train loss: 0.07715187221765518. Valid loss: 0.23559053242206573
+2024-02-16 14:13:05,571 - root - INFO - Time taken for epoch 144 is 32.75966668128967 sec
+2024-02-16 14:13:05,572 - root - INFO - Train loss: 0.07356142997741699. Valid loss: 0.23428626358509064
+2024-02-16 14:13:39,437 - root - INFO - Time taken for epoch 145 is 33.8645224571228 sec
+2024-02-16 14:13:39,437 - root - INFO - Train loss: 0.07059970498085022. Valid loss: 0.23210187256336212
+2024-02-16 14:14:12,711 - root - INFO - Time taken for epoch 146 is 33.27360510826111 sec
+2024-02-16 14:14:12,712 - root - INFO - Train loss: 0.07474315166473389. Valid loss: 0.2341875284910202
+2024-02-16 14:14:45,571 - root - INFO - Time taken for epoch 147 is 32.85922026634216 sec
+2024-02-16 14:14:45,572 - root - INFO - Train loss: 0.08272237330675125. Valid loss: 0.23776912689208984
+2024-02-16 14:15:18,606 - root - INFO - Time taken for epoch 148 is 33.03387975692749 sec
+2024-02-16 14:15:18,606 - root - INFO - Train loss: 0.08040663599967957. Valid loss: 0.23985889554023743
+2024-02-16 14:15:51,614 - root - INFO - Time taken for epoch 149 is 33.00742220878601 sec
+2024-02-16 14:15:51,615 - root - INFO - Train loss: 0.07881186157464981. Valid loss: 0.23678286373615265
+2024-02-16 14:16:24,391 - root - INFO - Time taken for epoch 150 is 32.775840520858765 sec
+2024-02-16 14:16:24,391 - root - INFO - Train loss: 0.07992060482501984. Valid loss: 0.23396484553813934
+2024-02-16 14:16:57,423 - root - INFO - Time taken for epoch 151 is 33.03113913536072 sec
+2024-02-16 14:16:57,423 - root - INFO - Train loss: 0.07338503748178482. Valid loss: 0.23219716548919678
+2024-02-16 14:17:31,447 - root - INFO - Time taken for epoch 152 is 34.02383089065552 sec
+2024-02-16 14:17:31,448 - root - INFO - Train loss: 0.07338538765907288. Valid loss: 0.23372165858745575
+2024-02-16 14:18:07,052 - root - INFO - Time taken for epoch 153 is 35.604345083236694 sec
+2024-02-16 14:18:07,053 - root - INFO - Train loss: 0.07293884456157684. Valid loss: 0.23472817242145538
+2024-02-16 14:18:41,458 - root - INFO - Time taken for epoch 154 is 34.4049174785614 sec
+2024-02-16 14:18:41,459 - root - INFO - Train loss: 0.07443974167108536. Valid loss: 0.23587408661842346
+2024-02-16 14:19:16,785 - root - INFO - Time taken for epoch 155 is 35.325900077819824 sec
+2024-02-16 14:19:16,785 - root - INFO - Train loss: 0.07685409486293793. Valid loss: 0.2382396161556244
+2024-02-16 14:19:51,376 - root - INFO - Time taken for epoch 156 is 34.59108901023865 sec
+2024-02-16 14:19:51,377 - root - INFO - Train loss: 0.07605382055044174. Valid loss: 0.23573434352874756
+2024-02-16 14:20:24,899 - root - INFO - Time taken for epoch 157 is 33.521160364151 sec
+2024-02-16 14:20:24,899 - root - INFO - Train loss: 0.06960463523864746. Valid loss: 0.24038298428058624
+2024-02-16 14:20:58,163 - root - INFO - Time taken for epoch 158 is 33.26391267776489 sec
+2024-02-16 14:20:58,164 - root - INFO - Train loss: 0.09813795983791351. Valid loss: 0.23733079433441162
+2024-02-16 14:21:32,159 - root - INFO - Time taken for epoch 159 is 33.99448084831238 sec
+2024-02-16 14:21:32,159 - root - INFO - Train loss: 0.07553721219301224. Valid loss: 0.2342582494020462
+2024-02-16 14:22:07,522 - root - INFO - Time taken for epoch 160 is 35.362393856048584 sec
+2024-02-16 14:22:07,523 - root - INFO - Train loss: 0.07307890057563782. Valid loss: 0.23482684791088104
+2024-02-16 14:22:41,424 - root - INFO - Time taken for epoch 161 is 33.901150941848755 sec
+2024-02-16 14:22:41,425 - root - INFO - Train loss: 0.07529750466346741. Valid loss: 0.23468001186847687
+2024-02-16 14:23:16,484 - root - INFO - Time taken for epoch 162 is 35.05896353721619 sec
+2024-02-16 14:23:16,485 - root - INFO - Train loss: 0.06681443750858307. Valid loss: 0.2349313497543335
+2024-02-16 14:23:50,479 - root - INFO - Time taken for epoch 163 is 33.99437880516052 sec
+2024-02-16 14:23:50,480 - root - INFO - Train loss: 0.07517679035663605. Valid loss: 0.23286744952201843
+2024-02-16 14:24:24,316 - root - INFO - Time taken for epoch 164 is 33.83582162857056 sec
+2024-02-16 14:24:24,316 - root - INFO - Train loss: 0.06627707183361053. Valid loss: 0.23429033160209656
+2024-02-16 14:24:57,335 - root - INFO - Time taken for epoch 165 is 33.01831912994385 sec
+2024-02-16 14:24:57,335 - root - INFO - Train loss: 0.07751058042049408. Valid loss: 0.23513762652873993
+2024-02-16 14:25:30,200 - root - INFO - Time taken for epoch 166 is 32.86409020423889 sec
+2024-02-16 14:25:30,200 - root - INFO - Train loss: 0.06802001595497131. Valid loss: 0.23535260558128357
+2024-02-16 14:26:03,073 - root - INFO - Time taken for epoch 167 is 32.87254047393799 sec
+2024-02-16 14:26:03,074 - root - INFO - Train loss: 0.0689368024468422. Valid loss: 0.23673763871192932
+2024-02-16 14:26:36,167 - root - INFO - Time taken for epoch 168 is 33.09306836128235 sec
+2024-02-16 14:26:36,167 - root - INFO - Train loss: 0.06796237826347351. Valid loss: 0.23515912890434265
+2024-02-16 14:27:09,166 - root - INFO - Time taken for epoch 169 is 32.99826741218567 sec
+2024-02-16 14:27:09,167 - root - INFO - Train loss: 0.06720583140850067. Valid loss: 0.23332926630973816
+2024-02-16 14:27:42,676 - root - INFO - Time taken for epoch 170 is 33.50949239730835 sec
+2024-02-16 14:27:42,677 - root - INFO - Train loss: 0.06419996172189713. Valid loss: 0.23180584609508514
+2024-02-16 14:28:15,694 - root - INFO - Time taken for epoch 171 is 33.01683807373047 sec
+2024-02-16 14:28:15,694 - root - INFO - Train loss: 0.069453664124012. Valid loss: 0.23467829823493958
+2024-02-16 14:28:48,828 - root - INFO - Time taken for epoch 172 is 33.133463621139526 sec
+2024-02-16 14:28:48,829 - root - INFO - Train loss: 0.06798576563596725. Valid loss: 0.2338843047618866
+2024-02-16 14:29:23,927 - root - INFO - Time taken for epoch 173 is 35.09840798377991 sec
+2024-02-16 14:29:23,928 - root - INFO - Train loss: 0.06702478975057602. Valid loss: 0.23319745063781738
+2024-02-16 14:29:56,781 - root - INFO - Time taken for epoch 174 is 32.85315299034119 sec
+2024-02-16 14:29:56,782 - root - INFO - Train loss: 0.06609494239091873. Valid loss: 0.23288503289222717
+2024-02-16 14:30:29,782 - root - INFO - Time taken for epoch 175 is 33.000213623046875 sec
+2024-02-16 14:30:29,783 - root - INFO - Train loss: 0.0697450190782547. Valid loss: 0.23367004096508026
+2024-02-16 14:31:02,606 - root - INFO - Time taken for epoch 176 is 32.822492599487305 sec
+2024-02-16 14:31:02,606 - root - INFO - Train loss: 0.06804733723402023. Valid loss: 0.2336917370557785
+2024-02-16 14:31:36,022 - root - INFO - Time taken for epoch 177 is 33.414942502975464 sec
+2024-02-16 14:31:36,022 - root - INFO - Train loss: 0.06390779465436935. Valid loss: 0.2315182238817215
+2024-02-16 14:32:09,062 - root - INFO - Time taken for epoch 178 is 33.039342641830444 sec
+2024-02-16 14:32:09,062 - root - INFO - Train loss: 0.0685032308101654. Valid loss: 0.23248045146465302
+2024-02-16 14:32:41,991 - root - INFO - Time taken for epoch 179 is 32.92832350730896 sec
+2024-02-16 14:32:41,992 - root - INFO - Train loss: 0.08066502958536148. Valid loss: 0.23453740775585175
+2024-02-16 14:33:14,884 - root - INFO - Time taken for epoch 180 is 32.891544342041016 sec
+2024-02-16 14:33:14,884 - root - INFO - Train loss: 0.0676913931965828. Valid loss: 0.23214784264564514
+2024-02-16 14:33:47,676 - root - INFO - Time taken for epoch 181 is 32.791667222976685 sec
+2024-02-16 14:33:47,677 - root - INFO - Train loss: 0.07214860618114471. Valid loss: 0.23312291502952576
+2024-02-16 14:34:20,608 - root - INFO - Time taken for epoch 182 is 32.93112325668335 sec
+2024-02-16 14:34:20,608 - root - INFO - Train loss: 0.07216228544712067. Valid loss: 0.23864011466503143
+2024-02-16 14:34:53,363 - root - INFO - Time taken for epoch 183 is 32.75463056564331 sec
+2024-02-16 14:34:53,364 - root - INFO - Train loss: 0.06417247653007507. Valid loss: 0.2345687448978424
+2024-02-16 14:35:26,124 - root - INFO - Time taken for epoch 184 is 32.75995898246765 sec
+2024-02-16 14:35:26,125 - root - INFO - Train loss: 0.060307275503873825. Valid loss: 0.23384340107440948
+2024-02-16 14:35:59,144 - root - INFO - Time taken for epoch 185 is 33.01891326904297 sec
+2024-02-16 14:35:59,170 - root - INFO - Train loss: 0.06040610000491142. Valid loss: 0.23279964923858643
+2024-02-16 14:36:31,819 - root - INFO - Time taken for epoch 186 is 32.64851689338684 sec
+2024-02-16 14:36:31,820 - root - INFO - Train loss: 0.06359592825174332. Valid loss: 0.23398935794830322
+2024-02-16 14:37:04,414 - root - INFO - Time taken for epoch 187 is 32.59403371810913 sec
+2024-02-16 14:37:04,414 - root - INFO - Train loss: 0.06492301821708679. Valid loss: 0.23478963971138
+2024-02-16 14:37:37,299 - root - INFO - Time taken for epoch 188 is 32.88489508628845 sec
+2024-02-16 14:37:37,300 - root - INFO - Train loss: 0.07774776220321655. Valid loss: 0.2350054532289505
+2024-02-16 14:38:10,259 - root - INFO - Time taken for epoch 189 is 32.95867204666138 sec
+2024-02-16 14:38:10,259 - root - INFO - Train loss: 0.06637268513441086. Valid loss: 0.23545324802398682
+2024-02-16 14:38:43,205 - root - INFO - Time taken for epoch 190 is 32.94516921043396 sec
+2024-02-16 14:38:43,205 - root - INFO - Train loss: 0.0604105219244957. Valid loss: 0.2343607246875763
+2024-02-16 14:39:16,005 - root - INFO - Time taken for epoch 191 is 32.799177408218384 sec
+2024-02-16 14:39:16,005 - root - INFO - Train loss: 0.0653502345085144. Valid loss: 0.233795166015625
+2024-02-16 14:39:48,870 - root - INFO - Time taken for epoch 192 is 32.86442542076111 sec
+2024-02-16 14:39:48,870 - root - INFO - Train loss: 0.06695311516523361. Valid loss: 0.2387312650680542
+2024-02-16 14:40:21,694 - root - INFO - Time taken for epoch 193 is 32.82366490364075 sec
+2024-02-16 14:40:21,695 - root - INFO - Train loss: 0.0612541139125824. Valid loss: 0.23369643092155457
+2024-02-16 14:40:54,342 - root - INFO - Time taken for epoch 194 is 32.64704251289368 sec
+2024-02-16 14:40:54,343 - root - INFO - Train loss: 0.06249994412064552. Valid loss: 0.23253130912780762
+2024-02-16 14:41:27,164 - root - INFO - Time taken for epoch 195 is 32.82092475891113 sec
+2024-02-16 14:41:27,165 - root - INFO - Train loss: 0.06556232273578644. Valid loss: 0.2321714609861374
+2024-02-16 14:41:59,676 - root - INFO - Time taken for epoch 196 is 32.51098918914795 sec
+2024-02-16 14:41:59,676 - root - INFO - Train loss: 0.06150124967098236. Valid loss: 0.2344599962234497
+2024-02-16 14:42:32,409 - root - INFO - Time taken for epoch 197 is 32.7319016456604 sec
+2024-02-16 14:42:32,409 - root - INFO - Train loss: 0.06740130484104156. Valid loss: 0.233052060008049
+2024-02-16 14:43:05,305 - root - INFO - Time taken for epoch 198 is 32.89578604698181 sec
+2024-02-16 14:43:05,306 - root - INFO - Train loss: 0.061509717255830765. Valid loss: 0.23396727442741394
+2024-02-16 14:43:37,992 - root - INFO - Time taken for epoch 199 is 32.68573713302612 sec
+2024-02-16 14:43:37,992 - root - INFO - Train loss: 0.06398103386163712. Valid loss: 0.23413798213005066
+2024-02-16 14:44:10,832 - root - INFO - Time taken for epoch 200 is 32.839601278305054 sec
+2024-02-16 14:44:10,833 - root - INFO - Train loss: 0.06390002369880676. Valid loss: 0.23368623852729797
+2024-02-16 14:44:43,737 - root - INFO - Time taken for epoch 201 is 32.90452337265015 sec
+2024-02-16 14:44:43,738 - root - INFO - Train loss: 0.06283564865589142. Valid loss: 0.231903076171875
+2024-02-16 14:45:16,656 - root - INFO - Time taken for epoch 202 is 32.91828370094299 sec
+2024-02-16 14:45:16,657 - root - INFO - Train loss: 0.0661846473813057. Valid loss: 0.23372900485992432
+2024-02-16 14:45:49,980 - root - INFO - Time taken for epoch 203 is 33.32236385345459 sec
+2024-02-16 14:45:49,980 - root - INFO - Train loss: 0.06384819746017456. Valid loss: 0.23469850420951843
+2024-02-16 14:46:22,965 - root - INFO - Time taken for epoch 204 is 32.9849169254303 sec
+2024-02-16 14:46:22,966 - root - INFO - Train loss: 0.060604408383369446. Valid loss: 0.23397155106067657
+2024-02-16 14:46:56,239 - root - INFO - Time taken for epoch 205 is 33.2733199596405 sec
+2024-02-16 14:46:56,240 - root - INFO - Train loss: 0.062054313719272614. Valid loss: 0.23073461651802063
+2024-02-16 14:47:29,668 - root - INFO - Time taken for epoch 206 is 33.42806649208069 sec
+2024-02-16 14:47:29,669 - root - INFO - Train loss: 0.06220300868153572. Valid loss: 0.2304474115371704
+2024-02-16 14:48:02,287 - root - INFO - Time taken for epoch 207 is 32.617499351501465 sec
+2024-02-16 14:48:02,287 - root - INFO - Train loss: 0.06038779020309448. Valid loss: 0.23354598879814148
+2024-02-16 14:48:35,334 - root - INFO - Time taken for epoch 208 is 33.04622197151184 sec
+2024-02-16 14:48:35,334 - root - INFO - Train loss: 0.06100801005959511. Valid loss: 0.2330213040113449
+2024-02-16 14:49:08,228 - root - INFO - Time taken for epoch 209 is 32.89405155181885 sec
+2024-02-16 14:49:08,229 - root - INFO - Train loss: 0.05718458443880081. Valid loss: 0.23328228294849396
+2024-02-16 14:49:40,976 - root - INFO - Time taken for epoch 210 is 32.74659872055054 sec
+2024-02-16 14:49:40,976 - root - INFO - Train loss: 0.06106030195951462. Valid loss: 0.2341778576374054
+2024-02-16 14:50:13,819 - root - INFO - Time taken for epoch 211 is 32.84198880195618 sec
+2024-02-16 14:50:13,819 - root - INFO - Train loss: 0.058555394411087036. Valid loss: 0.23374955356121063
+2024-02-16 14:50:46,856 - root - INFO - Time taken for epoch 212 is 33.0367157459259 sec
+2024-02-16 14:50:46,857 - root - INFO - Train loss: 0.06052955985069275. Valid loss: 0.2345695048570633
+2024-02-16 14:51:19,805 - root - INFO - Time taken for epoch 213 is 32.948349952697754 sec
+2024-02-16 14:51:19,806 - root - INFO - Train loss: 0.0591517798602581. Valid loss: 0.23573601245880127
+2024-02-16 14:51:52,976 - root - INFO - Time taken for epoch 214 is 33.16993284225464 sec
+2024-02-16 14:51:52,977 - root - INFO - Train loss: 0.06084549427032471. Valid loss: 0.23297636210918427
+2024-02-16 14:52:25,839 - root - INFO - Time taken for epoch 215 is 32.861780405044556 sec
+2024-02-16 14:52:25,839 - root - INFO - Train loss: 0.0638037770986557. Valid loss: 0.23435135185718536
+2024-02-16 14:52:59,010 - root - INFO - Time taken for epoch 216 is 33.17086219787598 sec
+2024-02-16 14:52:59,011 - root - INFO - Train loss: 0.07018246501684189. Valid loss: 0.23233072459697723
+2024-02-16 14:53:32,070 - root - INFO - Time taken for epoch 217 is 33.05871605873108 sec
+2024-02-16 14:53:32,070 - root - INFO - Train loss: 0.06654196232557297. Valid loss: 0.23512110114097595
+2024-02-16 14:54:04,687 - root - INFO - Time taken for epoch 218 is 32.61630845069885 sec
+2024-02-16 14:54:04,687 - root - INFO - Train loss: 0.06792224943637848. Valid loss: 0.23399889469146729
+2024-02-16 14:54:37,480 - root - INFO - Time taken for epoch 219 is 32.792864084243774 sec
+2024-02-16 14:54:37,481 - root - INFO - Train loss: 0.0604628324508667. Valid loss: 0.23513218760490417
+2024-02-16 14:55:10,131 - root - INFO - Time taken for epoch 220 is 32.64925265312195 sec
+2024-02-16 14:55:10,131 - root - INFO - Train loss: 0.06231049820780754. Valid loss: 0.23280449211597443
+2024-02-16 14:55:42,635 - root - INFO - Time taken for epoch 221 is 32.50284814834595 sec
+2024-02-16 14:55:42,635 - root - INFO - Train loss: 0.0635790228843689. Valid loss: 0.2326100766658783
+2024-02-16 14:56:15,338 - root - INFO - Time taken for epoch 222 is 32.70235085487366 sec
+2024-02-16 14:56:15,338 - root - INFO - Train loss: 0.06130225956439972. Valid loss: 0.23322586715221405
+2024-02-16 14:56:47,904 - root - INFO - Time taken for epoch 223 is 32.565675497055054 sec
+2024-02-16 14:56:47,905 - root - INFO - Train loss: 0.06078309565782547. Valid loss: 0.23377835750579834
+2024-02-16 14:57:20,459 - root - INFO - Time taken for epoch 224 is 32.55397868156433 sec
+2024-02-16 14:57:20,460 - root - INFO - Train loss: 0.058539681136608124. Valid loss: 0.23333799839019775
+2024-02-16 14:57:53,253 - root - INFO - Time taken for epoch 225 is 32.79357576370239 sec
+2024-02-16 14:57:53,254 - root - INFO - Train loss: 0.058225322514772415. Valid loss: 0.23202869296073914
+2024-02-16 14:58:25,875 - root - INFO - Time taken for epoch 226 is 32.620481967926025 sec
+2024-02-16 14:58:25,875 - root - INFO - Train loss: 0.059905730187892914. Valid loss: 0.23133376240730286
+2024-02-16 14:58:58,569 - root - INFO - Time taken for epoch 227 is 32.69323706626892 sec
+2024-02-16 14:58:58,569 - root - INFO - Train loss: 0.06038247048854828. Valid loss: 0.23330652713775635
+2024-02-16 14:59:31,334 - root - INFO - Time taken for epoch 228 is 32.764899015426636 sec
+2024-02-16 14:59:31,335 - root - INFO - Train loss: 0.05569814145565033. Valid loss: 0.2329457700252533
+2024-02-16 15:00:03,937 - root - INFO - Time taken for epoch 229 is 32.601595640182495 sec
+2024-02-16 15:00:03,937 - root - INFO - Train loss: 0.05961524695158005. Valid loss: 0.23463526368141174
+2024-02-16 15:00:36,828 - root - INFO - Time taken for epoch 230 is 32.89051818847656 sec
+2024-02-16 15:00:36,829 - root - INFO - Train loss: 0.05937829613685608. Valid loss: 0.23559311032295227
+2024-02-16 15:01:09,503 - root - INFO - Time taken for epoch 231 is 32.67464017868042 sec
+2024-02-16 15:01:09,504 - root - INFO - Train loss: 0.06122501567006111. Valid loss: 0.23243634402751923
+2024-02-16 15:01:42,268 - root - INFO - Time taken for epoch 232 is 32.76384162902832 sec
+2024-02-16 15:01:42,269 - root - INFO - Train loss: 0.05780329927802086. Valid loss: 0.23314282298088074
+2024-02-16 15:02:15,178 - root - INFO - Time taken for epoch 233 is 32.9093861579895 sec
+2024-02-16 15:02:15,179 - root - INFO - Train loss: 0.05700159817934036. Valid loss: 0.2327995002269745
+2024-02-16 15:02:47,890 - root - INFO - Time taken for epoch 234 is 32.710792541503906 sec
+2024-02-16 15:02:47,890 - root - INFO - Train loss: 0.061334192752838135. Valid loss: 0.235589861869812
+2024-02-16 15:03:20,637 - root - INFO - Time taken for epoch 235 is 32.74626278877258 sec
+2024-02-16 15:03:20,637 - root - INFO - Train loss: 0.05530758947134018. Valid loss: 0.23497450351715088
+2024-02-16 15:03:53,483 - root - INFO - Time taken for epoch 236 is 32.845407009124756 sec
+2024-02-16 15:03:53,484 - root - INFO - Train loss: 0.06180104240775108. Valid loss: 0.23237256705760956
+2024-02-16 15:04:26,243 - root - INFO - Time taken for epoch 237 is 32.75927662849426 sec
+2024-02-16 15:04:26,244 - root - INFO - Train loss: 0.055601816624403. Valid loss: 0.23101353645324707
+2024-02-16 15:04:59,095 - root - INFO - Time taken for epoch 238 is 32.85135865211487 sec
+2024-02-16 15:04:59,096 - root - INFO - Train loss: 0.05635498836636543. Valid loss: 0.23345108330249786
+2024-02-16 15:05:31,706 - root - INFO - Time taken for epoch 239 is 32.61043167114258 sec
+2024-02-16 15:05:31,707 - root - INFO - Train loss: 0.06032766029238701. Valid loss: 0.23291030526161194
+2024-02-16 15:06:04,192 - root - INFO - Time taken for epoch 240 is 32.48489594459534 sec
+2024-02-16 15:06:04,193 - root - INFO - Train loss: 0.058564312756061554. Valid loss: 0.23399774730205536
+2024-02-16 15:06:37,053 - root - INFO - Time taken for epoch 241 is 32.85991048812866 sec
+2024-02-16 15:06:37,054 - root - INFO - Train loss: 0.05989342927932739. Valid loss: 0.23498637974262238
+2024-02-16 15:07:09,908 - root - INFO - Time taken for epoch 242 is 32.85392785072327 sec
+2024-02-16 15:07:09,909 - root - INFO - Train loss: 0.05697590857744217. Valid loss: 0.2367457151412964
+2024-02-16 15:07:42,889 - root - INFO - Time taken for epoch 243 is 32.98039269447327 sec
+2024-02-16 15:07:42,890 - root - INFO - Train loss: 0.06058288365602493. Valid loss: 0.23226019740104675
+2024-02-16 15:08:15,873 - root - INFO - Time taken for epoch 244 is 32.983436584472656 sec
+2024-02-16 15:08:15,874 - root - INFO - Train loss: 0.055995456874370575. Valid loss: 0.23136845231056213
+2024-02-16 15:08:48,505 - root - INFO - Time taken for epoch 245 is 32.63083028793335 sec
+2024-02-16 15:08:48,505 - root - INFO - Train loss: 0.055497072637081146. Valid loss: 0.2327745407819748
+2024-02-16 15:09:21,457 - root - INFO - Time taken for epoch 246 is 32.95141243934631 sec
+2024-02-16 15:09:21,458 - root - INFO - Train loss: 0.05692374333739281. Valid loss: 0.23204723000526428
+2024-02-16 15:09:54,445 - root - INFO - Time taken for epoch 247 is 32.98677945137024 sec
+2024-02-16 15:09:54,445 - root - INFO - Train loss: 0.06302519142627716. Valid loss: 0.2336961328983307
+2024-02-16 15:10:27,112 - root - INFO - Time taken for epoch 248 is 32.66686391830444 sec
+2024-02-16 15:10:27,113 - root - INFO - Train loss: 0.05775688961148262. Valid loss: 0.2357908934354782
+2024-02-16 15:10:59,933 - root - INFO - Time taken for epoch 249 is 32.819875717163086 sec
+2024-02-16 15:10:59,933 - root - INFO - Train loss: 0.05838517099618912. Valid loss: 0.23329536616802216
+2024-02-16 15:11:32,829 - root - INFO - Time taken for epoch 250 is 32.8954393863678 sec
+2024-02-16 15:11:32,830 - root - INFO - Train loss: 0.057848766446113586. Valid loss: 0.2318851500749588
+2024-02-16 15:12:05,604 - root - INFO - Time taken for epoch 251 is 32.77424931526184 sec
+2024-02-16 15:12:05,605 - root - INFO - Train loss: 0.06129312142729759. Valid loss: 0.23653051257133484
+2024-02-16 15:12:38,535 - root - INFO - Time taken for epoch 252 is 32.93004298210144 sec
+2024-02-16 15:12:38,536 - root - INFO - Train loss: 0.06086854636669159. Valid loss: 0.23609885573387146
+2024-02-16 15:13:11,422 - root - INFO - Time taken for epoch 253 is 32.88643026351929 sec
+2024-02-16 15:13:11,423 - root - INFO - Train loss: 0.056766413152217865. Valid loss: 0.23526743054389954
+2024-02-16 15:13:44,558 - root - INFO - Time taken for epoch 254 is 33.13516283035278 sec
+2024-02-16 15:13:44,559 - root - INFO - Train loss: 0.05384337529540062. Valid loss: 0.23529371619224548
+2024-02-16 15:14:17,676 - root - INFO - Time taken for epoch 255 is 33.11672902107239 sec
+2024-02-16 15:14:17,677 - root - INFO - Train loss: 0.05589171499013901. Valid loss: 0.2353467494249344
+2024-02-16 15:14:50,434 - root - INFO - Time taken for epoch 256 is 32.75733733177185 sec
+2024-02-16 15:14:50,435 - root - INFO - Train loss: 0.050070278346538544. Valid loss: 0.2329091578722
+2024-02-16 15:15:23,208 - root - INFO - Time taken for epoch 257 is 32.77251172065735 sec
+2024-02-16 15:15:23,208 - root - INFO - Train loss: 0.04974287748336792. Valid loss: 0.23227639496326447
+2024-02-16 15:15:56,111 - root - INFO - Time taken for epoch 258 is 32.90218806266785 sec
+2024-02-16 15:15:56,111 - root - INFO - Train loss: 0.05825674906373024. Valid loss: 0.2304801046848297
+2024-02-16 15:16:28,794 - root - INFO - Time taken for epoch 259 is 32.68232202529907 sec
+2024-02-16 15:16:28,794 - root - INFO - Train loss: 0.060593217611312866. Valid loss: 0.23282547295093536
+2024-02-16 15:17:01,620 - root - INFO - Time taken for epoch 260 is 32.8252158164978 sec
+2024-02-16 15:17:01,620 - root - INFO - Train loss: 0.05903974175453186. Valid loss: 0.23190085589885712
+2024-02-16 15:17:34,486 - root - INFO - Time taken for epoch 261 is 32.865111351013184 sec
+2024-02-16 15:17:34,486 - root - INFO - Train loss: 0.05712595582008362. Valid loss: 0.2326923906803131
+2024-02-16 15:18:07,208 - root - INFO - Time taken for epoch 262 is 32.7215096950531 sec
+2024-02-16 15:18:07,209 - root - INFO - Train loss: 0.05743788927793503. Valid loss: 0.2341988980770111
+2024-02-16 15:18:40,143 - root - INFO - Time taken for epoch 263 is 32.93417811393738 sec
+2024-02-16 15:18:40,144 - root - INFO - Train loss: 0.05147714912891388. Valid loss: 0.23701496422290802
+2024-02-16 15:19:12,948 - root - INFO - Time taken for epoch 264 is 32.804011821746826 sec
+2024-02-16 15:19:12,949 - root - INFO - Train loss: 0.05346040800213814. Valid loss: 0.2352442741394043
+2024-02-16 15:19:45,752 - root - INFO - Time taken for epoch 265 is 32.803279638290405 sec
+2024-02-16 15:19:45,753 - root - INFO - Train loss: 0.05840791016817093. Valid loss: 0.231657937169075
+2024-02-16 15:20:19,267 - root - INFO - Time taken for epoch 266 is 33.51443791389465 sec
+2024-02-16 15:20:19,268 - root - INFO - Train loss: 0.05538966879248619. Valid loss: 0.22963908314704895
+2024-02-16 15:20:52,437 - root - INFO - Time taken for epoch 267 is 33.168896198272705 sec
+2024-02-16 15:20:52,437 - root - INFO - Train loss: 0.052024904638528824. Valid loss: 0.22934217751026154
+2024-02-16 15:21:25,650 - root - INFO - Time taken for epoch 268 is 33.21284031867981 sec
+2024-02-16 15:21:25,651 - root - INFO - Train loss: 0.05170199275016785. Valid loss: 0.23062872886657715
+2024-02-16 15:21:58,486 - root - INFO - Time taken for epoch 269 is 32.835010051727295 sec
+2024-02-16 15:21:58,487 - root - INFO - Train loss: 0.06280927360057831. Valid loss: 0.23165929317474365
+2024-02-16 15:22:31,190 - root - INFO - Time taken for epoch 270 is 32.70268177986145 sec
+2024-02-16 15:22:31,191 - root - INFO - Train loss: 0.05278263986110687. Valid loss: 0.2331654280424118
+2024-02-16 15:23:03,988 - root - INFO - Time taken for epoch 271 is 32.79703664779663 sec
+2024-02-16 15:23:03,988 - root - INFO - Train loss: 0.05758640170097351. Valid loss: 0.23193895816802979
+2024-02-16 15:23:36,600 - root - INFO - Time taken for epoch 272 is 32.61136221885681 sec
+2024-02-16 15:23:36,601 - root - INFO - Train loss: 0.053518421947956085. Valid loss: 0.23286695778369904
+2024-02-16 15:24:09,338 - root - INFO - Time taken for epoch 273 is 32.73737096786499 sec
+2024-02-16 15:24:09,339 - root - INFO - Train loss: 0.055593010038137436. Valid loss: 0.2323085367679596
+2024-02-16 15:24:42,372 - root - INFO - Time taken for epoch 274 is 33.03278732299805 sec
+2024-02-16 15:24:42,372 - root - INFO - Train loss: 0.05458221957087517. Valid loss: 0.23146355152130127
+2024-02-16 15:25:14,839 - root - INFO - Time taken for epoch 275 is 32.46653509140015 sec
+2024-02-16 15:25:14,840 - root - INFO - Train loss: 0.06164725124835968. Valid loss: 0.2358226329088211
+2024-02-16 15:25:47,748 - root - INFO - Time taken for epoch 276 is 32.90837907791138 sec
+2024-02-16 15:25:47,749 - root - INFO - Train loss: 0.06203253194689751. Valid loss: 0.2364008128643036
+2024-02-16 15:26:23,118 - root - INFO - Time taken for epoch 277 is 35.368385314941406 sec
+2024-02-16 15:26:23,118 - root - INFO - Train loss: 0.05767876282334328. Valid loss: 0.23631611466407776
+2024-02-16 15:26:57,275 - root - INFO - Time taken for epoch 278 is 34.15693211555481 sec
+2024-02-16 15:26:57,276 - root - INFO - Train loss: 0.06331683695316315. Valid loss: 0.23523607850074768
+2024-02-16 15:27:32,009 - root - INFO - Time taken for epoch 279 is 34.73316550254822 sec
+2024-02-16 15:27:32,010 - root - INFO - Train loss: 0.06481507420539856. Valid loss: 0.23486793041229248
+2024-02-16 15:28:07,344 - root - INFO - Time taken for epoch 280 is 35.333765506744385 sec
+2024-02-16 15:28:07,345 - root - INFO - Train loss: 0.05619475245475769. Valid loss: 0.2360040843486786
+2024-02-16 15:28:42,711 - root - INFO - Time taken for epoch 281 is 35.366190910339355 sec
+2024-02-16 15:28:42,712 - root - INFO - Train loss: 0.05246739089488983. Valid loss: 0.2329513132572174
+2024-02-16 15:29:17,892 - root - INFO - Time taken for epoch 282 is 35.17969346046448 sec
+2024-02-16 15:29:17,892 - root - INFO - Train loss: 0.04800964146852493. Valid loss: 0.23221233487129211
+2024-02-16 15:29:51,596 - root - INFO - Time taken for epoch 283 is 33.70337748527527 sec
+2024-02-16 15:29:51,597 - root - INFO - Train loss: 0.04983048141002655. Valid loss: 0.23073109984397888
+2024-02-16 15:30:24,613 - root - INFO - Time taken for epoch 284 is 33.01562833786011 sec
+2024-02-16 15:30:24,613 - root - INFO - Train loss: 0.051419492810964584. Valid loss: 0.23077484965324402
+2024-02-16 15:30:58,096 - root - INFO - Time taken for epoch 285 is 33.48237490653992 sec
+2024-02-16 15:30:58,097 - root - INFO - Train loss: 0.05466385558247566. Valid loss: 0.22938799858093262
+2024-02-16 15:31:31,539 - root - INFO - Time taken for epoch 286 is 33.44238018989563 sec
+2024-02-16 15:31:31,540 - root - INFO - Train loss: 0.055061742663383484. Valid loss: 0.2302672117948532
+2024-02-16 15:32:04,246 - root - INFO - Time taken for epoch 287 is 32.70642614364624 sec
+2024-02-16 15:32:04,247 - root - INFO - Train loss: 0.05340396612882614. Valid loss: 0.2314562350511551
+2024-02-16 15:32:36,935 - root - INFO - Time taken for epoch 288 is 32.688138246536255 sec
+2024-02-16 15:32:36,936 - root - INFO - Train loss: 0.05182476341724396. Valid loss: 0.232805997133255
+2024-02-16 15:33:09,404 - root - INFO - Time taken for epoch 289 is 32.46803116798401 sec
+2024-02-16 15:33:09,405 - root - INFO - Train loss: 0.05378313735127449. Valid loss: 0.23537401854991913
+2024-02-16 15:33:42,214 - root - INFO - Time taken for epoch 290 is 32.809478521347046 sec
+2024-02-16 15:33:42,215 - root - INFO - Train loss: 0.054320983588695526. Valid loss: 0.23105330765247345
+2024-02-16 15:34:14,909 - root - INFO - Time taken for epoch 291 is 32.693641662597656 sec
+2024-02-16 15:34:14,909 - root - INFO - Train loss: 0.05101213604211807. Valid loss: 0.23113441467285156
+2024-02-16 15:34:47,935 - root - INFO - Time taken for epoch 292 is 33.02549767494202 sec
+2024-02-16 15:34:47,935 - root - INFO - Train loss: 0.05200794339179993. Valid loss: 0.22956570982933044
+2024-02-16 15:35:20,957 - root - INFO - Time taken for epoch 293 is 33.020962715148926 sec
+2024-02-16 15:35:20,957 - root - INFO - Train loss: 0.05931489169597626. Valid loss: 0.23249168694019318
+2024-02-16 15:35:53,740 - root - INFO - Time taken for epoch 294 is 32.78214645385742 sec
+2024-02-16 15:35:53,740 - root - INFO - Train loss: 0.054507892578840256. Valid loss: 0.23096425831317902
+2024-02-16 15:36:26,649 - root - INFO - Time taken for epoch 295 is 32.90880799293518 sec
+2024-02-16 15:36:26,650 - root - INFO - Train loss: 0.05114661157131195. Valid loss: 0.23139628767967224
+2024-02-16 15:36:59,618 - root - INFO - Time taken for epoch 296 is 32.968138217926025 sec
+2024-02-16 15:36:59,619 - root - INFO - Train loss: 0.05269896239042282. Valid loss: 0.2309177666902542
+2024-02-16 15:37:32,211 - root - INFO - Time taken for epoch 297 is 32.59240245819092 sec
+2024-02-16 15:37:32,212 - root - INFO - Train loss: 0.05364334210753441. Valid loss: 0.2331302911043167
+2024-02-16 15:38:05,098 - root - INFO - Time taken for epoch 298 is 32.88618445396423 sec
+2024-02-16 15:38:05,099 - root - INFO - Train loss: 0.05063416436314583. Valid loss: 0.23129487037658691
+2024-02-16 15:38:37,720 - root - INFO - Time taken for epoch 299 is 32.62071776390076 sec
+2024-02-16 15:38:37,720 - root - INFO - Train loss: 0.04682622849941254. Valid loss: 0.22960159182548523
+2024-02-16 15:39:10,553 - root - INFO - Time taken for epoch 300 is 32.832523822784424 sec
+2024-02-16 15:39:10,554 - root - INFO - Train loss: 0.05763670802116394. Valid loss: 0.23206600546836853
+2024-02-16 15:39:43,369 - root - INFO - Time taken for epoch 301 is 32.814982652664185 sec
+2024-02-16 15:39:43,369 - root - INFO - Train loss: 0.05467647314071655. Valid loss: 0.23715424537658691
+2024-02-16 15:40:16,091 - root - INFO - Time taken for epoch 302 is 32.72148656845093 sec
+2024-02-16 15:40:16,092 - root - INFO - Train loss: 0.05165978521108627. Valid loss: 0.23642508685588837
+2024-02-16 15:40:49,138 - root - INFO - Time taken for epoch 303 is 33.045472621917725 sec
+2024-02-16 15:40:49,138 - root - INFO - Train loss: 0.05764825642108917. Valid loss: 0.23686663806438446
+2024-02-16 15:41:22,361 - root - INFO - Time taken for epoch 304 is 33.222230672836304 sec
+2024-02-16 15:41:22,361 - root - INFO - Train loss: 0.05490266531705856. Valid loss: 0.23495686054229736
+2024-02-16 15:41:55,466 - root - INFO - Time taken for epoch 305 is 33.1051025390625 sec
+2024-02-16 15:41:55,467 - root - INFO - Train loss: 0.05869067460298538. Valid loss: 0.2342545986175537
+2024-02-16 15:42:28,250 - root - INFO - Time taken for epoch 306 is 32.782846212387085 sec
+2024-02-16 15:42:28,251 - root - INFO - Train loss: 0.05444391444325447. Valid loss: 0.2345532476902008
+2024-02-16 15:43:01,236 - root - INFO - Time taken for epoch 307 is 32.98501133918762 sec
+2024-02-16 15:43:01,236 - root - INFO - Train loss: 0.05260499566793442. Valid loss: 0.23373445868492126
+2024-02-16 15:43:33,918 - root - INFO - Time taken for epoch 308 is 32.68151068687439 sec
+2024-02-16 15:43:33,919 - root - INFO - Train loss: 0.04949197918176651. Valid loss: 0.2327929437160492
+2024-02-16 15:44:06,822 - root - INFO - Time taken for epoch 309 is 32.90281915664673 sec
+2024-02-16 15:44:06,822 - root - INFO - Train loss: 0.05192362889647484. Valid loss: 0.2322002351284027
+2024-02-16 15:44:40,059 - root - INFO - Time taken for epoch 310 is 33.236202001571655 sec
+2024-02-16 15:44:40,059 - root - INFO - Train loss: 0.05139230936765671. Valid loss: 0.2289479672908783
+2024-02-16 15:45:12,955 - root - INFO - Time taken for epoch 311 is 32.895145893096924 sec
+2024-02-16 15:45:12,955 - root - INFO - Train loss: 0.04740983992815018. Valid loss: 0.2290899008512497
+2024-02-16 15:45:45,780 - root - INFO - Time taken for epoch 312 is 32.82419753074646 sec
+2024-02-16 15:45:45,780 - root - INFO - Train loss: 0.05579307675361633. Valid loss: 0.23123109340667725
+2024-02-16 15:46:18,331 - root - INFO - Time taken for epoch 313 is 32.550973653793335 sec
+2024-02-16 15:46:18,332 - root - INFO - Train loss: 0.0563698410987854. Valid loss: 0.23186536133289337
+2024-02-16 15:46:51,125 - root - INFO - Time taken for epoch 314 is 32.792243003845215 sec
+2024-02-16 15:46:51,125 - root - INFO - Train loss: 0.05028725787997246. Valid loss: 0.23319265246391296
+2024-02-16 15:47:23,942 - root - INFO - Time taken for epoch 315 is 32.81645750999451 sec
+2024-02-16 15:47:23,943 - root - INFO - Train loss: 0.04828788340091705. Valid loss: 0.234925776720047
+2024-02-16 15:47:56,626 - root - INFO - Time taken for epoch 316 is 32.68277978897095 sec
+2024-02-16 15:47:56,626 - root - INFO - Train loss: 0.0503443218767643. Valid loss: 0.23339521884918213
+2024-02-16 15:48:29,402 - root - INFO - Time taken for epoch 317 is 32.77543568611145 sec
+2024-02-16 15:48:29,402 - root - INFO - Train loss: 0.04789584130048752. Valid loss: 0.23142603039741516
+2024-02-16 15:49:02,094 - root - INFO - Time taken for epoch 318 is 32.691073179244995 sec
+2024-02-16 15:49:02,094 - root - INFO - Train loss: 0.04691842198371887. Valid loss: 0.2296479195356369
+2024-02-16 15:49:34,965 - root - INFO - Time taken for epoch 319 is 32.87090849876404 sec
+2024-02-16 15:49:34,966 - root - INFO - Train loss: 0.05169939994812012. Valid loss: 0.23190423846244812
+2024-02-16 15:50:07,822 - root - INFO - Time taken for epoch 320 is 32.85547685623169 sec
+2024-02-16 15:50:07,822 - root - INFO - Train loss: 0.0529894158244133. Valid loss: 0.23557338118553162
+2024-02-16 15:50:40,629 - root - INFO - Time taken for epoch 321 is 32.80699682235718 sec
+2024-02-16 15:50:40,630 - root - INFO - Train loss: 0.05148693174123764. Valid loss: 0.23231661319732666
+2024-02-16 15:51:13,498 - root - INFO - Time taken for epoch 322 is 32.8678994178772 sec
+2024-02-16 15:51:13,498 - root - INFO - Train loss: 0.05506177246570587. Valid loss: 0.23303060233592987
+2024-02-16 15:51:46,298 - root - INFO - Time taken for epoch 323 is 32.79900765419006 sec
+2024-02-16 15:51:46,298 - root - INFO - Train loss: 0.05050180107355118. Valid loss: 0.23168125748634338
+2024-02-16 15:52:18,941 - root - INFO - Time taken for epoch 324 is 32.64245271682739 sec
+2024-02-16 15:52:18,941 - root - INFO - Train loss: 0.0581820048391819. Valid loss: 0.2309487760066986
+2024-02-16 15:52:51,827 - root - INFO - Time taken for epoch 325 is 32.885852336883545 sec
+2024-02-16 15:52:51,828 - root - INFO - Train loss: 0.04897620156407356. Valid loss: 0.23068192601203918
+2024-02-16 15:53:24,730 - root - INFO - Time taken for epoch 326 is 32.90143179893494 sec
+2024-02-16 15:53:24,730 - root - INFO - Train loss: 0.05981510877609253. Valid loss: 0.23185625672340393
+2024-02-16 15:53:57,516 - root - INFO - Time taken for epoch 327 is 32.785537004470825 sec
+2024-02-16 15:53:57,517 - root - INFO - Train loss: 0.0599534697830677. Valid loss: 0.23123688995838165
+2024-02-16 15:54:30,444 - root - INFO - Time taken for epoch 328 is 32.92722201347351 sec
+2024-02-16 15:54:30,445 - root - INFO - Train loss: 0.062156811356544495. Valid loss: 0.2330656796693802
+2024-02-16 15:55:03,150 - root - INFO - Time taken for epoch 329 is 32.70565629005432 sec
+2024-02-16 15:55:03,151 - root - INFO - Train loss: 0.05872497335076332. Valid loss: 0.2352404147386551
+2024-02-16 15:55:36,069 - root - INFO - Time taken for epoch 330 is 32.91814732551575 sec
+2024-02-16 15:55:36,070 - root - INFO - Train loss: 0.05055096000432968. Valid loss: 0.23549103736877441
+2024-02-16 15:56:08,954 - root - INFO - Time taken for epoch 331 is 32.88413095474243 sec
+2024-02-16 15:56:08,955 - root - INFO - Train loss: 0.05157361924648285. Valid loss: 0.23515546321868896
+2024-02-16 15:56:41,771 - root - INFO - Time taken for epoch 332 is 32.816267013549805 sec
+2024-02-16 15:56:41,772 - root - INFO - Train loss: 0.052665211260318756. Valid loss: 0.23294703662395477
+2024-02-16 15:57:14,639 - root - INFO - Time taken for epoch 333 is 32.867300510406494 sec
+2024-02-16 15:57:14,640 - root - INFO - Train loss: 0.048750244081020355. Valid loss: 0.23126108944416046
+2024-02-16 15:57:47,602 - root - INFO - Time taken for epoch 334 is 32.96181011199951 sec
+2024-02-16 15:57:47,603 - root - INFO - Train loss: 0.055999986827373505. Valid loss: 0.23010993003845215
+2024-02-16 15:58:20,413 - root - INFO - Time taken for epoch 335 is 32.81051278114319 sec
+2024-02-16 15:58:20,414 - root - INFO - Train loss: 0.0534229502081871. Valid loss: 0.23076960444450378
+2024-02-16 15:58:53,312 - root - INFO - Time taken for epoch 336 is 32.89775228500366 sec
+2024-02-16 15:58:53,312 - root - INFO - Train loss: 0.05014010891318321. Valid loss: 0.23338302969932556
+2024-02-16 15:59:26,143 - root - INFO - Time taken for epoch 337 is 32.83083510398865 sec
+2024-02-16 15:59:26,144 - root - INFO - Train loss: 0.049033794552087784. Valid loss: 0.23249223828315735
+2024-02-16 15:59:59,062 - root - INFO - Time taken for epoch 338 is 32.91766548156738 sec
+2024-02-16 15:59:59,063 - root - INFO - Train loss: 0.04731670767068863. Valid loss: 0.23091062903404236
+2024-02-16 16:00:32,052 - root - INFO - Time taken for epoch 339 is 32.988980293273926 sec
+2024-02-16 16:00:32,052 - root - INFO - Train loss: 0.04745281860232353. Valid loss: 0.229812890291214
+2024-02-16 16:01:04,815 - root - INFO - Time taken for epoch 340 is 32.76226449012756 sec
+2024-02-16 16:01:04,815 - root - INFO - Train loss: 0.046515338122844696. Valid loss: 0.2300805151462555
+2024-02-16 16:01:37,781 - root - INFO - Time taken for epoch 341 is 32.96501159667969 sec
+2024-02-16 16:01:37,781 - root - INFO - Train loss: 0.046315133571624756. Valid loss: 0.23075918853282928
+2024-02-16 16:02:10,678 - root - INFO - Time taken for epoch 342 is 32.89615750312805 sec
+2024-02-16 16:02:10,678 - root - INFO - Train loss: 0.04888935759663582. Valid loss: 0.23137417435646057
+2024-02-16 16:02:43,399 - root - INFO - Time taken for epoch 343 is 32.72064995765686 sec
+2024-02-16 16:02:43,400 - root - INFO - Train loss: 0.057473037391901016. Valid loss: 0.22932708263397217
+2024-02-16 16:03:16,284 - root - INFO - Time taken for epoch 344 is 32.88394045829773 sec
+2024-02-16 16:03:16,284 - root - INFO - Train loss: 0.04689921438694. Valid loss: 0.2298598289489746
+2024-02-16 16:03:49,190 - root - INFO - Time taken for epoch 345 is 32.90504789352417 sec
+2024-02-16 16:03:49,190 - root - INFO - Train loss: 0.05129317194223404. Valid loss: 0.23347577452659607
+2024-02-16 16:04:22,082 - root - INFO - Time taken for epoch 346 is 32.89104175567627 sec
+2024-02-16 16:04:22,082 - root - INFO - Train loss: 0.05208688974380493. Valid loss: 0.23361925780773163
+2024-02-16 16:04:55,157 - root - INFO - Time taken for epoch 347 is 33.074283838272095 sec
+2024-02-16 16:04:55,157 - root - INFO - Train loss: 0.05189855769276619. Valid loss: 0.23317770659923553
+2024-02-16 16:05:27,970 - root - INFO - Time taken for epoch 348 is 32.81254053115845 sec
+2024-02-16 16:05:27,971 - root - INFO - Train loss: 0.055366817861795425. Valid loss: 0.23203130066394806
+2024-02-16 16:06:00,949 - root - INFO - Time taken for epoch 349 is 32.97782635688782 sec
+2024-02-16 16:06:00,949 - root - INFO - Train loss: 0.04922763630747795. Valid loss: 0.229690819978714
+2024-02-16 16:06:33,833 - root - INFO - Time taken for epoch 350 is 32.88340997695923 sec
+2024-02-16 16:06:33,833 - root - INFO - Train loss: 0.04706631600856781. Valid loss: 0.22927455604076385
+2024-02-16 16:07:07,103 - root - INFO - Time taken for epoch 351 is 33.26956534385681 sec
+2024-02-16 16:07:07,104 - root - INFO - Train loss: 0.04785308986902237. Valid loss: 0.22842378914356232
+2024-02-16 16:07:40,131 - root - INFO - Time taken for epoch 352 is 33.02682638168335 sec
+2024-02-16 16:07:40,131 - root - INFO - Train loss: 0.047209396958351135. Valid loss: 0.23052242398262024
+2024-02-16 16:08:12,945 - root - INFO - Time taken for epoch 353 is 32.81316018104553 sec
+2024-02-16 16:08:12,945 - root - INFO - Train loss: 0.045456960797309875. Valid loss: 0.2297365665435791
+2024-02-16 16:08:45,791 - root - INFO - Time taken for epoch 354 is 32.84537601470947 sec
+2024-02-16 16:08:45,791 - root - INFO - Train loss: 0.04716399312019348. Valid loss: 0.23044781386852264
+2024-02-16 16:09:18,690 - root - INFO - Time taken for epoch 355 is 32.898301124572754 sec
+2024-02-16 16:09:18,690 - root - INFO - Train loss: 0.04889160394668579. Valid loss: 0.23298868536949158
+2024-02-16 16:09:51,479 - root - INFO - Time taken for epoch 356 is 32.78863167762756 sec
+2024-02-16 16:09:51,480 - root - INFO - Train loss: 0.05338623374700546. Valid loss: 0.23153576254844666
+2024-02-16 16:10:24,558 - root - INFO - Time taken for epoch 357 is 33.077754497528076 sec
+2024-02-16 16:10:24,558 - root - INFO - Train loss: 0.04785652458667755. Valid loss: 0.23035447299480438
+2024-02-16 16:10:57,543 - root - INFO - Time taken for epoch 358 is 32.98431062698364 sec
+2024-02-16 16:10:57,544 - root - INFO - Train loss: 0.048778533935546875. Valid loss: 0.2311364710330963
+2024-02-16 16:11:30,298 - root - INFO - Time taken for epoch 359 is 32.754149198532104 sec
+2024-02-16 16:11:30,298 - root - INFO - Train loss: 0.05146864429116249. Valid loss: 0.22941288352012634
+2024-02-16 16:12:03,258 - root - INFO - Time taken for epoch 360 is 32.95956993103027 sec
+2024-02-16 16:12:03,259 - root - INFO - Train loss: 0.04780285060405731. Valid loss: 0.23327501118183136
+2024-02-16 16:12:36,217 - root - INFO - Time taken for epoch 361 is 32.95809864997864 sec
+2024-02-16 16:12:36,218 - root - INFO - Train loss: 0.04448798671364784. Valid loss: 0.23174574971199036
+2024-02-16 16:13:08,998 - root - INFO - Time taken for epoch 362 is 32.77968668937683 sec
+2024-02-16 16:13:08,998 - root - INFO - Train loss: 0.04764995723962784. Valid loss: 0.23506693542003632
+2024-02-16 16:13:41,860 - root - INFO - Time taken for epoch 363 is 32.86184740066528 sec
+2024-02-16 16:13:41,861 - root - INFO - Train loss: 0.04868003726005554. Valid loss: 0.23345907032489777
+2024-02-16 16:14:14,731 - root - INFO - Time taken for epoch 364 is 32.86958122253418 sec
+2024-02-16 16:14:14,731 - root - INFO - Train loss: 0.052152518182992935. Valid loss: 0.23279793560504913
+2024-02-16 16:14:47,385 - root - INFO - Time taken for epoch 365 is 32.65319037437439 sec
+2024-02-16 16:14:47,385 - root - INFO - Train loss: 0.052088018506765366. Valid loss: 0.23084864020347595
+2024-02-16 16:15:20,354 - root - INFO - Time taken for epoch 366 is 32.968464612960815 sec
+2024-02-16 16:15:20,355 - root - INFO - Train loss: 0.05093419551849365. Valid loss: 0.23021134734153748
+2024-02-16 16:15:53,340 - root - INFO - Time taken for epoch 367 is 32.985538721084595 sec
+2024-02-16 16:15:53,341 - root - INFO - Train loss: 0.058874618262052536. Valid loss: 0.23023107647895813
+2024-02-16 16:16:26,265 - root - INFO - Time taken for epoch 368 is 32.9235315322876 sec
+2024-02-16 16:16:26,265 - root - INFO - Train loss: 0.045216768980026245. Valid loss: 0.23145481944084167
+2024-02-16 16:16:59,232 - root - INFO - Time taken for epoch 369 is 32.96674942970276 sec
+2024-02-16 16:16:59,233 - root - INFO - Train loss: 0.04445551708340645. Valid loss: 0.2331136167049408
+2024-02-16 16:17:32,058 - root - INFO - Time taken for epoch 370 is 32.825249433517456 sec
+2024-02-16 16:17:32,059 - root - INFO - Train loss: 0.045996785163879395. Valid loss: 0.2323777675628662
+2024-02-16 16:18:04,982 - root - INFO - Time taken for epoch 371 is 32.9231071472168 sec
+2024-02-16 16:18:04,983 - root - INFO - Train loss: 0.043520744889974594. Valid loss: 0.23116469383239746
+2024-02-16 16:18:38,012 - root - INFO - Time taken for epoch 372 is 33.028881788253784 sec
+2024-02-16 16:18:38,013 - root - INFO - Train loss: 0.0439099445939064. Valid loss: 0.22918812930583954
+2024-02-16 16:19:10,694 - root - INFO - Time taken for epoch 373 is 32.6814820766449 sec
+2024-02-16 16:19:10,695 - root - INFO - Train loss: 0.043885983526706696. Valid loss: 0.22895734012126923
+2024-02-16 16:19:43,650 - root - INFO - Time taken for epoch 374 is 32.954702854156494 sec
+2024-02-16 16:19:43,650 - root - INFO - Train loss: 0.047391317784786224. Valid loss: 0.22999152541160583
+2024-02-16 16:20:16,467 - root - INFO - Time taken for epoch 375 is 32.816102027893066 sec
+2024-02-16 16:20:16,467 - root - INFO - Train loss: 0.044903725385665894. Valid loss: 0.22973918914794922
+2024-02-16 16:20:49,351 - root - INFO - Time taken for epoch 376 is 32.883230447769165 sec
+2024-02-16 16:20:49,351 - root - INFO - Train loss: 0.047918155789375305. Valid loss: 0.23038442432880402
+2024-02-16 16:21:22,281 - root - INFO - Time taken for epoch 377 is 32.92942261695862 sec
+2024-02-16 16:21:22,281 - root - INFO - Train loss: 0.045128434896469116. Valid loss: 0.23013484477996826
+2024-02-16 16:21:55,234 - root - INFO - Time taken for epoch 378 is 32.95274066925049 sec
+2024-02-16 16:21:55,235 - root - INFO - Train loss: 0.04452279955148697. Valid loss: 0.2307666838169098
+2024-02-16 16:22:28,011 - root - INFO - Time taken for epoch 379 is 32.77591586112976 sec
+2024-02-16 16:22:28,012 - root - INFO - Train loss: 0.04508446902036667. Valid loss: 0.23198862373828888
+2024-02-16 16:23:00,855 - root - INFO - Time taken for epoch 380 is 32.84326386451721 sec
+2024-02-16 16:23:00,856 - root - INFO - Train loss: 0.04784095287322998. Valid loss: 0.2328776866197586
+2024-02-16 16:23:33,417 - root - INFO - Time taken for epoch 381 is 32.561482429504395 sec
+2024-02-16 16:23:33,418 - root - INFO - Train loss: 0.049468543380498886. Valid loss: 0.23289939761161804
+2024-02-16 16:24:06,201 - root - INFO - Time taken for epoch 382 is 32.78297281265259 sec
+2024-02-16 16:24:06,202 - root - INFO - Train loss: 0.04637476056814194. Valid loss: 0.2324061393737793
+2024-02-16 16:24:38,890 - root - INFO - Time taken for epoch 383 is 32.68803024291992 sec
+2024-02-16 16:24:38,891 - root - INFO - Train loss: 0.05693944916129112. Valid loss: 0.23469428718090057
+2024-02-16 16:25:11,905 - root - INFO - Time taken for epoch 384 is 33.01434326171875 sec
+2024-02-16 16:25:11,906 - root - INFO - Train loss: 0.054452087730169296. Valid loss: 0.23442180454730988
+2024-02-16 16:25:44,674 - root - INFO - Time taken for epoch 385 is 32.768258810043335 sec
+2024-02-16 16:25:44,675 - root - INFO - Train loss: 0.05582613870501518. Valid loss: 0.23595742881298065
+2024-02-16 16:26:17,554 - root - INFO - Time taken for epoch 386 is 32.878920793533325 sec
+2024-02-16 16:26:17,554 - root - INFO - Train loss: 0.049094028770923615. Valid loss: 0.23337261378765106
+2024-02-16 16:26:50,651 - root - INFO - Time taken for epoch 387 is 33.09597587585449 sec
+2024-02-16 16:26:50,651 - root - INFO - Train loss: 0.05358687415719032. Valid loss: 0.23045606911182404
+2024-02-16 16:27:23,741 - root - INFO - Time taken for epoch 388 is 33.08969593048096 sec
+2024-02-16 16:27:23,742 - root - INFO - Train loss: 0.05022638291120529. Valid loss: 0.233320951461792
+2024-02-16 16:27:56,760 - root - INFO - Time taken for epoch 389 is 33.01807761192322 sec
+2024-02-16 16:27:56,761 - root - INFO - Train loss: 0.04591380059719086. Valid loss: 0.2312289923429489
+2024-02-16 16:28:29,934 - root - INFO - Time taken for epoch 390 is 33.17333626747131 sec
+2024-02-16 16:28:29,935 - root - INFO - Train loss: 0.04438745975494385. Valid loss: 0.23319223523139954
+2024-02-16 16:29:02,971 - root - INFO - Time taken for epoch 391 is 33.035709857940674 sec
+2024-02-16 16:29:02,971 - root - INFO - Train loss: 0.046536870300769806. Valid loss: 0.2310236394405365
+2024-02-16 16:29:35,551 - root - INFO - Time taken for epoch 392 is 32.57971954345703 sec
+2024-02-16 16:29:35,552 - root - INFO - Train loss: 0.047829605638980865. Valid loss: 0.23128323256969452
+2024-02-16 16:30:08,322 - root - INFO - Time taken for epoch 393 is 32.770389556884766 sec
+2024-02-16 16:30:08,323 - root - INFO - Train loss: 0.04484075307846069. Valid loss: 0.22933454811573029
+2024-02-16 16:30:40,786 - root - INFO - Time taken for epoch 394 is 32.46321368217468 sec
+2024-02-16 16:30:40,787 - root - INFO - Train loss: 0.046680375933647156. Valid loss: 0.22892940044403076
+2024-02-16 16:31:13,763 - root - INFO - Time taken for epoch 395 is 32.97598433494568 sec
+2024-02-16 16:31:13,764 - root - INFO - Train loss: 0.049568772315979004. Valid loss: 0.22981767356395721
+2024-02-16 16:31:46,616 - root - INFO - Time taken for epoch 396 is 32.85218858718872 sec
+2024-02-16 16:31:46,617 - root - INFO - Train loss: 0.06009785830974579. Valid loss: 0.23372390866279602
+2024-02-16 16:32:19,159 - root - INFO - Time taken for epoch 397 is 32.54177641868591 sec
+2024-02-16 16:32:19,159 - root - INFO - Train loss: 0.050046924501657486. Valid loss: 0.2363845407962799
+2024-02-16 16:32:52,006 - root - INFO - Time taken for epoch 398 is 32.84656381607056 sec
+2024-02-16 16:32:52,007 - root - INFO - Train loss: 0.04817221686244011. Valid loss: 0.23712539672851562
+2024-02-16 16:33:24,885 - root - INFO - Time taken for epoch 399 is 32.87821102142334 sec
+2024-02-16 16:33:24,886 - root - INFO - Train loss: 0.050634510815143585. Valid loss: 0.23490092158317566
+2024-02-16 16:33:57,532 - root - INFO - Time taken for epoch 400 is 32.64569354057312 sec
+2024-02-16 16:33:57,532 - root - INFO - Train loss: 0.04821450635790825. Valid loss: 0.2324812412261963
+2024-02-16 16:34:30,455 - root - INFO - Time taken for epoch 401 is 32.922890186309814 sec
+2024-02-16 16:34:30,456 - root - INFO - Train loss: 0.042880427092313766. Valid loss: 0.23097245395183563
+2024-02-16 16:35:03,048 - root - INFO - Time taken for epoch 402 is 32.59180951118469 sec
+2024-02-16 16:35:03,049 - root - INFO - Train loss: 0.045120835304260254. Valid loss: 0.2291376292705536
+2024-02-16 16:35:35,750 - root - INFO - Time taken for epoch 403 is 32.70143103599548 sec
+2024-02-16 16:35:35,751 - root - INFO - Train loss: 0.048095107078552246. Valid loss: 0.22900977730751038
+2024-02-16 16:36:08,648 - root - INFO - Time taken for epoch 404 is 32.896921157836914 sec
+2024-02-16 16:36:08,648 - root - INFO - Train loss: 0.04743929207324982. Valid loss: 0.23054644465446472
+2024-02-16 16:36:41,458 - root - INFO - Time taken for epoch 405 is 32.80967378616333 sec
+2024-02-16 16:36:41,459 - root - INFO - Train loss: 0.04746104031801224. Valid loss: 0.2320651262998581
+2024-02-16 16:37:13,986 - root - INFO - Time taken for epoch 406 is 32.52642750740051 sec
+2024-02-16 16:37:13,986 - root - INFO - Train loss: 0.044666338711977005. Valid loss: 0.22924017906188965
+2024-02-16 16:37:46,787 - root - INFO - Time taken for epoch 407 is 32.800594329833984 sec
+2024-02-16 16:37:46,787 - root - INFO - Train loss: 0.04695867747068405. Valid loss: 0.23145373165607452
+2024-02-16 16:38:19,424 - root - INFO - Time taken for epoch 408 is 32.63647150993347 sec
+2024-02-16 16:38:19,425 - root - INFO - Train loss: 0.04573613777756691. Valid loss: 0.23121865093708038
+2024-02-16 16:38:52,184 - root - INFO - Time taken for epoch 409 is 32.759479999542236 sec
+2024-02-16 16:38:52,185 - root - INFO - Train loss: 0.041788049042224884. Valid loss: 0.23023633658885956
+2024-02-16 16:39:24,957 - root - INFO - Time taken for epoch 410 is 32.77113127708435 sec
+2024-02-16 16:39:24,957 - root - INFO - Train loss: 0.0428958460688591. Valid loss: 0.23300901055335999
+2024-02-16 16:39:57,413 - root - INFO - Time taken for epoch 411 is 32.45530343055725 sec
+2024-02-16 16:39:57,413 - root - INFO - Train loss: 0.04264635220170021. Valid loss: 0.2308611124753952
+2024-02-16 16:40:30,023 - root - INFO - Time taken for epoch 412 is 32.60926556587219 sec
+2024-02-16 16:40:30,023 - root - INFO - Train loss: 0.046027086675167084. Valid loss: 0.22969596087932587
+2024-02-16 16:41:02,472 - root - INFO - Time taken for epoch 413 is 32.448933362960815 sec
+2024-02-16 16:41:02,473 - root - INFO - Train loss: 0.049069710075855255. Valid loss: 0.22922447323799133
+2024-02-16 16:41:35,202 - root - INFO - Time taken for epoch 414 is 32.72900438308716 sec
+2024-02-16 16:41:35,203 - root - INFO - Train loss: 0.05428818240761757. Valid loss: 0.23291485011577606
+2024-02-16 16:42:08,080 - root - INFO - Time taken for epoch 415 is 32.87719249725342 sec
+2024-02-16 16:42:08,081 - root - INFO - Train loss: 0.052214615046978. Valid loss: 0.23219141364097595
+2024-02-16 16:42:40,692 - root - INFO - Time taken for epoch 416 is 32.61059498786926 sec
+2024-02-16 16:42:40,692 - root - INFO - Train loss: 0.048202525824308395. Valid loss: 0.23405595123767853
+2024-02-16 16:43:13,565 - root - INFO - Time taken for epoch 417 is 32.87290835380554 sec
+2024-02-16 16:43:13,566 - root - INFO - Train loss: 0.06055675446987152. Valid loss: 0.23423950374126434
+2024-02-16 16:43:46,450 - root - INFO - Time taken for epoch 418 is 32.884422302246094 sec
+2024-02-16 16:43:46,451 - root - INFO - Train loss: 0.05038175731897354. Valid loss: 0.23081985116004944
+2024-02-16 16:44:18,971 - root - INFO - Time taken for epoch 419 is 32.52018690109253 sec
+2024-02-16 16:44:18,972 - root - INFO - Train loss: 0.044867753982543945. Valid loss: 0.23005878925323486
+2024-02-16 16:44:51,841 - root - INFO - Time taken for epoch 420 is 32.868457555770874 sec
+2024-02-16 16:44:51,841 - root - INFO - Train loss: 0.04318113625049591. Valid loss: 0.22949691116809845
+2024-02-16 16:45:24,622 - root - INFO - Time taken for epoch 421 is 32.780128479003906 sec
+2024-02-16 16:45:24,622 - root - INFO - Train loss: 0.044670406728982925. Valid loss: 0.23203083872795105
+2024-02-16 16:45:57,415 - root - INFO - Time taken for epoch 422 is 32.79282569885254 sec
+2024-02-16 16:45:57,416 - root - INFO - Train loss: 0.039509281516075134. Valid loss: 0.23346324265003204
+2024-02-16 16:46:30,387 - root - INFO - Time taken for epoch 423 is 32.971055030822754 sec
+2024-02-16 16:46:30,388 - root - INFO - Train loss: 0.03934432938694954. Valid loss: 0.2318214476108551
+2024-02-16 16:47:03,132 - root - INFO - Time taken for epoch 424 is 32.74351787567139 sec
+2024-02-16 16:47:03,132 - root - INFO - Train loss: 0.0449703112244606. Valid loss: 0.23029211163520813
+2024-02-16 16:47:35,954 - root - INFO - Time taken for epoch 425 is 32.821882247924805 sec
+2024-02-16 16:47:35,955 - root - INFO - Train loss: 0.04383218288421631. Valid loss: 0.22946234047412872
+2024-02-16 16:48:08,711 - root - INFO - Time taken for epoch 426 is 32.755542516708374 sec
+2024-02-16 16:48:08,711 - root - INFO - Train loss: 0.051460541784763336. Valid loss: 0.22995474934577942
+2024-02-16 16:48:41,108 - root - INFO - Time taken for epoch 427 is 32.39653444290161 sec
+2024-02-16 16:48:41,108 - root - INFO - Train loss: 0.048140957951545715. Valid loss: 0.2302839457988739
+2024-02-16 16:49:13,922 - root - INFO - Time taken for epoch 428 is 32.81285643577576 sec
+2024-02-16 16:49:13,922 - root - INFO - Train loss: 0.04710420221090317. Valid loss: 0.23058922588825226
+2024-02-16 16:49:46,665 - root - INFO - Time taken for epoch 429 is 32.74282646179199 sec
+2024-02-16 16:49:46,666 - root - INFO - Train loss: 0.04195822402834892. Valid loss: 0.23138348758220673
+2024-02-16 16:50:19,320 - root - INFO - Time taken for epoch 430 is 32.65393853187561 sec
+2024-02-16 16:50:19,320 - root - INFO - Train loss: 0.041782308369874954. Valid loss: 0.23072449862957
+2024-02-16 16:50:51,937 - root - INFO - Time taken for epoch 431 is 32.61622738838196 sec
+2024-02-16 16:50:51,937 - root - INFO - Train loss: 0.04524751752614975. Valid loss: 0.22980599105358124
+2024-02-16 16:51:24,349 - root - INFO - Time taken for epoch 432 is 32.41148400306702 sec
+2024-02-16 16:51:24,350 - root - INFO - Train loss: 0.043672896921634674. Valid loss: 0.23082247376441956
+2024-02-16 16:51:57,413 - root - INFO - Time taken for epoch 433 is 33.062793254852295 sec
+2024-02-16 16:51:57,413 - root - INFO - Train loss: 0.04910457879304886. Valid loss: 0.2328394651412964
+2024-02-16 16:52:30,440 - root - INFO - Time taken for epoch 434 is 33.0267608165741 sec
+2024-02-16 16:52:30,441 - root - INFO - Train loss: 0.060794662684202194. Valid loss: 0.2336854487657547
+2024-02-16 16:53:03,174 - root - INFO - Time taken for epoch 435 is 32.73342537879944 sec
+2024-02-16 16:53:03,175 - root - INFO - Train loss: 0.04736685752868652. Valid loss: 0.2336592972278595
+2024-02-16 16:53:35,664 - root - INFO - Time taken for epoch 436 is 32.48856282234192 sec
+2024-02-16 16:53:35,664 - root - INFO - Train loss: 0.04733394831418991. Valid loss: 0.23312728106975555
+2024-02-16 16:54:08,435 - root - INFO - Time taken for epoch 437 is 32.76987338066101 sec
+2024-02-16 16:54:08,435 - root - INFO - Train loss: 0.04840819165110588. Valid loss: 0.23050029575824738
+2024-02-16 16:54:41,159 - root - INFO - Time taken for epoch 438 is 32.72348928451538 sec
+2024-02-16 16:54:41,159 - root - INFO - Train loss: 0.05054447427392006. Valid loss: 0.22910821437835693
+2024-02-16 16:55:14,115 - root - INFO - Time taken for epoch 439 is 32.95562791824341 sec
+2024-02-16 16:55:14,116 - root - INFO - Train loss: 0.03961939364671707. Valid loss: 0.23117533326148987
+2024-02-16 16:55:46,644 - root - INFO - Time taken for epoch 440 is 32.52807545661926 sec
+2024-02-16 16:55:46,645 - root - INFO - Train loss: 0.03979863226413727. Valid loss: 0.23384752869606018
+2024-02-16 16:56:19,288 - root - INFO - Time taken for epoch 441 is 32.643158197402954 sec
+2024-02-16 16:56:19,289 - root - INFO - Train loss: 0.041808031499385834. Valid loss: 0.23352546989917755
+2024-02-16 16:56:52,077 - root - INFO - Time taken for epoch 442 is 32.78809309005737 sec
+2024-02-16 16:56:52,077 - root - INFO - Train loss: 0.043916359543800354. Valid loss: 0.2328532189130783
+2024-02-16 16:57:24,605 - root - INFO - Time taken for epoch 443 is 32.527360916137695 sec
+2024-02-16 16:57:24,606 - root - INFO - Train loss: 0.051010310649871826. Valid loss: 0.23064133524894714
+2024-02-16 16:57:57,418 - root - INFO - Time taken for epoch 444 is 32.81177020072937 sec
+2024-02-16 16:57:57,418 - root - INFO - Train loss: 0.04445294290781021. Valid loss: 0.23010095953941345
+2024-02-16 16:58:30,136 - root - INFO - Time taken for epoch 445 is 32.71780180931091 sec
+2024-02-16 16:58:30,137 - root - INFO - Train loss: 0.041710421442985535. Valid loss: 0.22957682609558105
+2024-02-16 16:59:02,985 - root - INFO - Time taken for epoch 446 is 32.84839987754822 sec
+2024-02-16 16:59:02,986 - root - INFO - Train loss: 0.044283896684646606. Valid loss: 0.23016028106212616
+2024-02-16 16:59:35,661 - root - INFO - Time taken for epoch 447 is 32.67477059364319 sec
+2024-02-16 16:59:35,661 - root - INFO - Train loss: 0.03992365300655365. Valid loss: 0.2306700199842453
+2024-02-16 17:00:08,239 - root - INFO - Time taken for epoch 448 is 32.57703232765198 sec
+2024-02-16 17:00:08,239 - root - INFO - Train loss: 0.04049421101808548. Valid loss: 0.23057690262794495
+2024-02-16 17:00:40,801 - root - INFO - Time taken for epoch 449 is 32.562005043029785 sec
+2024-02-16 17:00:40,802 - root - INFO - Train loss: 0.04588337987661362. Valid loss: 0.23014244437217712
+2024-02-16 17:01:13,409 - root - INFO - Time taken for epoch 450 is 32.606677532196045 sec
+2024-02-16 17:01:13,409 - root - INFO - Train loss: 0.04579545557498932. Valid loss: 0.23250600695610046
+2024-02-16 17:01:45,992 - root - INFO - Time taken for epoch 451 is 32.58287334442139 sec
+2024-02-16 17:01:45,993 - root - INFO - Train loss: 0.054322749376297. Valid loss: 0.23377618193626404
+2024-02-16 17:02:19,044 - root - INFO - Time taken for epoch 452 is 33.051212787628174 sec
+2024-02-16 17:02:19,045 - root - INFO - Train loss: 0.043497346341609955. Valid loss: 0.23081767559051514
+2024-02-16 17:02:51,828 - root - INFO - Time taken for epoch 453 is 32.78238844871521 sec
+2024-02-16 17:02:51,829 - root - INFO - Train loss: 0.04702093079686165. Valid loss: 0.22895315289497375
+2024-02-16 17:03:24,604 - root - INFO - Time taken for epoch 454 is 32.775628328323364 sec
+2024-02-16 17:03:24,605 - root - INFO - Train loss: 0.04271920025348663. Valid loss: 0.22899870574474335
+2024-02-16 17:03:57,465 - root - INFO - Time taken for epoch 455 is 32.86023235321045 sec
+2024-02-16 17:03:57,466 - root - INFO - Train loss: 0.04142531752586365. Valid loss: 0.22999313473701477
+2024-02-16 17:04:30,305 - root - INFO - Time taken for epoch 456 is 32.83886098861694 sec
+2024-02-16 17:04:30,306 - root - INFO - Train loss: 0.040152400732040405. Valid loss: 0.22943799197673798
+2024-02-16 17:05:03,118 - root - INFO - Time taken for epoch 457 is 32.81182885169983 sec
+2024-02-16 17:05:03,119 - root - INFO - Train loss: 0.04522068798542023. Valid loss: 0.22999751567840576
+2024-02-16 17:05:35,788 - root - INFO - Time taken for epoch 458 is 32.66905498504639 sec
+2024-02-16 17:05:35,789 - root - INFO - Train loss: 0.049885958433151245. Valid loss: 0.23037703335285187
+2024-02-16 17:06:08,314 - root - INFO - Time taken for epoch 459 is 32.52572274208069 sec
+2024-02-16 17:06:08,315 - root - INFO - Train loss: 0.04200687259435654. Valid loss: 0.23118071258068085
+2024-02-16 17:06:41,072 - root - INFO - Time taken for epoch 460 is 32.75728726387024 sec
+2024-02-16 17:06:41,073 - root - INFO - Train loss: 0.04210268333554268. Valid loss: 0.2305433303117752
+2024-02-16 17:07:13,707 - root - INFO - Time taken for epoch 461 is 32.63344359397888 sec
+2024-02-16 17:07:13,707 - root - INFO - Train loss: 0.042240120470523834. Valid loss: 0.2302217185497284
+2024-02-16 17:07:46,362 - root - INFO - Time taken for epoch 462 is 32.65416860580444 sec
+2024-02-16 17:07:46,363 - root - INFO - Train loss: 0.043083660304546356. Valid loss: 0.23157735168933868
+2024-02-16 17:08:19,187 - root - INFO - Time taken for epoch 463 is 32.82367157936096 sec
+2024-02-16 17:08:19,187 - root - INFO - Train loss: 0.041883423924446106. Valid loss: 0.2318134605884552
+2024-02-16 17:08:52,071 - root - INFO - Time taken for epoch 464 is 32.883179664611816 sec
+2024-02-16 17:08:52,071 - root - INFO - Train loss: 0.0409492626786232. Valid loss: 0.2306727170944214
+2024-02-16 17:09:24,587 - root - INFO - Time taken for epoch 465 is 32.5159547328949 sec
+2024-02-16 17:09:24,588 - root - INFO - Train loss: 0.04288525879383087. Valid loss: 0.2287907600402832
+2024-02-16 17:09:57,696 - root - INFO - Time taken for epoch 466 is 33.10843229293823 sec
+2024-02-16 17:09:57,697 - root - INFO - Train loss: 0.03836086392402649. Valid loss: 0.2277565747499466
+2024-02-16 17:10:30,424 - root - INFO - Time taken for epoch 467 is 32.727033615112305 sec
+2024-02-16 17:10:30,425 - root - INFO - Train loss: 0.0418236069381237. Valid loss: 0.2279740571975708
+2024-02-16 17:11:03,107 - root - INFO - Time taken for epoch 468 is 32.68246078491211 sec
+2024-02-16 17:11:03,108 - root - INFO - Train loss: 0.0425293929874897. Valid loss: 0.23068085312843323
+2024-02-16 17:11:35,896 - root - INFO - Time taken for epoch 469 is 32.788317918777466 sec
+2024-02-16 17:11:35,897 - root - INFO - Train loss: 0.03823934122920036. Valid loss: 0.2307916134595871
+2024-02-16 17:12:08,603 - root - INFO - Time taken for epoch 470 is 32.706204891204834 sec
+2024-02-16 17:12:08,604 - root - INFO - Train loss: 0.038489606231451035. Valid loss: 0.2309425324201584
+2024-02-16 17:12:41,134 - root - INFO - Time taken for epoch 471 is 32.52955365180969 sec
+2024-02-16 17:12:41,134 - root - INFO - Train loss: 0.03813385218381882. Valid loss: 0.23007984459400177
+2024-02-16 17:13:13,807 - root - INFO - Time taken for epoch 472 is 32.6724317073822 sec
+2024-02-16 17:13:13,807 - root - INFO - Train loss: 0.0397883765399456. Valid loss: 0.22977742552757263
+2024-02-16 17:13:46,477 - root - INFO - Time taken for epoch 473 is 32.66959190368652 sec
+2024-02-16 17:13:46,478 - root - INFO - Train loss: 0.03922371566295624. Valid loss: 0.22956232726573944
+2024-02-16 17:14:19,305 - root - INFO - Time taken for epoch 474 is 32.8270697593689 sec
+2024-02-16 17:14:19,306 - root - INFO - Train loss: 0.03976178914308548. Valid loss: 0.22824561595916748
+2024-02-16 17:14:52,127 - root - INFO - Time taken for epoch 475 is 32.8211305141449 sec
+2024-02-16 17:14:52,127 - root - INFO - Train loss: 0.042939282953739166. Valid loss: 0.2310820072889328
+2024-02-16 17:15:24,867 - root - INFO - Time taken for epoch 476 is 32.73945903778076 sec
+2024-02-16 17:15:24,868 - root - INFO - Train loss: 0.04056725651025772. Valid loss: 0.2326098382472992
+2024-02-16 17:15:57,636 - root - INFO - Time taken for epoch 477 is 32.76800870895386 sec
+2024-02-16 17:15:57,636 - root - INFO - Train loss: 0.049058057367801666. Valid loss: 0.23447397351264954
+2024-02-16 17:16:30,293 - root - INFO - Time taken for epoch 478 is 32.65601992607117 sec
+2024-02-16 17:16:30,293 - root - INFO - Train loss: 0.051127463579177856. Valid loss: 0.23201020061969757
+2024-02-16 17:17:03,353 - root - INFO - Time taken for epoch 479 is 33.05931282043457 sec
+2024-02-16 17:17:03,353 - root - INFO - Train loss: 0.04372328892350197. Valid loss: 0.2300579994916916
+2024-02-16 17:17:36,202 - root - INFO - Time taken for epoch 480 is 32.84907817840576 sec
+2024-02-16 17:17:36,203 - root - INFO - Train loss: 0.04213055968284607. Valid loss: 0.22963686287403107
+2024-02-16 17:18:09,104 - root - INFO - Time taken for epoch 481 is 32.900599002838135 sec
+2024-02-16 17:18:09,104 - root - INFO - Train loss: 0.04285689443349838. Valid loss: 0.23029442131519318
+2024-02-16 17:18:42,240 - root - INFO - Time taken for epoch 482 is 33.13569092750549 sec
+2024-02-16 17:18:42,241 - root - INFO - Train loss: 0.03975694254040718. Valid loss: 0.2321823090314865
+2024-02-16 17:19:15,307 - root - INFO - Time taken for epoch 483 is 33.06623029708862 sec
+2024-02-16 17:19:15,308 - root - INFO - Train loss: 0.03796699270606041. Valid loss: 0.23267951607704163
+2024-02-16 17:19:48,172 - root - INFO - Time taken for epoch 484 is 32.86424016952515 sec
+2024-02-16 17:19:48,173 - root - INFO - Train loss: 0.03988363593816757. Valid loss: 0.229482501745224
+2024-02-16 17:20:21,105 - root - INFO - Time taken for epoch 485 is 32.932208776474 sec
+2024-02-16 17:20:21,106 - root - INFO - Train loss: 0.04004419222474098. Valid loss: 0.22902151942253113
+2024-02-16 17:20:54,111 - root - INFO - Time taken for epoch 486 is 33.00492334365845 sec
+2024-02-16 17:20:54,112 - root - INFO - Train loss: 0.051008522510528564. Valid loss: 0.23139064013957977
+2024-02-16 17:21:26,869 - root - INFO - Time taken for epoch 487 is 32.75701928138733 sec
+2024-02-16 17:21:26,870 - root - INFO - Train loss: 0.051412433385849. Valid loss: 0.23289994895458221
+2024-02-16 17:21:59,610 - root - INFO - Time taken for epoch 488 is 32.740381717681885 sec
+2024-02-16 17:21:59,611 - root - INFO - Train loss: 0.04876262694597244. Valid loss: 0.23269018530845642
+2024-02-16 17:22:32,240 - root - INFO - Time taken for epoch 489 is 32.62867999076843 sec
+2024-02-16 17:22:32,240 - root - INFO - Train loss: 0.04024599492549896. Valid loss: 0.23080627620220184
+2024-02-16 17:23:05,083 - root - INFO - Time taken for epoch 490 is 32.84304165840149 sec
+2024-02-16 17:23:05,084 - root - INFO - Train loss: 0.040634408593177795. Valid loss: 0.22963328659534454
+2024-02-16 17:23:37,974 - root - INFO - Time taken for epoch 491 is 32.88986778259277 sec
+2024-02-16 17:23:37,975 - root - INFO - Train loss: 0.03808876499533653. Valid loss: 0.2289634644985199
+2024-02-16 17:24:10,483 - root - INFO - Time taken for epoch 492 is 32.508065938949585 sec
+2024-02-16 17:24:10,484 - root - INFO - Train loss: 0.03979383036494255. Valid loss: 0.22855272889137268
+2024-02-16 17:24:43,411 - root - INFO - Time taken for epoch 493 is 32.92720866203308 sec
+2024-02-16 17:24:43,412 - root - INFO - Train loss: 0.039143893867731094. Valid loss: 0.22972822189331055
+2024-02-16 17:25:16,024 - root - INFO - Time taken for epoch 494 is 32.611852407455444 sec
+2024-02-16 17:25:16,024 - root - INFO - Train loss: 0.045591726899147034. Valid loss: 0.22965550422668457
+2024-02-16 17:25:48,538 - root - INFO - Time taken for epoch 495 is 32.51303696632385 sec
+2024-02-16 17:25:48,538 - root - INFO - Train loss: 0.03909273445606232. Valid loss: 0.23057584464550018
+2024-02-16 17:26:21,267 - root - INFO - Time taken for epoch 496 is 32.728782176971436 sec
+2024-02-16 17:26:21,268 - root - INFO - Train loss: 0.04145720228552818. Valid loss: 0.22992178797721863
+2024-02-16 17:26:54,428 - root - INFO - Time taken for epoch 497 is 33.159966707229614 sec
+2024-02-16 17:26:54,428 - root - INFO - Train loss: 0.04407709836959839. Valid loss: 0.22764869034290314
+2024-02-16 17:27:26,954 - root - INFO - Time taken for epoch 498 is 32.525558948516846 sec
+2024-02-16 17:27:26,955 - root - INFO - Train loss: 0.03914652019739151. Valid loss: 0.2282450944185257
+2024-02-16 17:27:59,599 - root - INFO - Time taken for epoch 499 is 32.64405536651611 sec
+2024-02-16 17:27:59,600 - root - INFO - Train loss: 0.039958417415618896. Valid loss: 0.23011013865470886
+2024-02-16 17:28:32,237 - root - INFO - Time taken for epoch 500 is 32.63712406158447 sec
+2024-02-16 17:28:32,238 - root - INFO - Train loss: 0.040509533137083054. Valid loss: 0.23243553936481476
+2024-02-16 17:29:05,040 - root - INFO - Time taken for epoch 501 is 32.80218029022217 sec
+2024-02-16 17:29:05,041 - root - INFO - Train loss: 0.040718141943216324. Valid loss: 0.23362953960895538
+2024-02-16 17:29:37,813 - root - INFO - Time taken for epoch 502 is 32.77167320251465 sec
+2024-02-16 17:29:37,813 - root - INFO - Train loss: 0.039600178599357605. Valid loss: 0.23017409443855286
+2024-02-16 17:30:10,404 - root - INFO - Time taken for epoch 503 is 32.59099292755127 sec
+2024-02-16 17:30:10,405 - root - INFO - Train loss: 0.039457567036151886. Valid loss: 0.22906525433063507
+2024-02-16 17:30:43,205 - root - INFO - Time taken for epoch 504 is 32.799426555633545 sec
+2024-02-16 17:30:43,205 - root - INFO - Train loss: 0.03820187598466873. Valid loss: 0.2279636561870575
+2024-02-16 17:31:15,888 - root - INFO - Time taken for epoch 505 is 32.68288850784302 sec
+2024-02-16 17:31:15,889 - root - INFO - Train loss: 0.03871825337409973. Valid loss: 0.22786574065685272
+2024-02-16 17:31:48,826 - root - INFO - Time taken for epoch 506 is 32.93686270713806 sec
+2024-02-16 17:31:48,827 - root - INFO - Train loss: 0.04003100469708443. Valid loss: 0.22900934517383575
+2024-02-16 17:32:21,570 - root - INFO - Time taken for epoch 507 is 32.74336314201355 sec
+2024-02-16 17:32:21,571 - root - INFO - Train loss: 0.03794912248849869. Valid loss: 0.22906947135925293
+2024-02-16 17:32:54,307 - root - INFO - Time taken for epoch 508 is 32.735435485839844 sec
+2024-02-16 17:32:54,307 - root - INFO - Train loss: 0.042879361659288406. Valid loss: 0.22940340638160706
+2024-02-16 17:33:27,185 - root - INFO - Time taken for epoch 509 is 32.877134799957275 sec
+2024-02-16 17:33:27,185 - root - INFO - Train loss: 0.039127010852098465. Valid loss: 0.2309505045413971
+2024-02-16 17:33:59,881 - root - INFO - Time taken for epoch 510 is 32.69562315940857 sec
+2024-02-16 17:33:59,882 - root - INFO - Train loss: 0.04178895428776741. Valid loss: 0.2323790043592453
+2024-02-16 17:34:32,453 - root - INFO - Time taken for epoch 511 is 32.5708441734314 sec
+2024-02-16 17:34:32,453 - root - INFO - Train loss: 0.039832331240177155. Valid loss: 0.23147860169410706
+2024-02-16 17:35:05,135 - root - INFO - Time taken for epoch 512 is 32.68118119239807 sec
+2024-02-16 17:35:05,135 - root - INFO - Train loss: 0.038583263754844666. Valid loss: 0.22930535674095154
+2024-02-16 17:35:38,417 - root - INFO - Time taken for epoch 513 is 33.282100439071655 sec
+2024-02-16 17:35:38,418 - root - INFO - Train loss: 0.03392542153596878. Valid loss: 0.2272229939699173
+2024-02-16 17:36:11,088 - root - INFO - Time taken for epoch 514 is 32.66957664489746 sec
+2024-02-16 17:36:11,088 - root - INFO - Train loss: 0.039411306381225586. Valid loss: 0.22953498363494873
+2024-02-16 17:36:43,963 - root - INFO - Time taken for epoch 515 is 32.87450051307678 sec
+2024-02-16 17:36:43,964 - root - INFO - Train loss: 0.04379168152809143. Valid loss: 0.2289227992296219
+2024-02-16 17:37:16,506 - root - INFO - Time taken for epoch 516 is 32.542269468307495 sec
+2024-02-16 17:37:16,507 - root - INFO - Train loss: 0.04900757595896721. Valid loss: 0.22839036583900452
+2024-02-16 17:37:49,300 - root - INFO - Time taken for epoch 517 is 32.792898178100586 sec
+2024-02-16 17:37:49,300 - root - INFO - Train loss: 0.040366627275943756. Valid loss: 0.22814588248729706
+2024-02-16 17:38:22,152 - root - INFO - Time taken for epoch 518 is 32.851802587509155 sec
+2024-02-16 17:38:22,153 - root - INFO - Train loss: 0.0447828583419323. Valid loss: 0.23061180114746094
+2024-02-16 17:38:54,864 - root - INFO - Time taken for epoch 519 is 32.71107363700867 sec
+2024-02-16 17:38:54,865 - root - INFO - Train loss: 0.04544980078935623. Valid loss: 0.23109035193920135
+2024-02-16 17:39:27,684 - root - INFO - Time taken for epoch 520 is 32.81907415390015 sec
+2024-02-16 17:39:27,685 - root - INFO - Train loss: 0.053287532180547714. Valid loss: 0.23236966133117676
+2024-02-16 17:40:00,506 - root - INFO - Time taken for epoch 521 is 32.820828914642334 sec
+2024-02-16 17:40:00,506 - root - INFO - Train loss: 0.041134003549814224. Valid loss: 0.23297420144081116
+2024-02-16 17:40:33,211 - root - INFO - Time taken for epoch 522 is 32.705044984817505 sec
+2024-02-16 17:40:33,212 - root - INFO - Train loss: 0.04356874153017998. Valid loss: 0.23192241787910461
+2024-02-16 17:41:05,937 - root - INFO - Time taken for epoch 523 is 32.725083351135254 sec
+2024-02-16 17:41:05,938 - root - INFO - Train loss: 0.044677991420030594. Valid loss: 0.23195187747478485
+2024-02-16 17:41:38,534 - root - INFO - Time taken for epoch 524 is 32.59645080566406 sec
+2024-02-16 17:41:38,535 - root - INFO - Train loss: 0.04091539978981018. Valid loss: 0.23159483075141907
+2024-02-16 17:42:11,261 - root - INFO - Time taken for epoch 525 is 32.72598218917847 sec
+2024-02-16 17:42:11,262 - root - INFO - Train loss: 0.03503447771072388. Valid loss: 0.2320212423801422
+2024-02-16 17:42:43,993 - root - INFO - Time taken for epoch 526 is 32.73099374771118 sec
+2024-02-16 17:42:43,994 - root - INFO - Train loss: 0.03722745180130005. Valid loss: 0.23035959899425507
+2024-02-16 17:43:16,480 - root - INFO - Time taken for epoch 527 is 32.48621582984924 sec
+2024-02-16 17:43:16,481 - root - INFO - Train loss: 0.03604477643966675. Valid loss: 0.2303861379623413
+2024-02-16 17:43:49,261 - root - INFO - Time taken for epoch 528 is 32.780399560928345 sec
+2024-02-16 17:43:49,262 - root - INFO - Train loss: 0.043395932763814926. Valid loss: 0.22974880039691925
+2024-02-16 17:44:21,904 - root - INFO - Time taken for epoch 529 is 32.64162850379944 sec
+2024-02-16 17:44:21,904 - root - INFO - Train loss: 0.04275006800889969. Valid loss: 0.2314101755619049
+2024-02-16 17:44:54,550 - root - INFO - Time taken for epoch 530 is 32.64600872993469 sec
+2024-02-16 17:44:54,551 - root - INFO - Train loss: 0.04135884344577789. Valid loss: 0.23087051510810852
+2024-02-16 17:45:27,378 - root - INFO - Time taken for epoch 531 is 32.82686734199524 sec
+2024-02-16 17:45:27,379 - root - INFO - Train loss: 0.05007680132985115. Valid loss: 0.23083317279815674
+2024-02-16 17:46:00,046 - root - INFO - Time taken for epoch 532 is 32.66697549819946 sec
+2024-02-16 17:46:00,047 - root - INFO - Train loss: 0.05108370631933212. Valid loss: 0.2320842444896698
+2024-02-16 17:46:32,737 - root - INFO - Time taken for epoch 533 is 32.68980836868286 sec
+2024-02-16 17:46:32,737 - root - INFO - Train loss: 0.04193602502346039. Valid loss: 0.22954674065113068
+2024-02-16 17:47:06,706 - root - INFO - Time taken for epoch 534 is 33.96840214729309 sec
+2024-02-16 17:47:06,707 - root - INFO - Train loss: 0.04078444465994835. Valid loss: 0.2286209762096405
+2024-02-16 17:47:42,479 - root - INFO - Time taken for epoch 535 is 35.772027254104614 sec
+2024-02-16 17:47:42,480 - root - INFO - Train loss: 0.03969109430909157. Valid loss: 0.22919127345085144
+2024-02-16 17:48:17,343 - root - INFO - Time taken for epoch 536 is 34.863304138183594 sec
+2024-02-16 17:48:17,344 - root - INFO - Train loss: 0.03511520475149155. Valid loss: 0.2299521416425705
+2024-02-16 17:48:52,531 - root - INFO - Time taken for epoch 537 is 35.1864550113678 sec
+2024-02-16 17:48:52,531 - root - INFO - Train loss: 0.03788759931921959. Valid loss: 0.23106789588928223
+2024-02-16 17:49:26,269 - root - INFO - Time taken for epoch 538 is 33.7374792098999 sec
+2024-02-16 17:49:26,269 - root - INFO - Train loss: 0.03802112489938736. Valid loss: 0.23116405308246613
+2024-02-16 17:49:59,309 - root - INFO - Time taken for epoch 539 is 33.03949594497681 sec
+2024-02-16 17:49:59,310 - root - INFO - Train loss: 0.03636052459478378. Valid loss: 0.23136642575263977
+2024-02-16 17:50:32,188 - root - INFO - Time taken for epoch 540 is 32.877930641174316 sec
+2024-02-16 17:50:32,188 - root - INFO - Train loss: 0.04028352349996567. Valid loss: 0.23139850795269012
+2024-02-16 17:51:04,612 - root - INFO - Time taken for epoch 541 is 32.42367172241211 sec
+2024-02-16 17:51:04,613 - root - INFO - Train loss: 0.04087722301483154. Valid loss: 0.23480506241321564
+2024-02-16 17:51:37,356 - root - INFO - Time taken for epoch 542 is 32.74217462539673 sec
+2024-02-16 17:51:37,356 - root - INFO - Train loss: 0.04839146509766579. Valid loss: 0.22961702942848206
+2024-02-16 17:52:11,340 - root - INFO - Time taken for epoch 543 is 33.983224630355835 sec
+2024-02-16 17:52:11,340 - root - INFO - Train loss: 0.04458807408809662. Valid loss: 0.22966746985912323
+2024-02-16 17:52:44,687 - root - INFO - Time taken for epoch 544 is 33.34614849090576 sec
+2024-02-16 17:52:44,687 - root - INFO - Train loss: 0.04532300680875778. Valid loss: 0.23090429604053497
+2024-02-16 17:53:17,602 - root - INFO - Time taken for epoch 545 is 32.91502523422241 sec
+2024-02-16 17:53:17,603 - root - INFO - Train loss: 0.03882082551717758. Valid loss: 0.23136863112449646
+2024-02-16 17:53:50,099 - root - INFO - Time taken for epoch 546 is 32.49648928642273 sec
+2024-02-16 17:53:50,100 - root - INFO - Train loss: 0.038994111120700836. Valid loss: 0.23100006580352783
+2024-02-16 17:54:22,706 - root - INFO - Time taken for epoch 547 is 32.60624146461487 sec
+2024-02-16 17:54:22,707 - root - INFO - Train loss: 0.03699970245361328. Valid loss: 0.2302701771259308
+2024-02-16 17:54:55,418 - root - INFO - Time taken for epoch 548 is 32.71049642562866 sec
+2024-02-16 17:54:55,419 - root - INFO - Train loss: 0.03504333645105362. Valid loss: 0.22898077964782715
+2024-02-16 17:55:27,857 - root - INFO - Time taken for epoch 549 is 32.43860054016113 sec
+2024-02-16 17:55:27,858 - root - INFO - Train loss: 0.0328756719827652. Valid loss: 0.22862641513347626
+2024-02-16 17:56:00,452 - root - INFO - Time taken for epoch 550 is 32.59372544288635 sec
+2024-02-16 17:56:00,452 - root - INFO - Train loss: 0.03383656591176987. Valid loss: 0.2287619560956955
+2024-02-16 17:56:33,083 - root - INFO - Time taken for epoch 551 is 32.63082528114319 sec
+2024-02-16 17:56:33,084 - root - INFO - Train loss: 0.04255998134613037. Valid loss: 0.22942546010017395
+2024-02-16 17:57:05,524 - root - INFO - Time taken for epoch 552 is 32.440027952194214 sec
+2024-02-16 17:57:05,525 - root - INFO - Train loss: 0.040008436888456345. Valid loss: 0.23209889233112335
+2024-02-16 17:57:37,973 - root - INFO - Time taken for epoch 553 is 32.447906255722046 sec
+2024-02-16 17:57:37,973 - root - INFO - Train loss: 0.044589851051568985. Valid loss: 0.22950617969036102
+2024-02-16 17:58:10,347 - root - INFO - Time taken for epoch 554 is 32.37294340133667 sec
+2024-02-16 17:58:10,347 - root - INFO - Train loss: 0.041510045528411865. Valid loss: 0.2282819300889969
+2024-02-16 17:58:42,992 - root - INFO - Time taken for epoch 555 is 32.6447651386261 sec
+2024-02-16 17:58:42,993 - root - INFO - Train loss: 0.03599438816308975. Valid loss: 0.2284032106399536
+2024-02-16 17:59:15,621 - root - INFO - Time taken for epoch 556 is 32.62811207771301 sec
+2024-02-16 17:59:15,622 - root - INFO - Train loss: 0.032905224710702896. Valid loss: 0.2290107011795044
+2024-02-16 17:59:48,041 - root - INFO - Time taken for epoch 557 is 32.418840169906616 sec
+2024-02-16 17:59:48,042 - root - INFO - Train loss: 0.035333022475242615. Valid loss: 0.23041407763957977
+2024-02-16 18:00:20,646 - root - INFO - Time taken for epoch 558 is 32.60428333282471 sec
+2024-02-16 18:00:20,647 - root - INFO - Train loss: 0.038535505533218384. Valid loss: 0.2324221134185791
+2024-02-16 18:00:53,092 - root - INFO - Time taken for epoch 559 is 32.44477653503418 sec
+2024-02-16 18:00:53,092 - root - INFO - Train loss: 0.03806649520993233. Valid loss: 0.2292899787425995
+2024-02-16 18:01:25,299 - root - INFO - Time taken for epoch 560 is 32.20667576789856 sec
+2024-02-16 18:01:25,300 - root - INFO - Train loss: 0.03306508809328079. Valid loss: 0.22856402397155762
+2024-02-16 18:01:57,886 - root - INFO - Time taken for epoch 561 is 32.58601713180542 sec
+2024-02-16 18:01:57,887 - root - INFO - Train loss: 0.03666819632053375. Valid loss: 0.2284308671951294
+2024-02-16 18:02:30,400 - root - INFO - Time taken for epoch 562 is 32.512858629226685 sec
+2024-02-16 18:02:30,400 - root - INFO - Train loss: 0.03342235088348389. Valid loss: 0.23035606741905212
+2024-02-16 18:03:03,050 - root - INFO - Time taken for epoch 563 is 32.64964485168457 sec
+2024-02-16 18:03:03,051 - root - INFO - Train loss: 0.04167446866631508. Valid loss: 0.2299068421125412
+2024-02-16 18:03:35,950 - root - INFO - Time taken for epoch 564 is 32.89944386482239 sec
+2024-02-16 18:03:35,951 - root - INFO - Train loss: 0.03608369454741478. Valid loss: 0.23025545477867126
+2024-02-16 18:04:08,634 - root - INFO - Time taken for epoch 565 is 32.68280601501465 sec
+2024-02-16 18:04:08,635 - root - INFO - Train loss: 0.040458738803863525. Valid loss: 0.2294580489397049
+2024-02-16 18:04:41,364 - root - INFO - Time taken for epoch 566 is 32.728922843933105 sec
+2024-02-16 18:04:41,364 - root - INFO - Train loss: 0.04468194767832756. Valid loss: 0.22929055988788605
+2024-02-16 18:05:14,005 - root - INFO - Time taken for epoch 567 is 32.64060711860657 sec
+2024-02-16 18:05:14,006 - root - INFO - Train loss: 0.03796568140387535. Valid loss: 0.2316569834947586
+2024-02-16 18:05:46,631 - root - INFO - Time taken for epoch 568 is 32.62530517578125 sec
+2024-02-16 18:05:46,632 - root - INFO - Train loss: 0.04066251963376999. Valid loss: 0.23142321407794952
+2024-02-16 18:06:19,459 - root - INFO - Time taken for epoch 569 is 32.826935052871704 sec
+2024-02-16 18:06:19,459 - root - INFO - Train loss: 0.03640027344226837. Valid loss: 0.23062868416309357
+2024-02-16 18:06:51,795 - root - INFO - Time taken for epoch 570 is 32.335288524627686 sec
+2024-02-16 18:06:51,796 - root - INFO - Train loss: 0.034842103719711304. Valid loss: 0.23025763034820557
+2024-02-16 18:07:24,358 - root - INFO - Time taken for epoch 571 is 32.562105655670166 sec
+2024-02-16 18:07:24,358 - root - INFO - Train loss: 0.03328204154968262. Valid loss: 0.22910873591899872
+2024-02-16 18:07:56,895 - root - INFO - Time taken for epoch 572 is 32.535924434661865 sec
+2024-02-16 18:07:56,895 - root - INFO - Train loss: 0.03258735314011574. Valid loss: 0.23079988360404968
+2024-02-16 18:08:29,334 - root - INFO - Time taken for epoch 573 is 32.43829655647278 sec
+2024-02-16 18:08:29,335 - root - INFO - Train loss: 0.03842899948358536. Valid loss: 0.23038840293884277
+2024-02-16 18:09:02,204 - root - INFO - Time taken for epoch 574 is 32.86935210227966 sec
+2024-02-16 18:09:02,205 - root - INFO - Train loss: 0.04077267646789551. Valid loss: 0.22978508472442627
+2024-02-16 18:09:34,974 - root - INFO - Time taken for epoch 575 is 32.76840257644653 sec
+2024-02-16 18:09:34,974 - root - INFO - Train loss: 0.0320601612329483. Valid loss: 0.22990718483924866
+2024-02-16 18:10:07,652 - root - INFO - Time taken for epoch 576 is 32.677849531173706 sec
+2024-02-16 18:10:07,653 - root - INFO - Train loss: 0.03759361431002617. Valid loss: 0.22966782748699188
+2024-02-16 18:10:40,292 - root - INFO - Time taken for epoch 577 is 32.638405561447144 sec
+2024-02-16 18:10:40,292 - root - INFO - Train loss: 0.043138328939676285. Valid loss: 0.22847020626068115
+2024-02-16 18:11:13,177 - root - INFO - Time taken for epoch 578 is 32.884477376937866 sec
+2024-02-16 18:11:13,177 - root - INFO - Train loss: 0.03817460685968399. Valid loss: 0.22916391491889954
+2024-02-16 18:11:46,019 - root - INFO - Time taken for epoch 579 is 32.84165835380554 sec
+2024-02-16 18:11:46,020 - root - INFO - Train loss: 0.03470725566148758. Valid loss: 0.22990825772285461
+2024-02-16 18:12:18,649 - root - INFO - Time taken for epoch 580 is 32.628666400909424 sec
+2024-02-16 18:12:18,649 - root - INFO - Train loss: 0.03583702817559242. Valid loss: 0.2306092083454132
+2024-02-16 18:12:51,121 - root - INFO - Time taken for epoch 581 is 32.47106194496155 sec
+2024-02-16 18:12:51,121 - root - INFO - Train loss: 0.034122366458177567. Valid loss: 0.22890272736549377
+2024-02-16 18:13:23,833 - root - INFO - Time taken for epoch 582 is 32.711424350738525 sec
+2024-02-16 18:13:23,834 - root - INFO - Train loss: 0.034508537501096725. Valid loss: 0.2278791218996048
+2024-02-16 18:13:56,565 - root - INFO - Time taken for epoch 583 is 32.73176288604736 sec
+2024-02-16 18:13:56,566 - root - INFO - Train loss: 0.03358417749404907. Valid loss: 0.22840926051139832
+2024-02-16 18:14:29,111 - root - INFO - Time taken for epoch 584 is 32.54495930671692 sec
+2024-02-16 18:14:29,112 - root - INFO - Train loss: 0.035323578864336014. Valid loss: 0.22897391021251678
+2024-02-16 18:15:01,827 - root - INFO - Time taken for epoch 585 is 32.71495842933655 sec
+2024-02-16 18:15:01,827 - root - INFO - Train loss: 0.03618443012237549. Valid loss: 0.23047614097595215
+2024-02-16 18:15:34,612 - root - INFO - Time taken for epoch 586 is 32.783915281295776 sec
+2024-02-16 18:15:34,612 - root - INFO - Train loss: 0.039355143904685974. Valid loss: 0.23012836277484894
+2024-02-16 18:16:07,188 - root - INFO - Time taken for epoch 587 is 32.57545566558838 sec
+2024-02-16 18:16:07,188 - root - INFO - Train loss: 0.035473767668008804. Valid loss: 0.23154667019844055
+2024-02-16 18:16:39,815 - root - INFO - Time taken for epoch 588 is 32.62613821029663 sec
+2024-02-16 18:16:39,815 - root - INFO - Train loss: 0.03703044727444649. Valid loss: 0.2315463274717331
+2024-02-16 18:17:12,309 - root - INFO - Time taken for epoch 589 is 32.49352478981018 sec
+2024-02-16 18:17:12,310 - root - INFO - Train loss: 0.034720197319984436. Valid loss: 0.23096033930778503
+2024-02-16 18:17:44,969 - root - INFO - Time taken for epoch 590 is 32.65967607498169 sec
+2024-02-16 18:17:44,970 - root - INFO - Train loss: 0.0364932119846344. Valid loss: 0.2298421859741211
+2024-02-16 18:18:17,703 - root - INFO - Time taken for epoch 591 is 32.73276925086975 sec
+2024-02-16 18:18:17,704 - root - INFO - Train loss: 0.03401878848671913. Valid loss: 0.22925253212451935
+2024-02-16 18:18:50,267 - root - INFO - Time taken for epoch 592 is 32.56314969062805 sec
+2024-02-16 18:18:50,268 - root - INFO - Train loss: 0.03520074114203453. Valid loss: 0.23006558418273926
+2024-02-16 18:19:22,738 - root - INFO - Time taken for epoch 593 is 32.46971583366394 sec
+2024-02-16 18:19:22,738 - root - INFO - Train loss: 0.03589750826358795. Valid loss: 0.23027165234088898
+2024-02-16 18:19:55,248 - root - INFO - Time taken for epoch 594 is 32.509408712387085 sec
+2024-02-16 18:19:55,248 - root - INFO - Train loss: 0.03139771521091461. Valid loss: 0.22922775149345398
+2024-02-16 18:20:27,686 - root - INFO - Time taken for epoch 595 is 32.43790316581726 sec
+2024-02-16 18:20:27,687 - root - INFO - Train loss: 0.03976115584373474. Valid loss: 0.2277757227420807
+2024-02-16 18:21:00,369 - root - INFO - Time taken for epoch 596 is 32.68172073364258 sec
+2024-02-16 18:21:00,370 - root - INFO - Train loss: 0.031127840280532837. Valid loss: 0.22750310599803925
+2024-02-16 18:21:33,086 - root - INFO - Time taken for epoch 597 is 32.716070890426636 sec
+2024-02-16 18:21:33,086 - root - INFO - Train loss: 0.03188105672597885. Valid loss: 0.22789700329303741
+2024-02-16 18:22:05,672 - root - INFO - Time taken for epoch 598 is 32.58504843711853 sec
+2024-02-16 18:22:05,672 - root - INFO - Train loss: 0.03466632217168808. Valid loss: 0.2280612289905548
+2024-02-16 18:22:38,291 - root - INFO - Time taken for epoch 599 is 32.61816358566284 sec
+2024-02-16 18:22:38,291 - root - INFO - Train loss: 0.03196854889392853. Valid loss: 0.22889740765094757
+2024-02-16 18:23:10,838 - root - INFO - Time taken for epoch 600 is 32.54618287086487 sec
+2024-02-16 18:23:10,838 - root - INFO - Train loss: 0.03260054811835289. Valid loss: 0.22933778166770935
+2024-02-16 18:23:43,536 - root - INFO - Time taken for epoch 601 is 32.69790816307068 sec
+2024-02-16 18:23:43,537 - root - INFO - Train loss: 0.03287719190120697. Valid loss: 0.2287437468767166
+2024-02-16 18:24:16,102 - root - INFO - Time taken for epoch 602 is 32.564611196517944 sec
+2024-02-16 18:24:16,102 - root - INFO - Train loss: 0.03469239920377731. Valid loss: 0.22922277450561523
+2024-02-16 18:24:48,633 - root - INFO - Time taken for epoch 603 is 32.53054404258728 sec
+2024-02-16 18:24:48,634 - root - INFO - Train loss: 0.03753851354122162. Valid loss: 0.2301957607269287
+2024-02-16 18:25:21,402 - root - INFO - Time taken for epoch 604 is 32.76832985877991 sec
+2024-02-16 18:25:21,403 - root - INFO - Train loss: 0.03787662461400032. Valid loss: 0.22991517186164856
+2024-02-16 18:25:54,020 - root - INFO - Time taken for epoch 605 is 32.616424322128296 sec
+2024-02-16 18:25:54,020 - root - INFO - Train loss: 0.03354967385530472. Valid loss: 0.23213648796081543
+2024-02-16 18:26:26,570 - root - INFO - Time taken for epoch 606 is 32.549357414245605 sec
+2024-02-16 18:26:26,571 - root - INFO - Train loss: 0.034755658358335495. Valid loss: 0.23437297344207764
+2024-02-16 18:26:59,182 - root - INFO - Time taken for epoch 607 is 32.61113619804382 sec
+2024-02-16 18:26:59,182 - root - INFO - Train loss: 0.0338786244392395. Valid loss: 0.23306086659431458
+2024-02-16 18:27:31,506 - root - INFO - Time taken for epoch 608 is 32.32311487197876 sec
+2024-02-16 18:27:31,507 - root - INFO - Train loss: 0.031050657853484154. Valid loss: 0.22901567816734314
+2024-02-16 18:28:04,197 - root - INFO - Time taken for epoch 609 is 32.69027757644653 sec
+2024-02-16 18:28:04,198 - root - INFO - Train loss: 0.03093099594116211. Valid loss: 0.2287808358669281
+2024-02-16 18:28:36,830 - root - INFO - Time taken for epoch 610 is 32.63213109970093 sec
+2024-02-16 18:28:36,831 - root - INFO - Train loss: 0.03007831797003746. Valid loss: 0.22990913689136505
+2024-02-16 18:29:09,232 - root - INFO - Time taken for epoch 611 is 32.400739908218384 sec
+2024-02-16 18:29:09,232 - root - INFO - Train loss: 0.03382439166307449. Valid loss: 0.2301248013973236
+2024-02-16 18:29:41,848 - root - INFO - Time taken for epoch 612 is 32.61551308631897 sec
+2024-02-16 18:29:41,848 - root - INFO - Train loss: 0.034060414880514145. Valid loss: 0.2294122278690338
+2024-02-16 18:30:14,480 - root - INFO - Time taken for epoch 613 is 32.631770849227905 sec
+2024-02-16 18:30:14,481 - root - INFO - Train loss: 0.0348643958568573. Valid loss: 0.22897140681743622
+2024-02-16 18:30:47,153 - root - INFO - Time taken for epoch 614 is 32.67143535614014 sec
+2024-02-16 18:30:47,153 - root - INFO - Train loss: 0.038092464208602905. Valid loss: 0.22777995467185974
+2024-02-16 18:31:19,858 - root - INFO - Time taken for epoch 615 is 32.70497226715088 sec
+2024-02-16 18:31:19,859 - root - INFO - Train loss: 0.03606132045388222. Valid loss: 0.22816133499145508
+2024-02-16 18:31:52,457 - root - INFO - Time taken for epoch 616 is 32.59838628768921 sec
+2024-02-16 18:31:52,458 - root - INFO - Train loss: 0.03693537041544914. Valid loss: 0.22967004776000977
+2024-02-16 18:32:24,794 - root - INFO - Time taken for epoch 617 is 32.33577013015747 sec
+2024-02-16 18:32:24,795 - root - INFO - Train loss: 0.035761043429374695. Valid loss: 0.22969186305999756
+2024-02-16 18:32:57,271 - root - INFO - Time taken for epoch 618 is 32.47616386413574 sec
+2024-02-16 18:32:57,272 - root - INFO - Train loss: 0.034802280366420746. Valid loss: 0.2294704169034958
+2024-02-16 18:33:29,750 - root - INFO - Time taken for epoch 619 is 32.47798442840576 sec
+2024-02-16 18:33:29,750 - root - INFO - Train loss: 0.035483814775943756. Valid loss: 0.23034091293811798
+2024-02-16 18:34:02,256 - root - INFO - Time taken for epoch 620 is 32.50505828857422 sec
+2024-02-16 18:34:02,256 - root - INFO - Train loss: 0.03929862380027771. Valid loss: 0.2297285497188568
+2024-02-16 18:34:34,825 - root - INFO - Time taken for epoch 621 is 32.56830382347107 sec
+2024-02-16 18:34:34,825 - root - INFO - Train loss: 0.03305034339427948. Valid loss: 0.2293822467327118
+2024-02-16 18:35:07,285 - root - INFO - Time taken for epoch 622 is 32.459407567977905 sec
+2024-02-16 18:35:07,285 - root - INFO - Train loss: 0.04508572071790695. Valid loss: 0.22995276749134064
+2024-02-16 18:35:39,899 - root - INFO - Time taken for epoch 623 is 32.61330580711365 sec
+2024-02-16 18:35:39,900 - root - INFO - Train loss: 0.03410274535417557. Valid loss: 0.2287178337574005
+2024-02-16 18:36:13,009 - root - INFO - Time taken for epoch 624 is 33.10936164855957 sec
+2024-02-16 18:36:13,010 - root - INFO - Train loss: 0.03227000683546066. Valid loss: 0.2283162623643875
+2024-02-16 18:36:46,553 - root - INFO - Time taken for epoch 625 is 33.542898654937744 sec
+2024-02-16 18:36:46,553 - root - INFO - Train loss: 0.03281706944108009. Valid loss: 0.22715744376182556
+2024-02-16 18:37:20,210 - root - INFO - Time taken for epoch 626 is 33.65592980384827 sec
+2024-02-16 18:37:20,210 - root - INFO - Train loss: 0.03039943054318428. Valid loss: 0.22693994641304016
+2024-02-16 18:37:53,355 - root - INFO - Time taken for epoch 627 is 33.14491939544678 sec
+2024-02-16 18:37:53,356 - root - INFO - Train loss: 0.03816114366054535. Valid loss: 0.22861239314079285
+2024-02-16 18:38:26,680 - root - INFO - Time taken for epoch 628 is 33.323343992233276 sec
+2024-02-16 18:38:26,680 - root - INFO - Train loss: 0.038142479956150055. Valid loss: 0.22934584319591522
+2024-02-16 18:38:59,703 - root - INFO - Time taken for epoch 629 is 33.02292561531067 sec
+2024-02-16 18:38:59,704 - root - INFO - Train loss: 0.03755643591284752. Valid loss: 0.22970843315124512
+2024-02-16 18:39:32,428 - root - INFO - Time taken for epoch 630 is 32.72364354133606 sec
+2024-02-16 18:39:32,429 - root - INFO - Train loss: 0.032232336699962616. Valid loss: 0.22940924763679504
+2024-02-16 18:40:06,176 - root - INFO - Time taken for epoch 631 is 33.74700117111206 sec
+2024-02-16 18:40:06,176 - root - INFO - Train loss: 0.03087751753628254. Valid loss: 0.22931627929210663
+2024-02-16 18:40:39,669 - root - INFO - Time taken for epoch 632 is 33.49227952957153 sec
+2024-02-16 18:40:39,669 - root - INFO - Train loss: 0.0305208507925272. Valid loss: 0.22876481711864471
+2024-02-16 18:41:13,162 - root - INFO - Time taken for epoch 633 is 33.49249482154846 sec
+2024-02-16 18:41:13,163 - root - INFO - Train loss: 0.031128810718655586. Valid loss: 0.22876691818237305
+2024-02-16 18:41:46,257 - root - INFO - Time taken for epoch 634 is 33.0936233997345 sec
+2024-02-16 18:41:46,257 - root - INFO - Train loss: 0.03414937108755112. Valid loss: 0.22926345467567444
+2024-02-16 18:42:19,627 - root - INFO - Time taken for epoch 635 is 33.36991596221924 sec
+2024-02-16 18:42:19,628 - root - INFO - Train loss: 0.03728890419006348. Valid loss: 0.22984924912452698
+2024-02-16 18:42:52,793 - root - INFO - Time taken for epoch 636 is 33.16438841819763 sec
+2024-02-16 18:42:52,793 - root - INFO - Train loss: 0.03961164504289627. Valid loss: 0.23114338517189026
+2024-02-16 18:43:26,256 - root - INFO - Time taken for epoch 637 is 33.46285390853882 sec
+2024-02-16 18:43:26,257 - root - INFO - Train loss: 0.03631003201007843. Valid loss: 0.230709508061409
+2024-02-16 18:43:59,656 - root - INFO - Time taken for epoch 638 is 33.39878177642822 sec
+2024-02-16 18:43:59,657 - root - INFO - Train loss: 0.040904588997364044. Valid loss: 0.23006224632263184
+2024-02-16 18:44:34,195 - root - INFO - Time taken for epoch 639 is 34.53836154937744 sec
+2024-02-16 18:44:34,196 - root - INFO - Train loss: 0.040480516850948334. Valid loss: 0.22971507906913757
+2024-02-16 18:45:09,105 - root - INFO - Time taken for epoch 640 is 34.90898084640503 sec
+2024-02-16 18:45:09,105 - root - INFO - Train loss: 0.03509751707315445. Valid loss: 0.23082776367664337
+2024-02-16 18:45:42,510 - root - INFO - Time taken for epoch 641 is 33.404672145843506 sec
+2024-02-16 18:45:42,511 - root - INFO - Train loss: 0.031974632292985916. Valid loss: 0.23112592101097107
+2024-02-16 18:46:16,848 - root - INFO - Time taken for epoch 642 is 34.3365478515625 sec
+2024-02-16 18:46:16,848 - root - INFO - Train loss: 0.03071463480591774. Valid loss: 0.22931942343711853
+2024-02-16 18:46:51,028 - root - INFO - Time taken for epoch 643 is 34.17967772483826 sec
+2024-02-16 18:46:51,029 - root - INFO - Train loss: 0.033208854496479034. Valid loss: 0.22843921184539795
+2024-02-16 18:47:24,300 - root - INFO - Time taken for epoch 644 is 33.27102065086365 sec
+2024-02-16 18:47:24,300 - root - INFO - Train loss: 0.03526363894343376. Valid loss: 0.23061101138591766
+2024-02-16 18:47:57,398 - root - INFO - Time taken for epoch 645 is 33.09771943092346 sec
+2024-02-16 18:47:57,399 - root - INFO - Train loss: 0.04088098555803299. Valid loss: 0.23017993569374084
+2024-02-16 18:48:30,455 - root - INFO - Time taken for epoch 646 is 33.05629205703735 sec
+2024-02-16 18:48:30,456 - root - INFO - Train loss: 0.03610570356249809. Valid loss: 0.2287149429321289
+2024-02-16 18:49:03,799 - root - INFO - Time taken for epoch 647 is 33.34308195114136 sec
+2024-02-16 18:49:03,800 - root - INFO - Train loss: 0.03558509796857834. Valid loss: 0.22822341322898865
+2024-02-16 18:49:36,686 - root - INFO - Time taken for epoch 648 is 32.88554239273071 sec
+2024-02-16 18:49:36,686 - root - INFO - Train loss: 0.031036557629704475. Valid loss: 0.22843411564826965
+2024-02-16 18:50:11,028 - root - INFO - Time taken for epoch 649 is 34.3415253162384 sec
+2024-02-16 18:50:11,029 - root - INFO - Train loss: 0.03380712494254112. Valid loss: 0.23022547364234924
+2024-02-16 18:50:47,293 - root - INFO - Time taken for epoch 650 is 36.263832569122314 sec
+2024-02-16 18:50:47,293 - root - INFO - Train loss: 0.03130049630999565. Valid loss: 0.23009398579597473
+2024-02-16 18:51:22,158 - root - INFO - Time taken for epoch 651 is 34.86480259895325 sec
+2024-02-16 18:51:22,159 - root - INFO - Train loss: 0.030942842364311218. Valid loss: 0.22876527905464172
+2024-02-16 18:51:58,211 - root - INFO - Time taken for epoch 652 is 36.05169486999512 sec
+2024-02-16 18:51:58,211 - root - INFO - Train loss: 0.031713441014289856. Valid loss: 0.22762639820575714
+2024-02-16 18:52:36,898 - root - INFO - Time taken for epoch 653 is 38.68598556518555 sec
+2024-02-16 18:52:36,898 - root - INFO - Train loss: 0.033018793910741806. Valid loss: 0.22867853939533234
+2024-02-16 18:53:14,554 - root - INFO - Time taken for epoch 654 is 37.656006813049316 sec
+2024-02-16 18:53:14,555 - root - INFO - Train loss: 0.03696262836456299. Valid loss: 0.23292402923107147
+2024-02-16 18:53:52,326 - root - INFO - Time taken for epoch 655 is 37.77109932899475 sec
+2024-02-16 18:53:52,328 - root - INFO - Train loss: 0.03984565660357475. Valid loss: 0.23416300117969513
+2024-02-16 18:54:27,755 - root - INFO - Time taken for epoch 656 is 35.426958322525024 sec
+2024-02-16 18:54:27,755 - root - INFO - Train loss: 0.0422104075551033. Valid loss: 0.2327260971069336
+2024-02-16 18:55:02,279 - root - INFO - Time taken for epoch 657 is 34.52309322357178 sec
+2024-02-16 18:55:02,279 - root - INFO - Train loss: 0.0373411625623703. Valid loss: 0.22960352897644043
+2024-02-16 18:55:37,350 - root - INFO - Time taken for epoch 658 is 35.07013130187988 sec
+2024-02-16 18:55:37,350 - root - INFO - Train loss: 0.041954491287469864. Valid loss: 0.22937817871570587
+2024-02-16 18:56:13,751 - root - INFO - Time taken for epoch 659 is 36.40071678161621 sec
+2024-02-16 18:56:13,752 - root - INFO - Train loss: 0.04121232032775879. Valid loss: 0.22986607253551483
+2024-02-16 18:56:49,975 - root - INFO - Time taken for epoch 660 is 36.22352433204651 sec
+2024-02-16 18:56:49,976 - root - INFO - Train loss: 0.03161546587944031. Valid loss: 0.22983607649803162
+2024-02-16 18:57:25,985 - root - INFO - Time taken for epoch 661 is 36.008657455444336 sec
+2024-02-16 18:57:25,986 - root - INFO - Train loss: 0.0366114117205143. Valid loss: 0.23091740906238556
+2024-02-16 18:58:01,483 - root - INFO - Time taken for epoch 662 is 35.49675440788269 sec
+2024-02-16 18:58:01,484 - root - INFO - Train loss: 0.03495974838733673. Valid loss: 0.2295791655778885
+2024-02-16 18:58:37,357 - root - INFO - Time taken for epoch 663 is 35.873247146606445 sec
+2024-02-16 18:58:37,358 - root - INFO - Train loss: 0.034018516540527344. Valid loss: 0.22776567935943604
+2024-02-16 18:59:13,046 - root - INFO - Time taken for epoch 664 is 35.688100814819336 sec
+2024-02-16 18:59:13,047 - root - INFO - Train loss: 0.029203541576862335. Valid loss: 0.2270287573337555
+2024-02-16 18:59:47,251 - root - INFO - Time taken for epoch 665 is 34.204184770584106 sec
+2024-02-16 18:59:47,251 - root - INFO - Train loss: 0.03480513393878937. Valid loss: 0.2292124330997467
+2024-02-16 19:00:21,425 - root - INFO - Time taken for epoch 666 is 34.1734082698822 sec
+2024-02-16 19:00:21,426 - root - INFO - Train loss: 0.030540019273757935. Valid loss: 0.2287440299987793
+2024-02-16 19:00:55,553 - root - INFO - Time taken for epoch 667 is 34.127262592315674 sec
+2024-02-16 19:00:55,554 - root - INFO - Train loss: 0.028443995863199234. Valid loss: 0.2281610667705536
+2024-02-16 19:01:29,653 - root - INFO - Time taken for epoch 668 is 34.098976373672485 sec
+2024-02-16 19:01:29,654 - root - INFO - Train loss: 0.028525786474347115. Valid loss: 0.2276710569858551
+2024-02-16 19:02:04,968 - root - INFO - Time taken for epoch 669 is 35.31450319290161 sec
+2024-02-16 19:02:04,969 - root - INFO - Train loss: 0.03425917774438858. Valid loss: 0.22813232243061066
+2024-02-16 19:02:41,282 - root - INFO - Time taken for epoch 670 is 36.31268000602722 sec
+2024-02-16 19:02:41,282 - root - INFO - Train loss: 0.03396568074822426. Valid loss: 0.2293132096529007
+2024-02-16 19:03:17,767 - root - INFO - Time taken for epoch 671 is 36.484278202056885 sec
+2024-02-16 19:03:17,767 - root - INFO - Train loss: 0.0339214950799942. Valid loss: 0.22906740009784698
+2024-02-16 19:03:55,650 - root - INFO - Time taken for epoch 672 is 37.8825786113739 sec
+2024-02-16 19:03:55,651 - root - INFO - Train loss: 0.029846372082829475. Valid loss: 0.22842338681221008
+2024-02-16 19:04:33,078 - root - INFO - Time taken for epoch 673 is 37.42688488960266 sec
+2024-02-16 19:04:33,078 - root - INFO - Train loss: 0.03049052506685257. Valid loss: 0.22788503766059875
+2024-02-16 19:05:08,817 - root - INFO - Time taken for epoch 674 is 35.738943099975586 sec
+2024-02-16 19:05:08,820 - root - INFO - Train loss: 0.03231465071439743. Valid loss: 0.22825276851654053
+2024-02-16 19:05:44,586 - root - INFO - Time taken for epoch 675 is 35.765904903411865 sec
+2024-02-16 19:05:44,586 - root - INFO - Train loss: 0.03672309219837189. Valid loss: 0.22986140847206116
+2024-02-16 19:06:19,688 - root - INFO - Time taken for epoch 676 is 35.10174036026001 sec
+2024-02-16 19:06:19,689 - root - INFO - Train loss: 0.03574671596288681. Valid loss: 0.2305036038160324
+2024-02-16 19:06:56,385 - root - INFO - Time taken for epoch 677 is 36.696308612823486 sec
+2024-02-16 19:06:56,386 - root - INFO - Train loss: 0.032511502504348755. Valid loss: 0.23100098967552185
+2024-02-16 19:07:33,061 - root - INFO - Time taken for epoch 678 is 36.67444181442261 sec
+2024-02-16 19:07:33,061 - root - INFO - Train loss: 0.04086579009890556. Valid loss: 0.23261690139770508
