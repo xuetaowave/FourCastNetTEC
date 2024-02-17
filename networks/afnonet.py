@@ -188,11 +188,13 @@ class AFNONet(nn.Module):
         ):
         super().__init__()
         self.params = params
+
+        if hasattr(params, 'depth'):
+            depth = params.depth
+
         if hasattr(params, 'img_size'):
-            self.img_size = params.img_size
-            img_size = self.img_size
-        else:
-            self.img_size = img_size
+            img_size = params.img_size
+        self.img_size = img_size
         self.patch_size = (params.patch_size, params.patch_size)
         self.in_chans = params.N_in_channels
         self.out_chans = params.N_out_channels

@@ -64,8 +64,9 @@ afno_backbone_tec_256:
   <<: *FULL_FIELD
   log_to_wandb: !!bool False
   lr: 5E-4
-  batch_size: 4
-  patch_size: 4
+  batch_size: 8
+  patch_size: 2
+  depth : 6 # default 12
   img_size: [128, 256]
   max_epochs: 1500
   scheduler: 'CosineAnnealingLR'
