@@ -4,7 +4,7 @@ import os
 import h5py
 
 for year in range(2005, 2014):
-    with h5py.File(os.path.join('/home/ess/cxt/work/data/GIM/GIM_data', 'Step2_data_{}.mat'.format(year))) as data_load:
+    with h5py.File(os.path.join('/home/ess/cxt/work/data/GIM/', 'Step2_data_{}.mat'.format(year))) as data_load:
         tec_list = []
         tec_list.append(np.array(data_load['TECA']).transpose(0, 2, 1))
 
