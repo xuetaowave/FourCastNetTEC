@@ -1,4 +1,4 @@
-#BSD 3-Clause License
+#BSD 3-Clause License test
 #
 #Copyright (c) 2022, FourCastNet authors
 #All rights reserved.
@@ -216,7 +216,7 @@ class Trainer():
       elif self.params.scheduler == 'CosineAnnealingLR':
         self.scheduler.step()
         if self.epoch >= self.params.max_epochs:
-          logging.info("Terminating training after reaching params.max_epochs while LR scheduler is set to CosineAnnealingLR")
+          logging.info("Te rminatingtraining after reaching params.max_epochs while LR scheduler is set to CosineAnnealingLR")
           exit()
 
       if self.params.log_to_wandb:
