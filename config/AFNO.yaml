@@ -60,26 +60,75 @@ full_field: &FULL_FIELD
   noise_std: 0
 
 
-afno_backbone_cxtwin:
+afno_backbone_tec_256:
+  <<: *FULL_FIELD
+  log_to_wandb: !!bool False
+  lr: 5E-4
+  batch_size: 4
+  patch_size: 4
+  img_size: [128, 256]
+  max_epochs: 1500
+  scheduler: 'CosineAnnealingLR'
+#  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+#  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  in_channels: [ 0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  out_channels: [ 0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  prediction_length: 100
+  orography: !!bool False
+  orography_path: None
+  exp_dir: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256'
+  train_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train'
+  valid_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test'
+  inf_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/out_of_sample'
+  time_means_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/time_means.npy'
+  global_means_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_means.npy'
+  global_stds_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_stds.npy'
+
+afno_backbone_tec_4:
+  <<: *FULL_FIELD
+  log_to_wandb: !!bool True
+  lr: 5E-4
+  batch_size: 4
+  patch_size: 4
+  img_size: [71, 73]
+  max_epochs: 1500
+  scheduler: 'CosineAnnealingLR'
+#  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+#  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19]
+  in_channels: [ 0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  out_channels: [ 0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12 ]
+  prediction_length: 100
+  orography: !!bool False
+  orography_path: None
+  exp_dir: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj'
+  train_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train'
+  valid_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test'
+  inf_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample'
+  time_means_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy'
+  global_means_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy'
+  global_stds_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy'
+
+afno_backbone_tec:
   <<: *FULL_FIELD
   log_to_wandb: !!bool True
   lr: 5E-4
   batch_size: 16
   max_epochs: 1510
   scheduler: 'CosineAnnealingLR'
-  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
-  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+  in_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  out_channels: [0, 1 ,2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+  prediction_length: 100
 #  in_channels: [0, 1, 2, 3, 4, 5]
 #  out_channels: [0, 1, 2, 3, 4, 5]
   orography: !!bool False
   orography_path: None
-  exp_dir: '/home/cxt/work/fourcastnet/FourCastNetwithobswin/results/ljkj'
-  train_data_path: '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/train'
-  valid_data_path: '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/test'
-  inf_data_path:   '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/out_of_sample'
-  time_means_path:   '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/time_means.npy'
-  global_means_path: '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/global_means.npy'
-  global_stds_path:  '/home/cxt/work/fourcastnet/FourCastNetwithobswin/data_ljkj/global_stds.npy'
+  exp_dir: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/ljkj'
+  train_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/train'
+  valid_data_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/test'
+  inf_data_path:   '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/out_of_sample'
+  time_means_path:   '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/time_means.npy'
+  global_means_path: '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_means.npy'
+  global_stds_path:  '/home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC/global_stds.npy'
 
 afno_backbone_cxt: &backbone_cxt
   <<: *FULL_FIELD

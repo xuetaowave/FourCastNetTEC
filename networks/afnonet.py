@@ -173,7 +173,7 @@ class AFNONet(nn.Module):
             self,
             params,
             # img_size=(720, 1440), modified by cxt 2023.12.31
-            img_size=(192, 288),
+            img_size=(128, 128),
             patch_size=(16, 16),
             in_chans=2,
             out_chans=2,
@@ -188,7 +188,11 @@ class AFNONet(nn.Module):
         ):
         super().__init__()
         self.params = params
-        self.img_size = img_size
+        if hasattr(params, 'img_size'):
+            self.img_size = params.img_size
+            img_size = self.img_size
+        else:
+            self.img_size = img_size
         self.patch_size = (params.patch_size, params.patch_size)
         self.in_chans = params.N_in_channels
         self.out_chans = params.N_out_channels
