@@ -295,3 +295,148 @@
 2024-02-17 18:27:46,403 - root - INFO - Train loss: 0.2227291464805603. Valid loss: 0.4282892346382141
 2024-02-17 18:30:04,505 - root - INFO - Time taken for epoch 18 is 138.1018943786621 sec
 2024-02-17 18:30:04,505 - root - INFO - Train loss: 0.22263231873512268. Valid loss: 0.4343600869178772
+2024-02-17 20:12:21,335 - root - INFO - --------------- Versions ---------------
+2024-02-17 20:12:21,340 - root - INFO - git branch: b'* master'
+2024-02-17 20:12:21,343 - root - INFO - git hash: b'f2d034e08b25af946b48ae2dabf5ce62c0de596b'
+2024-02-17 20:12:21,343 - root - INFO - Torch: 2.1.2+cu118
+2024-02-17 20:12:21,343 - root - INFO - ----------------------------------------
+2024-02-17 20:12:21,343 - root - INFO - ------------------ Configuration ------------------
+2024-02-17 20:12:21,343 - root - INFO - Configuration file: /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/config/AFNO.yaml
+2024-02-17 20:12:21,343 - root - INFO - Configuration name: afno_backbone_tec_256
+2024-02-17 20:12:21,343 - root - INFO - log_to_wandb False
+2024-02-17 20:12:21,343 - root - INFO - lr 0.0005
+2024-02-17 20:12:21,343 - root - INFO - batch_size 8
+2024-02-17 20:12:21,343 - root - INFO - patch_size 2
+2024-02-17 20:12:21,343 - root - INFO - depth 6
+2024-02-17 20:12:21,344 - root - INFO - img_size [128, 256]
+2024-02-17 20:12:21,344 - root - INFO - max_epochs 1500
+2024-02-17 20:12:21,344 - root - INFO - scheduler CosineAnnealingLR
+2024-02-17 20:12:21,344 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 20:12:21,344 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-17 20:12:21,344 - root - INFO - prediction_length 100
+2024-02-17 20:12:21,344 - root - INFO - orography False
+2024-02-17 20:12:21,344 - root - INFO - orography_path None
+2024-02-17 20:12:21,344 - root - INFO - exp_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256
+2024-02-17 20:12:21,344 - root - INFO - train_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train
+2024-02-17 20:12:21,344 - root - INFO - valid_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test
+2024-02-17 20:12:21,344 - root - INFO - inf_data_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/out_of_sample
+2024-02-17 20:12:21,344 - root - INFO - time_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/time_means.npy
+2024-02-17 20:12:21,344 - root - INFO - global_means_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_means.npy
+2024-02-17 20:12:21,344 - root - INFO - global_stds_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/global_stds.npy
+2024-02-17 20:12:21,344 - root - INFO - loss l2
+2024-02-17 20:12:21,344 - root - INFO - num_data_workers 4
+2024-02-17 20:12:21,344 - root - INFO - dt 1
+2024-02-17 20:12:21,344 - root - INFO - n_history 0
+2024-02-17 20:12:21,344 - root - INFO - prediction_type iterative
+2024-02-17 20:12:21,344 - root - INFO - n_initial_conditions 5
+2024-02-17 20:12:21,344 - root - INFO - ics_type default
+2024-02-17 20:12:21,344 - root - INFO - save_raw_forecasts True
+2024-02-17 20:12:21,344 - root - INFO - save_channel False
+2024-02-17 20:12:21,344 - root - INFO - masked_acc False
+2024-02-17 20:12:21,344 - root - INFO - maskpath None
+2024-02-17 20:12:21,344 - root - INFO - perturb False
+2024-02-17 20:12:21,344 - root - INFO - add_grid False
+2024-02-17 20:12:21,344 - root - INFO - N_grid_channels 0
+2024-02-17 20:12:21,344 - root - INFO - gridtype sinusoidal
+2024-02-17 20:12:21,344 - root - INFO - roll False
+2024-02-17 20:12:21,344 - root - INFO - num_blocks 8
+2024-02-17 20:12:21,344 - root - INFO - nettype afno
+2024-02-17 20:12:21,345 - root - INFO - width 56
+2024-02-17 20:12:21,345 - root - INFO - modes 32
+2024-02-17 20:12:21,345 - root - INFO - target default
+2024-02-17 20:12:21,345 - root - INFO - normalization zscore
+2024-02-17 20:12:21,345 - root - INFO - log_to_screen True
+2024-02-17 20:12:21,345 - root - INFO - save_checkpoint True
+2024-02-17 20:12:21,345 - root - INFO - enable_nhwc False
+2024-02-17 20:12:21,345 - root - INFO - optimizer_type FusedAdam
+2024-02-17 20:12:21,345 - root - INFO - crop_size_x None
+2024-02-17 20:12:21,345 - root - INFO - crop_size_y None
+2024-02-17 20:12:21,345 - root - INFO - two_step_training False
+2024-02-17 20:12:21,345 - root - INFO - plot_animations False
+2024-02-17 20:12:21,345 - root - INFO - add_noise False
+2024-02-17 20:12:21,345 - root - INFO - noise_std 0
+2024-02-17 20:12:21,345 - root - INFO - epsilon_factor 0
+2024-02-17 20:12:21,345 - root - INFO - world_size 1
+2024-02-17 20:12:21,345 - root - INFO - experiment_dir /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1
+2024-02-17 20:12:21,345 - root - INFO - checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1/training_checkpoints/ckpt.tar
+2024-02-17 20:12:21,345 - root - INFO - best_checkpoint_path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1/training_checkpoints/best_ckpt.tar
+2024-02-17 20:12:21,345 - root - INFO - resuming True
+2024-02-17 20:12:21,345 - root - INFO - local_rank 0
+2024-02-17 20:12:21,345 - root - INFO - enable_amp True
+2024-02-17 20:12:21,345 - root - INFO - name afno_backbone_tec_256_d6p_test1
+2024-02-17 20:12:21,345 - root - INFO - group era5_precipafno_backbone_tec_256
+2024-02-17 20:12:21,345 - root - INFO - project ERA5_precip
+2024-02-17 20:12:21,345 - root - INFO - entity flowgan
+2024-02-17 20:12:21,345 - root - INFO - ---------------------------------------------------
+2024-02-17 20:12:21,349 - root - INFO - rank 0, begin data loader init
+2024-02-17 20:12:21,350 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train/2005.h5
+2024-02-17 20:12:21,350 - root - INFO - Number of samples per year: 336
+2024-02-17 20:12:21,350 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-17 20:12:21,350 - root - INFO - Delta t: 6 hours
+2024-02-17 20:12:21,350 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 20:12:21,351 - root - INFO - Getting file stats from /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test/2008.h5
+2024-02-17 20:12:21,351 - root - INFO - Number of samples per year: 337
+2024-02-17 20:12:21,351 - root - INFO - Found data at path /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/Data_TEC_256x512/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-17 20:12:21,351 - root - INFO - Delta t: 6 hours
+2024-02-17 20:12:21,351 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-17 20:12:21,351 - root - INFO - rank 0, data loader initialized
+2024-02-17 20:12:21,733 - root - INFO - Loading checkpoint /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1/training_checkpoints/ckpt.tar
+2024-02-17 20:12:21,903 - root - INFO - Number of trainable model parameters: 36514560
+2024-02-17 20:12:21,903 - root - INFO - Starting Training Loop...
+2024-02-17 20:14:43,247 - root - INFO - Time taken for epoch 63 is 141.34334993362427 sec
+2024-02-17 20:14:43,247 - root - INFO - Train loss: 0.18461653590202332. Valid loss: 0.2740938067436218
+2024-02-17 20:14:43,313 - root - INFO - Memory Used: 7128.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:16:58,876 - root - INFO - Time taken for epoch 64 is 135.56297254562378 sec
+2024-02-17 20:16:58,877 - root - INFO - Train loss: 0.17719271779060364. Valid loss: 0.23956795036792755
+2024-02-17 20:16:58,914 - root - INFO - Memory Used: 16844.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:19:14,253 - root - INFO - Time taken for epoch 65 is 135.33872866630554 sec
+2024-02-17 20:19:14,253 - root - INFO - Train loss: 0.17852357029914856. Valid loss: 0.24173688888549805
+2024-02-17 20:19:14,283 - root - INFO - Memory Used: 16891.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:21:29,484 - root - INFO - Time taken for epoch 66 is 135.20027613639832 sec
+2024-02-17 20:21:29,485 - root - INFO - Train loss: 0.17852964997291565. Valid loss: 0.24811112880706787
+2024-02-17 20:21:29,518 - root - INFO - Memory Used: 16891.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:23:45,571 - root - INFO - Time taken for epoch 67 is 136.05273723602295 sec
+2024-02-17 20:23:45,571 - root - INFO - Train loss: 0.19438773393630981. Valid loss: 0.23883533477783203
+2024-02-17 20:23:45,607 - root - INFO - Memory Used: 16854.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:26:01,236 - root - INFO - Time taken for epoch 68 is 135.6283950805664 sec
+2024-02-17 20:26:01,236 - root - INFO - Train loss: 0.17547498643398285. Valid loss: 0.22095294296741486
+2024-02-17 20:26:01,267 - root - INFO - Memory Used: 16848.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:28:16,810 - root - INFO - Time taken for epoch 69 is 135.54285621643066 sec
+2024-02-17 20:28:16,811 - root - INFO - Train loss: 0.16529110074043274. Valid loss: 0.22078636288642883
+2024-02-17 20:28:16,849 - root - INFO - Memory Used: 16848.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:30:32,122 - root - INFO - Time taken for epoch 70 is 135.27275133132935 sec
+2024-02-17 20:30:32,123 - root - INFO - Train loss: 0.16967333853244781. Valid loss: 0.2312389612197876
+2024-02-17 20:30:32,158 - root - INFO - Memory Used: 16852.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:32:47,383 - root - INFO - Time taken for epoch 71 is 135.22433280944824 sec
+2024-02-17 20:32:47,383 - root - INFO - Train loss: 0.16473236680030823. Valid loss: 0.2628466486930847
+2024-02-17 20:32:47,416 - root - INFO - Memory Used: 16862.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:35:02,702 - root - INFO - Time taken for epoch 72 is 135.2863907814026 sec
+2024-02-17 20:35:02,703 - root - INFO - Train loss: 0.16323377192020416. Valid loss: 0.2689552903175354
+2024-02-17 20:35:02,744 - root - INFO - Memory Used: 16862.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:37:18,147 - root - INFO - Time taken for epoch 73 is 135.40361666679382 sec
+2024-02-17 20:37:18,148 - root - INFO - Train loss: 0.18156640231609344. Valid loss: 0.23321881890296936
+2024-02-17 20:37:18,207 - root - INFO - Memory Used: 16860.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:39:33,545 - root - INFO - Time taken for epoch 74 is 135.33798551559448 sec
+2024-02-17 20:39:33,545 - root - INFO - Train loss: 0.1633366048336029. Valid loss: 0.22621110081672668
+2024-02-17 20:39:33,578 - root - INFO - Memory Used: 16861.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:41:48,923 - root - INFO - Time taken for epoch 75 is 135.34435987472534 sec
+2024-02-17 20:41:48,923 - root - INFO - Train loss: 0.17500419914722443. Valid loss: 0.22449235618114471
+2024-02-17 20:41:48,965 - root - INFO - Memory Used: 16860.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:44:04,886 - root - INFO - Time taken for epoch 76 is 135.9206349849701 sec
+2024-02-17 20:44:04,886 - root - INFO - Train loss: 0.17397353053092957. Valid loss: 0.22594523429870605
+2024-02-17 20:44:04,922 - root - INFO - Memory Used: 17194.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:46:20,729 - root - INFO - Time taken for epoch 77 is 135.80692529678345 sec
+2024-02-17 20:46:20,729 - root - INFO - Train loss: 0.1752854287624359. Valid loss: 0.23761744797229767
+2024-02-17 20:46:20,765 - root - INFO - Memory Used: 17125.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:48:36,027 - root - INFO - Time taken for epoch 78 is 135.26268577575684 sec
+2024-02-17 20:48:36,028 - root - INFO - Train loss: 0.17243915796279907. Valid loss: 0.2742829918861389
+2024-02-17 20:48:36,064 - root - INFO - Memory Used: 17125.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:50:51,332 - root - INFO - Time taken for epoch 79 is 135.26743268966675 sec
+2024-02-17 20:50:51,333 - root - INFO - Train loss: 0.15938088297843933. Valid loss: 0.25616925954818726
+2024-02-17 20:50:51,365 - root - INFO - Memory Used: 17039.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:53:06,656 - root - INFO - Time taken for epoch 80 is 135.2910385131836 sec
+2024-02-17 20:53:06,657 - root - INFO - Train loss: 0.1524873673915863. Valid loss: 0.2529136538505554
+2024-02-17 20:53:06,696 - root - INFO - Memory Used: 17035.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d
+2024-02-17 20:55:23,084 - root - INFO - Time taken for epoch 81 is 136.38770294189453 sec
+2024-02-17 20:55:23,084 - root - INFO - Train loss: 0.15045739710330963. Valid loss: 0.21060805022716522
+2024-02-17 20:55:23,120 - root - INFO - Memory Used: 16985.0 MB, GPU.UUID: GPU-dead2cd9-3e2a-4455-2129-2efe429a641d

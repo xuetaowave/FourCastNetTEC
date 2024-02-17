@@ -58,7 +58,7 @@ checkpoint_path:
   /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1/training_checkpoints/ckpt.tar
 best_checkpoint_path: 
   /home/cxt/work/fourcastnet_TEC/FourCastNetTEC/results/tec_256/afno_backbone_tec_256/d6p_test1/training_checkpoints/best_ckpt.tar
-resuming: 'False'
+resuming: 'True'
 local_rank: '0'
 enable_amp: 'True'
 name: afno_backbone_tec_256_d6p_test1

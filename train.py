@@ -49,6 +49,7 @@ import time
 import numpy as np
 import argparse
 import h5py
+import GPUtil
 import torch
 import cProfile
 import re
@@ -236,6 +237,12 @@ class Trainer():
         logging.info('Time taken for epoch {} is {} sec'.format(epoch + 1, time.time()-start))
         #logging.info('train data time={}, train step time={}, valid step time={}'.format(data_time, tr_time, valid_time))
         logging.info('Train loss: {}. Valid loss: {}'.format(train_logs['loss'], valid_logs['valid_loss']))
+
+        gpus = GPUtil.getGPUs()
+        for gpu in gpus:
+            logging.info(
+                f"Memory Used: {gpu.memoryUsed} MB, GPU.UUID: {gpu.uuid}")
+
 #        if epoch==self.params.max_epochs-1 and self.params.prediction_type == 'direct':
 #          logging.info('Final Valid RMSE: Z500- {}. T850- {}, 2m_T- {}'.format(valid_weighted_rmse[0], valid_weighted_rmse[1], valid_weighted_rmse[2]))
 
