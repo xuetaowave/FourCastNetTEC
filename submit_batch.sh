@@ -6,7 +6,6 @@
 #SBATCH --gpus-per-node=2
 #SBATCH --cpus-per-task=8
 #SBATCH -J afno
-#SBATCH --image=nersc/pytorch:ngc-22.02-v0
 #SBATCH -o afno_backbone_finetune.out
 #SBATCH -p GPU-8A100
 #SBATCH --gres=gpu:a100:2
