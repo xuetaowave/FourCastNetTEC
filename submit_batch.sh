@@ -1,14 +1,11 @@
 #!/bin/bash -l
 #SBATCH --time=01:00:00
 #SBATCH -C gpu
-#SBATCH --nodes=1
-#SBATCH --ntasks-per-node=2
-#SBATCH --gpus-per-node=2
-#SBATCH --cpus-per-task=8
 #SBATCH -J afno
 #SBATCH -o afno_backbone_finetune.out
 #SBATCH -p GPU-8A100
 #SBATCH --qos=gpu_8a100
+#SBATCH -N 1 -n 2 -c 8 -p GPU-V100 --gres=gpu:v100:2
 
 config_file=./config/AFNO.yaml
 config='afno_backbone_tec_ustc'
