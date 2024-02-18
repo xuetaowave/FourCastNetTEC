@@ -8,7 +8,6 @@
 #SBATCH -J afno
 #SBATCH -o afno_backbone_finetune.out
 #SBATCH -p GPU-8A100
-#SBATCH --gres=gpu:a100:2
 #SBATCH --qos=gpu_8a100
 
 config_file=./config/AFNO.yaml
