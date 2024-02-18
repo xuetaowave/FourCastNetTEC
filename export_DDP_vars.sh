@@ -1,3 +1,4 @@
+export MASTER_ADDR=$(hostname)
 export RANK=$SLURM_PROCID
 export WORLD_RANK=$SLURM_PROCID
 export LOCAL_RANK=$SLURM_LOCALID
