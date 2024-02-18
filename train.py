@@ -46,6 +46,7 @@
 
 import os
 import time
+from datetime import timedelta
 import numpy as np
 import argparse
 import h5py
@@ -558,7 +559,7 @@ if __name__ == '__main__':
   local_rank = 0
   if params['world_size'] > 1:
     dist.init_process_group(backend='nccl',
-                            init_method='env://')
+                            init_method='env://', timeout=timedelta(seconds=10))
     local_rank = int(os.environ["LOCAL_RANK"])
     args.gpu = local_rank
     world_rank = dist.get_rank()
