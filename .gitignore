@@ -16,3 +16,4 @@ ray_results
 *.svg
 *.npy
 *.npz
+run/
