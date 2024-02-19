@@ -4,7 +4,7 @@ import h5py
 data_load = h5py.File('train/2010.h5', 'r')
 data_load.keys()
 
-data = data_load['fields']
+data =  data_load['fields']
 global_mean = np.mean(data, axis=(0, 2, 3))[None, :, None, None]
 print(global_mean.shape)
 np.save('global_means.npy', global_mean)
