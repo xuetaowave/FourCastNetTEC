@@ -16,3 +16,4 @@ print(f"Rank: {rank}, World size: {world_size}")
 # 执行分布式训练代码
 # ...
 dist.destroy_process_group()  # 释放资源
+
