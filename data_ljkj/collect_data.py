@@ -1,25 +1,10 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
 import numpy as np
 from datetime import datetime, timedelta
 from time import time
 import os 
 os.getcwd()
-
-
-# In[2]:
-
-
 start_date = datetime(2010, 1, 11)
 end_date = datetime(2010, 12, 31)
-
-
-# In[3]:
-
 
 kind = 'Density'
 value = []
@@ -45,9 +30,6 @@ np.savez(kind, fields=value_all, date=np.array(date_list))
 pass
 
 
-# In[5]:
-
-
 kind = 'T'
 value = []
 date_list = []
@@ -69,10 +51,6 @@ for i in range((end_date-start_date).days):
         print('not found: {}'.format(filename))
 value_all = np.concatenate(value, axis=0)
 np.savez(kind, fields=value_all, date=np.array(date_list))
-
-
-# In[7]:
-
 
 kind = 'U'
 value = []
@@ -96,10 +74,6 @@ for i in range((end_date-start_date).days):
 value_all = np.concatenate(value, axis=0)
 np.savez(kind, fields=value_all, date=np.array(date_list))
 
-
-# In[9]:
-
-
 kind = 'V'
 value = []
 date_list = []
@@ -121,10 +95,6 @@ for i in range((end_date-start_date).days):
         print('not found: {}'.format(filename))
 value_all = np.concatenate(value, axis=0)
 np.savez(kind, fields=value_all, date=np.array(date_list))
-
-
-# In[10]:
-
 
 kind = 'P'
 value = []

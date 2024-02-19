@@ -1,15 +1,5 @@
-#!/usr/bin/env python
-# coding: utf-8
-
-# In[1]:
-
-
-import numpy as np 
+import numpy as np
 import h5py 
-
-
-# In[6]:
-
 
 data_load_D = np.load('Density.npz')
 D = data_load_D['fields']
@@ -28,25 +18,14 @@ V = data_load_V['fields']
 
 list(data_load_D.keys()), D.shape, P.shape, T.shape, U.shape, V.shape
 
-# In[18]:
-
-
 data = np.hstack((D.reshape((-1, 6)+D.shape[1:]), P.reshape((-1, 6)+P.shape[1:]), T.reshape((-1, 6)+T.shape[1:]), U.reshape((-1, 6)+U.shape[1:]), V.reshape((-1, 6)+V.shape[1:])))
 train_mask = data.shape[0]//6*5
-
-
-# In[19]:
-
 
 import os
 print(os.getcwd())
 os.makedirs('train', exist_ok=True)
 os.makedirs('test', exist_ok=True)
 os.makedirs('out_of_sample', exist_ok=True)
-
-
-# In[20]:
-
 
 import h5py
 with h5py.File('train/2010.h5', 'w') as f:
@@ -57,10 +36,6 @@ with h5py.File('test/2010.h5', 'w') as f:
     
 with h5py.File('out_of_sample/2010.h5', 'w') as f:
     f.create_dataset("fields", data=data[train_mask:])
-
-
-# In[ ]:
-
 
 
 
