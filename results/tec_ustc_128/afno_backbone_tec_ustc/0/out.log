@@ -1,0 +1,344 @@
+2024-02-19 10:22:58,884 - root - INFO - --------------- Versions ---------------
+2024-02-19 10:22:58,917 - root - INFO - git branch: b'* master'
+2024-02-19 10:22:58,938 - root - INFO - git hash: b'e5a3f93aaa5ce7cb389d3109c33fc5b583546731'
+2024-02-19 10:22:58,939 - root - INFO - Torch: 1.13.1+cu117
+2024-02-19 10:22:58,939 - root - INFO - ----------------------------------------
+2024-02-19 10:22:58,939 - root - INFO - ------------------ Configuration ------------------
+2024-02-19 10:22:58,939 - root - INFO - Configuration file: /gpfs/home/ess/cxt/work/FourCastNetTEC/config/AFNO.yaml
+2024-02-19 10:22:58,939 - root - INFO - Configuration name: afno_backbone_tec_ustc
+2024-02-19 10:22:58,939 - root - INFO - log_to_wandb False
+2024-02-19 10:22:58,939 - root - INFO - lr 0.0005
+2024-02-19 10:22:58,939 - root - INFO - batch_size 4
+2024-02-19 10:22:58,939 - root - INFO - patch_size 2
+2024-02-19 10:22:58,939 - root - INFO - depth 6
+2024-02-19 10:22:58,939 - root - INFO - img_size [128, 256]
+2024-02-19 10:22:58,939 - root - INFO - max_epochs 1500
+2024-02-19 10:22:58,939 - root - INFO - scheduler CosineAnnealingLR
+2024-02-19 10:22:58,939 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:22:58,939 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:22:58,939 - root - INFO - prediction_length 100
+2024-02-19 10:22:58,939 - root - INFO - orography False
+2024-02-19 10:22:58,939 - root - INFO - orography_path None
+2024-02-19 10:22:58,939 - root - INFO - exp_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128
+2024-02-19 10:22:58,939 - root - INFO - train_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train
+2024-02-19 10:22:58,939 - root - INFO - valid_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test
+2024-02-19 10:22:58,939 - root - INFO - inf_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/out_of_sample
+2024-02-19 10:22:58,940 - root - INFO - time_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/time_means.npy
+2024-02-19 10:22:58,940 - root - INFO - global_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_means.npy
+2024-02-19 10:22:58,940 - root - INFO - global_stds_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_stds.npy
+2024-02-19 10:22:58,940 - root - INFO - loss l2
+2024-02-19 10:22:58,940 - root - INFO - num_data_workers 4
+2024-02-19 10:22:58,940 - root - INFO - dt 1
+2024-02-19 10:22:58,940 - root - INFO - n_history 0
+2024-02-19 10:22:58,940 - root - INFO - prediction_type iterative
+2024-02-19 10:22:58,940 - root - INFO - n_initial_conditions 5
+2024-02-19 10:22:58,940 - root - INFO - ics_type default
+2024-02-19 10:22:58,940 - root - INFO - save_raw_forecasts True
+2024-02-19 10:22:58,940 - root - INFO - save_channel False
+2024-02-19 10:22:58,940 - root - INFO - masked_acc False
+2024-02-19 10:22:58,940 - root - INFO - maskpath None
+2024-02-19 10:22:58,940 - root - INFO - perturb False
+2024-02-19 10:22:58,940 - root - INFO - add_grid False
+2024-02-19 10:22:58,940 - root - INFO - N_grid_channels 0
+2024-02-19 10:22:58,940 - root - INFO - gridtype sinusoidal
+2024-02-19 10:22:58,940 - root - INFO - roll False
+2024-02-19 10:22:58,940 - root - INFO - num_blocks 8
+2024-02-19 10:22:58,940 - root - INFO - nettype afno
+2024-02-19 10:22:58,940 - root - INFO - width 56
+2024-02-19 10:22:58,941 - root - INFO - modes 32
+2024-02-19 10:22:58,941 - root - INFO - target default
+2024-02-19 10:22:58,941 - root - INFO - normalization zscore
+2024-02-19 10:22:58,941 - root - INFO - log_to_screen True
+2024-02-19 10:22:58,941 - root - INFO - save_checkpoint True
+2024-02-19 10:22:58,941 - root - INFO - enable_nhwc False
+2024-02-19 10:22:58,941 - root - INFO - optimizer_type FusedAdam
+2024-02-19 10:22:58,941 - root - INFO - crop_size_x None
+2024-02-19 10:22:58,941 - root - INFO - crop_size_y None
+2024-02-19 10:22:58,941 - root - INFO - two_step_training False
+2024-02-19 10:22:58,941 - root - INFO - plot_animations False
+2024-02-19 10:22:58,942 - root - INFO - add_noise False
+2024-02-19 10:22:58,942 - root - INFO - noise_std 0
+2024-02-19 10:22:58,942 - root - INFO - epsilon_factor 0
+2024-02-19 10:22:58,942 - root - INFO - world_size 2
+2024-02-19 10:22:58,942 - root - INFO - global_batch_size 8
+2024-02-19 10:22:58,942 - root - INFO - experiment_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0
+2024-02-19 10:22:58,942 - root - INFO - checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/ckpt.tar
+2024-02-19 10:22:58,942 - root - INFO - best_checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/best_ckpt.tar
+2024-02-19 10:22:58,943 - root - INFO - resuming False
+2024-02-19 10:22:58,943 - root - INFO - local_rank 0
+2024-02-19 10:22:58,943 - root - INFO - enable_amp True
+2024-02-19 10:22:58,943 - root - INFO - name afno_backbone_tec_ustc_0
+2024-02-19 10:22:58,943 - root - INFO - group era5_precipafno_backbone_tec_ustc
+2024-02-19 10:22:58,943 - root - INFO - project ERA5_precip
+2024-02-19 10:22:58,943 - root - INFO - entity flowgan
+2024-02-19 10:22:58,943 - root - INFO - ---------------------------------------------------
+2024-02-19 10:22:58,950 - root - INFO - rank 0, begin data loader init
+2024-02-19 10:22:58,951 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train/2005.h5
+2024-02-19 10:22:58,951 - root - INFO - Number of samples per year: 336
+2024-02-19 10:22:58,952 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-19 10:22:58,952 - root - INFO - Delta t: 6 hours
+2024-02-19 10:22:58,952 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:22:58,952 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test/2008.h5
+2024-02-19 10:22:58,953 - root - INFO - Number of samples per year: 337
+2024-02-19 10:22:58,953 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-19 10:22:58,953 - root - INFO - Delta t: 6 hours
+2024-02-19 10:22:58,953 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:22:58,953 - root - INFO - rank 0, data loader initialized
+2024-02-19 10:32:11,861 - root - INFO - --------------- Versions ---------------
+2024-02-19 10:32:11,885 - root - INFO - git branch: b'* master'
+2024-02-19 10:32:11,899 - root - INFO - git hash: b'e5a3f93aaa5ce7cb389d3109c33fc5b583546731'
+2024-02-19 10:32:11,900 - root - INFO - Torch: 1.13.1+cu117
+2024-02-19 10:32:11,900 - root - INFO - ----------------------------------------
+2024-02-19 10:32:11,900 - root - INFO - ------------------ Configuration ------------------
+2024-02-19 10:32:11,900 - root - INFO - Configuration file: /gpfs/home/ess/cxt/work/FourCastNetTEC/config/AFNO.yaml
+2024-02-19 10:32:11,900 - root - INFO - Configuration name: afno_backbone_tec_ustc
+2024-02-19 10:32:11,900 - root - INFO - log_to_wandb False
+2024-02-19 10:32:11,900 - root - INFO - lr 0.0005
+2024-02-19 10:32:11,900 - root - INFO - batch_size 4
+2024-02-19 10:32:11,900 - root - INFO - patch_size 2
+2024-02-19 10:32:11,900 - root - INFO - depth 6
+2024-02-19 10:32:11,900 - root - INFO - img_size [128, 256]
+2024-02-19 10:32:11,900 - root - INFO - max_epochs 1500
+2024-02-19 10:32:11,900 - root - INFO - scheduler CosineAnnealingLR
+2024-02-19 10:32:11,900 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:32:11,900 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:32:11,900 - root - INFO - prediction_length 100
+2024-02-19 10:32:11,900 - root - INFO - orography False
+2024-02-19 10:32:11,900 - root - INFO - orography_path None
+2024-02-19 10:32:11,900 - root - INFO - exp_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128
+2024-02-19 10:32:11,900 - root - INFO - train_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train
+2024-02-19 10:32:11,901 - root - INFO - valid_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test
+2024-02-19 10:32:11,901 - root - INFO - inf_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/out_of_sample
+2024-02-19 10:32:11,901 - root - INFO - time_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/time_means.npy
+2024-02-19 10:32:11,901 - root - INFO - global_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_means.npy
+2024-02-19 10:32:11,901 - root - INFO - global_stds_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_stds.npy
+2024-02-19 10:32:11,901 - root - INFO - loss l2
+2024-02-19 10:32:11,901 - root - INFO - num_data_workers 4
+2024-02-19 10:32:11,901 - root - INFO - dt 1
+2024-02-19 10:32:11,901 - root - INFO - n_history 0
+2024-02-19 10:32:11,901 - root - INFO - prediction_type iterative
+2024-02-19 10:32:11,901 - root - INFO - n_initial_conditions 5
+2024-02-19 10:32:11,901 - root - INFO - ics_type default
+2024-02-19 10:32:11,901 - root - INFO - save_raw_forecasts True
+2024-02-19 10:32:11,901 - root - INFO - save_channel False
+2024-02-19 10:32:11,901 - root - INFO - masked_acc False
+2024-02-19 10:32:11,901 - root - INFO - maskpath None
+2024-02-19 10:32:11,901 - root - INFO - perturb False
+2024-02-19 10:32:11,901 - root - INFO - add_grid False
+2024-02-19 10:32:11,901 - root - INFO - N_grid_channels 0
+2024-02-19 10:32:11,901 - root - INFO - gridtype sinusoidal
+2024-02-19 10:32:11,901 - root - INFO - roll False
+2024-02-19 10:32:11,901 - root - INFO - num_blocks 8
+2024-02-19 10:32:11,901 - root - INFO - nettype afno
+2024-02-19 10:32:11,901 - root - INFO - width 56
+2024-02-19 10:32:11,901 - root - INFO - modes 32
+2024-02-19 10:32:11,901 - root - INFO - target default
+2024-02-19 10:32:11,901 - root - INFO - normalization zscore
+2024-02-19 10:32:11,901 - root - INFO - log_to_screen True
+2024-02-19 10:32:11,901 - root - INFO - save_checkpoint True
+2024-02-19 10:32:11,902 - root - INFO - enable_nhwc False
+2024-02-19 10:32:11,902 - root - INFO - optimizer_type FusedAdam
+2024-02-19 10:32:11,902 - root - INFO - crop_size_x None
+2024-02-19 10:32:11,902 - root - INFO - crop_size_y None
+2024-02-19 10:32:11,902 - root - INFO - two_step_training False
+2024-02-19 10:32:11,902 - root - INFO - plot_animations False
+2024-02-19 10:32:11,902 - root - INFO - add_noise False
+2024-02-19 10:32:11,902 - root - INFO - noise_std 0
+2024-02-19 10:32:11,902 - root - INFO - epsilon_factor 0
+2024-02-19 10:32:11,902 - root - INFO - world_size 2
+2024-02-19 10:32:11,902 - root - INFO - global_batch_size 8
+2024-02-19 10:32:11,902 - root - INFO - experiment_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0
+2024-02-19 10:32:11,902 - root - INFO - checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/ckpt.tar
+2024-02-19 10:32:11,902 - root - INFO - best_checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/best_ckpt.tar
+2024-02-19 10:32:11,902 - root - INFO - resuming False
+2024-02-19 10:32:11,902 - root - INFO - local_rank 0
+2024-02-19 10:32:11,902 - root - INFO - enable_amp True
+2024-02-19 10:32:11,902 - root - INFO - name afno_backbone_tec_ustc_0
+2024-02-19 10:32:11,902 - root - INFO - group era5_precipafno_backbone_tec_ustc
+2024-02-19 10:32:11,902 - root - INFO - project ERA5_precip
+2024-02-19 10:32:11,902 - root - INFO - entity flowgan
+2024-02-19 10:32:11,902 - root - INFO - ---------------------------------------------------
+2024-02-19 10:32:11,910 - root - INFO - rank 0, begin data loader init
+2024-02-19 10:32:11,914 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train/2005.h5
+2024-02-19 10:32:11,915 - root - INFO - Number of samples per year: 336
+2024-02-19 10:32:11,915 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-19 10:32:11,915 - root - INFO - Delta t: 6 hours
+2024-02-19 10:32:11,916 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:32:11,916 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test/2008.h5
+2024-02-19 10:32:11,917 - root - INFO - Number of samples per year: 337
+2024-02-19 10:32:11,917 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-19 10:32:11,917 - root - INFO - Delta t: 6 hours
+2024-02-19 10:32:11,917 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:32:11,917 - root - INFO - rank 0, data loader initialized
+2024-02-19 10:37:50,152 - root - INFO - --------------- Versions ---------------
+2024-02-19 10:37:50,174 - root - INFO - git branch: b'* master'
+2024-02-19 10:37:50,192 - root - INFO - git hash: b'e5a3f93aaa5ce7cb389d3109c33fc5b583546731'
+2024-02-19 10:37:50,192 - root - INFO - Torch: 1.13.1+cu117
+2024-02-19 10:37:50,192 - root - INFO - ----------------------------------------
+2024-02-19 10:37:50,192 - root - INFO - ------------------ Configuration ------------------
+2024-02-19 10:37:50,192 - root - INFO - Configuration file: /gpfs/home/ess/cxt/work/FourCastNetTEC/config/AFNO.yaml
+2024-02-19 10:37:50,192 - root - INFO - Configuration name: afno_backbone_tec_ustc
+2024-02-19 10:37:50,192 - root - INFO - log_to_wandb False
+2024-02-19 10:37:50,192 - root - INFO - lr 0.0005
+2024-02-19 10:37:50,192 - root - INFO - batch_size 4
+2024-02-19 10:37:50,192 - root - INFO - patch_size 2
+2024-02-19 10:37:50,192 - root - INFO - depth 6
+2024-02-19 10:37:50,192 - root - INFO - img_size [128, 256]
+2024-02-19 10:37:50,192 - root - INFO - max_epochs 1500
+2024-02-19 10:37:50,192 - root - INFO - scheduler CosineAnnealingLR
+2024-02-19 10:37:50,193 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:37:50,193 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:37:50,193 - root - INFO - prediction_length 100
+2024-02-19 10:37:50,193 - root - INFO - orography False
+2024-02-19 10:37:50,193 - root - INFO - orography_path None
+2024-02-19 10:37:50,193 - root - INFO - exp_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128
+2024-02-19 10:37:50,193 - root - INFO - train_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train
+2024-02-19 10:37:50,193 - root - INFO - valid_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test
+2024-02-19 10:37:50,193 - root - INFO - inf_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/out_of_sample
+2024-02-19 10:37:50,193 - root - INFO - time_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/time_means.npy
+2024-02-19 10:37:50,193 - root - INFO - global_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_means.npy
+2024-02-19 10:37:50,193 - root - INFO - global_stds_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_stds.npy
+2024-02-19 10:37:50,193 - root - INFO - loss l2
+2024-02-19 10:37:50,193 - root - INFO - num_data_workers 4
+2024-02-19 10:37:50,193 - root - INFO - dt 1
+2024-02-19 10:37:50,193 - root - INFO - n_history 0
+2024-02-19 10:37:50,193 - root - INFO - prediction_type iterative
+2024-02-19 10:37:50,193 - root - INFO - n_initial_conditions 5
+2024-02-19 10:37:50,193 - root - INFO - ics_type default
+2024-02-19 10:37:50,193 - root - INFO - save_raw_forecasts True
+2024-02-19 10:37:50,193 - root - INFO - save_channel False
+2024-02-19 10:37:50,193 - root - INFO - masked_acc False
+2024-02-19 10:37:50,193 - root - INFO - maskpath None
+2024-02-19 10:37:50,193 - root - INFO - perturb False
+2024-02-19 10:37:50,193 - root - INFO - add_grid False
+2024-02-19 10:37:50,193 - root - INFO - N_grid_channels 0
+2024-02-19 10:37:50,193 - root - INFO - gridtype sinusoidal
+2024-02-19 10:37:50,193 - root - INFO - roll False
+2024-02-19 10:37:50,193 - root - INFO - num_blocks 8
+2024-02-19 10:37:50,193 - root - INFO - nettype afno
+2024-02-19 10:37:50,193 - root - INFO - width 56
+2024-02-19 10:37:50,194 - root - INFO - modes 32
+2024-02-19 10:37:50,194 - root - INFO - target default
+2024-02-19 10:37:50,194 - root - INFO - normalization zscore
+2024-02-19 10:37:50,194 - root - INFO - log_to_screen True
+2024-02-19 10:37:50,194 - root - INFO - save_checkpoint True
+2024-02-19 10:37:50,194 - root - INFO - enable_nhwc False
+2024-02-19 10:37:50,194 - root - INFO - optimizer_type FusedAdam
+2024-02-19 10:37:50,194 - root - INFO - crop_size_x None
+2024-02-19 10:37:50,194 - root - INFO - crop_size_y None
+2024-02-19 10:37:50,194 - root - INFO - two_step_training False
+2024-02-19 10:37:50,194 - root - INFO - plot_animations False
+2024-02-19 10:37:50,194 - root - INFO - add_noise False
+2024-02-19 10:37:50,194 - root - INFO - noise_std 0
+2024-02-19 10:37:50,194 - root - INFO - epsilon_factor 0
+2024-02-19 10:37:50,194 - root - INFO - world_size 2
+2024-02-19 10:37:50,194 - root - INFO - global_batch_size 8
+2024-02-19 10:37:50,194 - root - INFO - experiment_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0
+2024-02-19 10:37:50,194 - root - INFO - checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/ckpt.tar
+2024-02-19 10:37:50,194 - root - INFO - best_checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/best_ckpt.tar
+2024-02-19 10:37:50,194 - root - INFO - resuming False
+2024-02-19 10:37:50,194 - root - INFO - local_rank 0
+2024-02-19 10:37:50,194 - root - INFO - enable_amp True
+2024-02-19 10:37:50,194 - root - INFO - name afno_backbone_tec_ustc_0
+2024-02-19 10:37:50,194 - root - INFO - group era5_precipafno_backbone_tec_ustc
+2024-02-19 10:37:50,194 - root - INFO - project ERA5_precip
+2024-02-19 10:37:50,194 - root - INFO - entity flowgan
+2024-02-19 10:37:50,194 - root - INFO - ---------------------------------------------------
+2024-02-19 10:37:50,202 - root - INFO - rank 0, begin data loader init
+2024-02-19 10:37:50,210 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train/2005.h5
+2024-02-19 10:37:50,211 - root - INFO - Number of samples per year: 336
+2024-02-19 10:37:50,211 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-19 10:37:50,211 - root - INFO - Delta t: 6 hours
+2024-02-19 10:37:50,211 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:37:50,215 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test/2008.h5
+2024-02-19 10:37:50,216 - root - INFO - Number of samples per year: 337
+2024-02-19 10:37:50,216 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-19 10:37:50,216 - root - INFO - Delta t: 6 hours
+2024-02-19 10:37:50,216 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:37:50,216 - root - INFO - rank 0, data loader initialized
+2024-02-19 10:38:46,697 - root - INFO - --------------- Versions ---------------
+2024-02-19 10:38:46,721 - root - INFO - git branch: b'* master'
+2024-02-19 10:38:46,735 - root - INFO - git hash: b'e5a3f93aaa5ce7cb389d3109c33fc5b583546731'
+2024-02-19 10:38:46,736 - root - INFO - Torch: 1.13.1+cu117
+2024-02-19 10:38:46,736 - root - INFO - ----------------------------------------
+2024-02-19 10:38:46,736 - root - INFO - ------------------ Configuration ------------------
+2024-02-19 10:38:46,736 - root - INFO - Configuration file: /gpfs/home/ess/cxt/work/FourCastNetTEC/config/AFNO.yaml
+2024-02-19 10:38:46,736 - root - INFO - Configuration name: afno_backbone_tec_ustc
+2024-02-19 10:38:46,736 - root - INFO - log_to_wandb False
+2024-02-19 10:38:46,736 - root - INFO - lr 0.0005
+2024-02-19 10:38:46,736 - root - INFO - batch_size 4
+2024-02-19 10:38:46,736 - root - INFO - patch_size 2
+2024-02-19 10:38:46,736 - root - INFO - depth 6
+2024-02-19 10:38:46,736 - root - INFO - img_size [128, 256]
+2024-02-19 10:38:46,736 - root - INFO - max_epochs 1500
+2024-02-19 10:38:46,736 - root - INFO - scheduler CosineAnnealingLR
+2024-02-19 10:38:46,736 - root - INFO - in_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:38:46,736 - root - INFO - out_channels [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12]
+2024-02-19 10:38:46,736 - root - INFO - prediction_length 100
+2024-02-19 10:38:46,736 - root - INFO - orography False
+2024-02-19 10:38:46,736 - root - INFO - orography_path None
+2024-02-19 10:38:46,736 - root - INFO - exp_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128
+2024-02-19 10:38:46,736 - root - INFO - train_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train
+2024-02-19 10:38:46,736 - root - INFO - valid_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test
+2024-02-19 10:38:46,736 - root - INFO - inf_data_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/out_of_sample
+2024-02-19 10:38:46,736 - root - INFO - time_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/time_means.npy
+2024-02-19 10:38:46,736 - root - INFO - global_means_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_means.npy
+2024-02-19 10:38:46,736 - root - INFO - global_stds_path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/global_stds.npy
+2024-02-19 10:38:46,736 - root - INFO - loss l2
+2024-02-19 10:38:46,737 - root - INFO - num_data_workers 4
+2024-02-19 10:38:46,737 - root - INFO - dt 1
+2024-02-19 10:38:46,737 - root - INFO - n_history 0
+2024-02-19 10:38:46,737 - root - INFO - prediction_type iterative
+2024-02-19 10:38:46,737 - root - INFO - n_initial_conditions 5
+2024-02-19 10:38:46,737 - root - INFO - ics_type default
+2024-02-19 10:38:46,737 - root - INFO - save_raw_forecasts True
+2024-02-19 10:38:46,737 - root - INFO - save_channel False
+2024-02-19 10:38:46,737 - root - INFO - masked_acc False
+2024-02-19 10:38:46,737 - root - INFO - maskpath None
+2024-02-19 10:38:46,737 - root - INFO - perturb False
+2024-02-19 10:38:46,737 - root - INFO - add_grid False
+2024-02-19 10:38:46,737 - root - INFO - N_grid_channels 0
+2024-02-19 10:38:46,737 - root - INFO - gridtype sinusoidal
+2024-02-19 10:38:46,737 - root - INFO - roll False
+2024-02-19 10:38:46,737 - root - INFO - num_blocks 8
+2024-02-19 10:38:46,737 - root - INFO - nettype afno
+2024-02-19 10:38:46,737 - root - INFO - width 56
+2024-02-19 10:38:46,737 - root - INFO - modes 32
+2024-02-19 10:38:46,737 - root - INFO - target default
+2024-02-19 10:38:46,737 - root - INFO - normalization zscore
+2024-02-19 10:38:46,737 - root - INFO - log_to_screen True
+2024-02-19 10:38:46,737 - root - INFO - save_checkpoint True
+2024-02-19 10:38:46,737 - root - INFO - enable_nhwc False
+2024-02-19 10:38:46,737 - root - INFO - optimizer_type FusedAdam
+2024-02-19 10:38:46,737 - root - INFO - crop_size_x None
+2024-02-19 10:38:46,737 - root - INFO - crop_size_y None
+2024-02-19 10:38:46,737 - root - INFO - two_step_training False
+2024-02-19 10:38:46,737 - root - INFO - plot_animations False
+2024-02-19 10:38:46,737 - root - INFO - add_noise False
+2024-02-19 10:38:46,737 - root - INFO - noise_std 0
+2024-02-19 10:38:46,737 - root - INFO - epsilon_factor 0
+2024-02-19 10:38:46,737 - root - INFO - world_size 2
+2024-02-19 10:38:46,737 - root - INFO - global_batch_size 8
+2024-02-19 10:38:46,737 - root - INFO - experiment_dir /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0
+2024-02-19 10:38:46,738 - root - INFO - checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/ckpt.tar
+2024-02-19 10:38:46,738 - root - INFO - best_checkpoint_path /home/ess/cxt/work/FourCastNetTEC/results/tec_ustc_128/afno_backbone_tec_ustc/0/training_checkpoints/best_ckpt.tar
+2024-02-19 10:38:46,738 - root - INFO - resuming False
+2024-02-19 10:38:46,738 - root - INFO - local_rank 0
+2024-02-19 10:38:46,738 - root - INFO - enable_amp True
+2024-02-19 10:38:46,738 - root - INFO - name afno_backbone_tec_ustc_0
+2024-02-19 10:38:46,738 - root - INFO - group era5_precipafno_backbone_tec_ustc
+2024-02-19 10:38:46,738 - root - INFO - project ERA5_precip
+2024-02-19 10:38:46,738 - root - INFO - entity flowgan
+2024-02-19 10:38:46,738 - root - INFO - ---------------------------------------------------
+2024-02-19 10:38:46,745 - root - INFO - rank 0, begin data loader init
+2024-02-19 10:38:46,750 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train/2005.h5
+2024-02-19 10:38:46,751 - root - INFO - Number of samples per year: 336
+2024-02-19 10:38:46,751 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/train. Number of examples: 2352. Image Shape: 128 x 256 x 13
+2024-02-19 10:38:46,751 - root - INFO - Delta t: 6 hours
+2024-02-19 10:38:46,751 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:38:46,752 - root - INFO - Getting file stats from /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test/2008.h5
+2024-02-19 10:38:46,752 - root - INFO - Number of samples per year: 337
+2024-02-19 10:38:46,752 - root - INFO - Found data at path /home/ess/cxt/work/FourCastNetTEC/Data_TEC_ustc_128/test. Number of examples: 674. Image Shape: 128 x 256 x 13
+2024-02-19 10:38:46,752 - root - INFO - Delta t: 6 hours
+2024-02-19 10:38:46,752 - root - INFO - Including 0 hours of past history in training at a frequency of 6 hours
+2024-02-19 10:38:46,753 - root - INFO - rank 0, data loader initialized

@@ -1,0 +1,25 @@
+from datetime import timedelta
+
+#os.environ['MASTER_ADDR'] = 'gnode21'
+#os.environ['RANK'] = '0'
+#os.environ['WORLD_RANK'] = '0'
+#os.environ['LOCAL_RANK'] = '0'
+#os.environ['WORLD_SIZE'] = '2'
+#os.environ['WANDB_START_METHOD'] = 'thread'
+#os.environ['MASTER_PORT'] = '19500'
+import torch.distributed as dist
+
+import os
+# 设置主进程的 IP 地址和端口号
+os.environ['MASTER_ADDR'] = '127.0.0.1'
+os.environ['MASTER_PORT'] = '29501'
+os.environ['RANK'] = '0'
+os.environ['WORLD_SIZE'] = '2'
+dist.init_process_group(backend='nccl', timeout=timedelta(seconds=10)) # 初始化分布式训练环境
+# 获取当前进程的排名和总进程数
+rank = dist.get_rank()
+world_size = dist.get_world_size()
+print(f"Rank: {rank}, World size: {world_size}") # 在分布式训练中使用排名和总进程数
+# 执行分布式训练代码
+# ...
+dist.destroy_process_group()  # 释放资源

@@ -45,6 +45,11 @@
 #Animashree Anandkumar - California Institute of Technology, NVIDIA Corporation
 
 import os
+os.environ["NCCL_IB_TC"] = "128"
+os.environ["NCCL_IB_GID_INDEX"] = "3"
+os.environ["NCCL_IB_TIMEOUT"] = "22"
+os.environ["NCCL_SOCKET_IFNAME"] = "eth0"
+
 import time
 from datetime import timedelta
 import numpy as np
