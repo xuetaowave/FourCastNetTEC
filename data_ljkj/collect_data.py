@@ -12,7 +12,7 @@ date_list = []
 for i in range((end_date-start_date).days):
     t0 = time()
     c_date = start_date+timedelta(i)
-    filename = '/home/cxt/data/work/Data/WACCM/{}/{}/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
+    filename = '/home/ess/cxt/work/data/WACCM/{}/{}/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
 
     seconds = np.arange(0, 24*60*60, 60*30)
     date_i = np.array([c_date+timedelta(0, int(seconds[i])) for i in range(seconds.size)])
@@ -29,14 +29,13 @@ value_all = np.concatenate(value, axis=0)
 np.savez(kind, fields=value_all, date=np.array(date_list))
 pass
 
-
 kind = 'T'
 value = []
 date_list = []
 for i in range((end_date-start_date).days):
     t0 = time()
     c_date = start_date+timedelta(i)
-    filename = '/media/cxt/Elements/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
+    filename = '/home/ess/cxt/work/data/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
 
     seconds = np.arange(0, 24*60*60, 60*30)
     date_i = np.array([c_date+timedelta(0, int(seconds[i])) for i in range(seconds.size)])
@@ -58,7 +57,7 @@ date_list = []
 for i in range((end_date-start_date).days):
     t0 = time()
     c_date = start_date+timedelta(i)
-    filename = '/media/cxt/Elements/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
+    filename = '/home/ess/cxt/work/data/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
 
     seconds = np.arange(0, 24*60*60, 60*30)
     date_i = np.array([c_date+timedelta(0, int(seconds[i])) for i in range(seconds.size)])
@@ -80,7 +79,7 @@ date_list = []
 for i in range((end_date-start_date).days):
     t0 = time()
     c_date = start_date+timedelta(i)
-    filename = '/media/cxt/Elements/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
+    filename = '/home/ess/cxt/work/data/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.{}.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'), kind)
 
     seconds = np.arange(0, 24*60*60, 60*30)
     date_i = np.array([c_date+timedelta(0, int(seconds[i])) for i in range(seconds.size)])
@@ -102,7 +101,7 @@ date_list = []
 for i in range((end_date-start_date).days):
     t0 = time()
     c_date = start_date+timedelta(i)
-    filename = '/media/cxt/Elements/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.lev.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'))
+    filename = '/home/ess/cxt/work/data/WACCM/{}/{}_height/FWSD_2010.cam.h1.{}-00000.lev.2-5km.npz'.format(c_date.year, kind, c_date.strftime('%Y-%m-%d'))
 
     seconds = np.arange(0, 24*60*60, 60*30)
     date_i = np.array([c_date+timedelta(0, int(seconds[i])) for i in range(seconds.size)])
